@@ -105,11 +105,11 @@
         </p>
       </blockquote>
     </div>
-    <section class="reviews__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
-    </section>
+    <ul class="reviews__toggles slider">
+      <li class="slider__toggle--active"><a aria-label="Вы находитесь на первом слайде">1</a></li>
+      <li class="slider__toggle"><a href="slide-two.html" aria-label="Перейти на второй слайд">2</a></li>
+      <li class="slider__toggle"><a href="slide-three.html" aria-label="Перейти на третий слайд">3</a></li>
+    </ul>
   </section>
 
   <section class="rates">
@@ -135,11 +135,11 @@
         </div>
       </div>
     </div>
-    <section class="rates__toggles slider__toggles">
-      <button class="slider__toggle" type="button">1</button>
-      <button class="slider__toggle" type="button">2</button>
-      <button class="slider__toggle" type="button">3</button>
-    </section>
+    <ul class="rates__toggles slider">
+      <li class="slider__toggle"><a href="slide-one.html" aria-label="Перейти на первый слайд">1</a></li>
+      <li class="slider__toggle--active"><a aria-label="Вы находитесь на втором слайде">2</a></li>
+      <li class="slider__toggle"><a href="slide-three.html" aria-label="Перейти на третий слайд">3</a></li>
+    </ul>
   </section>
 
   <section class="contacts">
@@ -162,9 +162,9 @@
   </section>
 </main>
 
-<section class="interactive-map__wrapper">
+<section class="interactive-map">
   <h2 class="visually-hidden">Схема проезда</h2>
-  <iframe class="interactive-map"
+  <iframe class="interactive-map__frame"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor"
           allowfullscreen></iframe>
 </section>
