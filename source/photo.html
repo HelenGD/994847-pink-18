@@ -205,6 +205,39 @@
       </div>
     </li>
   </ul>
+
+  <!---- 2 задание -->
+  <section class="photo-upload">
+    <div class="photo-upload__lead">
+      <p>
+        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      </p>
+    </div>
+    <div class="photo-editor">
+      <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
+        <figure class="photo-editor__image">
+          <picture>
+            <img src="https://via.placeholder.com/150x150" width="280" height="374" alt="Загруженное изображение">
+          </picture>
+        </figure>
+        <div class="photo-editor__wrapper">
+          <ul class="photo-editor__tools">
+            <li class="photo-editor__tool">Обрезка</li>
+            <li class="photo-editor__tool">Цветокоррекция</li>
+            <li class="photo-editor__tool">Контраст</li>
+          </ul>
+        </div>
+        <div class="photo-editor__range">
+          <input type="range" id="range" name="range" value="15" min="0" max="20">
+          <label class="visually-hidden" for="range">Диапазон</label>
+        </div>
+        <div class="photo-editor__button">
+          <button class="photo-editor__upload-button" type="submit">Запостить</button>
+          <button class="photo-editor__cancel-button" type="reset">Отмена</button>
+        </div>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="page-footer">

@@ -92,6 +92,81 @@
       </ul>
     </div>
   </section>
+
+  <!---- 2 задание -->
+  <section class="reviews">
+    <div class="reviews__wrapper slider">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
+      <blockquote class="reviews__item">
+        <cite class="reviews__author-name">Николай Петров</cite>
+        <p class="reviews__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
+      </blockquote>
+    </div>
+    <ul class="reviews__toggles slider">
+      <li class="slider__toggle slider__toggle--active"><a aria-label="Вы находитесь на первом слайде">1</a></li>
+      <li class="slider__toggle"><a href="slide-two.html" aria-label="Перейти на второй слайд">2</a></li>
+      <li class="slider__toggle"><a href="slide-three.html" aria-label="Перейти на третий слайд">3</a></li>
+    </ul>
+  </section>
+
+  <section class="rates">
+    <h2 class="visually-hidden">Тарифы</h2>
+    <div class="rates__wrapper">
+      <div class="rates__header  rates__header--flag">
+        <div class="rates__name">Стандарт</div>
+        <div class="rates__flag">Хит</div>
+        <div class="rates__price">3,99 USD</div>
+      </div>
+      <div class="rates-main">
+        <div class="rates__item">
+          <p class="rates__name">Розовый фильтр</p>
+          <span class="rates__feature-status rates__feature-status--on">Включено</span>
+        </div>
+        <div class="rates__item">
+          <p class="rates__name">Смайлики</p>
+          <span class="rates__feature-status rates__feature-status--on">Включено</span>
+        </div>
+        <div class="rates__item">
+          <p class="rates__name">Комментарии</p>
+          <span class="rates__feature-status rates__feature-status--off">Выключено</span>
+        </div>
+      </div>
+    </div>
+    <ul class="rates__toggles slider">
+      <li class="slider__toggle"><a href="slide-one.html" aria-label="Перейти на первый слайд">1</a></li>
+      <li class="slider__toggle slider__toggle--active"><a aria-label="Вы находитесь на втором слайде">2</a></li>
+      <li class="slider__toggle"><a href="slide-three.html" aria-label="Перейти на третий слайд">3</a></li>
+    </ul>
+  </section>
+
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <p class="contacts-lead">Остались вопросы? Свяжитесь с нами!</p>
+    <div class="contacts__items">
+      <div class="contacts__item  contacts__item--phone">
+        <b class="contacts__item-lead">Звоните:</b>
+        <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__item  contacts__item--email">
+        <b class="contacts__item-lead">Пишите:</b>
+        <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__item  contacts__item--address">
+        <b class="contacts__item-lead">Приезжайте в гости:</b>
+        <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
+      </div>
+    </div>
+  </section>
 </main>
+
+<section class="interactive-map">
+  <h2 class="visually-hidden">Схема проезда</h2>
+  <iframe class="interactive-map__frame"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor"
+          allowfullscreen></iframe>
+</section>
 </body>
 </html>
