@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Логотип Pink">
-  </a>
-  <button class="page-header__button" type="button" title="Закрыть">x</button>
+  <div class="page-header__wrapper">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+    </a>
+    <button class="page-header__button" type="button" title="Закрыть">x</button>
+  </div>
 
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a>Фотографии</a>
+          <a class="site-list__link">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="academy.html">HTML Academy</a>
+          <a class="site-list__link" href="academy.html">HTML Academy</a>
         </li>
       </ul>
     </div>
@@ -34,179 +37,188 @@
 
 <main class="main-gallery">
   <h1 class="visually-hidden">Галерея фотографий</h1>
-  <section class="intro">
+  <section class="intro download-background download-background--form">
     <h2 class="intro__title">
       Фотографии пользователей
     </h2>
   </section>
-  <section class="gallery">
-    <p class="gallery__lead">Взгляните на фотографии, которые выкладывают пользователи!
+  <div class="gallery__wrapper">
+  <section class="gallery-description">
+    <p class="gallery-description__lead">Взгляните на фотографии, которые выкладывают пользователи!<br>
       Видите, как не хватает ваших?</p>
   </section>
-  <ul class="post">
-    <li class="post__item">
-      <div class="post__photo-wrapper post__photo-wrapper--panorama">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Фотография Анны">
-        <span class="post__panorama-rubric">Панорама дня</span>
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Анна</p>
-          <p class="post__time">(5 минут назад)</p>
-        </header>
-        <div class="post__text">
-          <p>
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
-            задавайте свои вопросы!
-          </p>
+    <ul class="post">
+      <li class="post__item">
+        <div class="post__photo-wrapper post__photo-wrapper--panorama">
+          <img class="post__photo" src="./img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография Анны">
+          <span class="post__panorama-rubric">Панорама дня</span>
         </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">215</span>
-          </a>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Анна <span class="post__time">(5 минут назад)</span>
+            </p>
+          </header>
+          <div>
+            <p class="post__text">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+              задавайте свои вопросы!
+            </p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">215</span>
+            </a>
+          </div>
         </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Левона">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Левон</p>
-          <p class="post__time">(5 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">356</span>
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Антона">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Антон</p>
-          <p class="post__time">(12 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>Соседи будут рады!</p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">666</span>
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Бориса">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Борис</p>
-          <p class="post__time">(12 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>Соседи будут рады!</p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">666</span>
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Сергея">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Сергей</p>
-          <p class="post__time">(25 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>Самая кубанская в мире!</p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">4</span>
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Максима">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Максим</p>
-          <p class="post__time">(40 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>Где снег-то?</p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">150</span>
-          </a>
-        </div>
-      </div>
-    </li>
-    <li class="post__item">
-      <div class="post__photo-wrapper">
-        <img class="post__photo" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Фотография Надежды">
-      </div>
-      <div class="post__wrappper">
-        <header class="post__header">
-          <p class="post__author">Надежда</p>
-          <p class="post__time">(45 часов назад)</p>
-        </header>
-        <div class="post__text">
-          <p>Всем GM и взаимные лайки!</p>
-        </div>
-        <div class="post__action">
-          <button class="post__like-btn" type="button" title="Мне нравится">
-            Мне нравится
-          </button>
-          <a class="post__stats" href="likes.html">
-            Hравится: <span class="post__stats-count">2560</span>
-          </a>
-        </div>
-      </div>
-    </li>
-  </ul>
+      </li>
 
-  <!---- 2 задание -->
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография Левона">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Левон <span class="post__time">(5 часов назад)</span>
+            </p>
+          </header>
+          <div>
+            <p class="post__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">356</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография Антона">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Антон <span class="post__time">(12 часов назад)</span>
+            </p>
+          </header>
+          <div>
+            <p class="post__text">Соседи будут рады!</p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">666</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография Бориса">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Борис <span class="post__time">(20 часов назад)</span>
+            </p>
+          </header>
+          <div>
+            <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">215</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Сергея">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Сергей <span class="post__time">(25 часов назад)</span>
+            </p>
+          </header>
+          <div>
+            <p class="post__text">Самая кубанская в мире!</p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">4</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография Максима">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Максим <span class="post__time">(40 часов назад)</span>
+            </p>
+          </header>
+          <div class="post__text">
+            <p class="post__text">Где снег-то?</p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">150</span>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="post__item">
+        <div class="post__photo-wrapper">
+          <img class="post__photo" src="./img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография Надежды">
+        </div>
+        <div class="post__wrapper">
+          <header class="post__header">
+            <p class="post__author">
+              Надежда <span class="post__time">(45 часов назад)</span>
+            </p>
+          </header>
+          <div class="post__text">
+            <p class="post__text">Всем GM и взаимные лайки!</p>
+          </div>
+          <div class="post__action">
+            <button class="post__like-btn" type="button" title="Мне нравится">
+              Мне нравится
+            </button>
+            <a class="post__stats" href="likes.html">
+              Hравится: <span class="post__stats-count">2560</span>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
   <section class="photo-upload">
     <div class="photo-upload__lead">
       <p>
@@ -242,8 +254,8 @@
 
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="index.html" class="page-footer__logo">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип Pink">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
     </a>
   </div>
   <div class="page-footer__social social">
@@ -262,8 +274,7 @@
   </div>
   <div class="page-footer__copyright copyright">
     <h2 class="visually-hidden">Создатель верстки</h2>
-    <p class="copyright__text">Разработано:</p>
-    <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <p class="copyright__text">Разработано<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/logo-htmlacademy-pink.svg"></a></p>
   </div>
 </footer>
 
