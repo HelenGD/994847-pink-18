@@ -1,71 +1,69 @@
 .post {
   margin: 0;
   padding: 20px;
+}
 
-  &__photo {
-    width: 100%;
-    display: block;
-  }
+.post__photo {
+  width: 100%;
+  display: block;
+}
 
-  &__item {
-    list-style-type: none;
-  }
+.post__item {
+  list-style-type: none;
+}
 
-  &__panorama-rubric {
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    color: $white;
-    background-color: $pink;
-  }
+.post__panorama-rubric {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+  background-color: $pink;
+}
 
-  &__author {
-    margin: 0;
-    font-weight: bold;
-    font-size: $font-size;
-    line-height: $line-height;
-    text-align: left;
-    color: $blue-dark;
-  }
+.post__author {
+  margin: 0;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: left;
+  color: $blue-dark;
+}
 
-  &__wrapper {
-    background-color: $grey-light;
-    margin-bottom: 20px;
-    padding: 25px 17px 10px 17px;
-  }
+.post__wrapper {
+  background-color: $grey-light;
+  margin-bottom: 20px;
+  padding: 25px 17px 10px 17px;
+}
 
-  &__time {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: $line-height;
-    color: #283645;
-    text-transform: uppercase;
-  }
+.post__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: $line-height;
+  color: #283645;
+  text-transform: uppercase;
+}
 
-  &__text {
-    margin: 0;
-    font-size: $font-size;
-    line-height: $line-height;
-    color: #283645;
-  }
+.post__text {
+  margin: 0;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: #283645;
+}
 
-  &__photo-wrapper {
-    &--panorama {
-      padding: 0;
-      margin: 0 -20px;
-    }
-  }
+.post__photo-wrapper--panorama {
+  padding: 0;
+  margin: 0 -20px;
+}
 
-  &__stats {
-    color: $pink;
-    text-decoration: none;
-    font-size: 12px;
-    line-height: $line-height;
-    text-align: left;
-    text-transform: uppercase;
-  }
+.post__stats {
+  color: $pink;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: $line-height;
+  text-align: left;
+  text-transform: uppercase;
+}
 
-  &__action {
-    margin-top: 16px;
-  }
+.post__action {
+  margin-top: 16px;
 }

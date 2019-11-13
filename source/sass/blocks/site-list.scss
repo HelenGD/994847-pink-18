@@ -1,11 +1,9 @@
-.site-list {
-  &__link {
-    text-decoration: none;
-    color: #ffffff;
-  }
+.site-list__link {
+  text-decoration: none;
+  color: $white;
+}
 
-  &__item {
-    list-style-type: none;
-    padding: 22px;
-  }
+.site-list__item {
+  list-style-type: none;
+  padding: 22px;
 }
