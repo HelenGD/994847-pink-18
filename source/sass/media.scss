@@ -1,0 +1,16 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 320px,
+  md: 768px,
+  xl: 1200px
+) !default;
+
+@mixin breakpoint($point) {
+  @each $key, $value in $grid-breakpoints {
+    @if $key == $point {
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+  }
+}

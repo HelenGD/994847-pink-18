@@ -1,4 +1,8 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
+
+  @include breakpoint(xl) {
+    display: flex;
+  }
 }

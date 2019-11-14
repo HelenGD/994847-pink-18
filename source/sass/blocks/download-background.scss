@@ -1,12 +1,23 @@
 .download-background {
   background-repeat: no-repeat;
+
+  @include breakpoint(xl) {
+    display: flex;
+  }
 }
 
 .download-background--home {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-size: 80%, 350px;
-  background-position: left bottom, center 67%;
-  min-height: 392px;
+  background-position: left 108px, center -65%;
+  padding-top: 392px;
+
+  @include breakpoint(xl) {
+    padding-top: 0;
+    min-height: 600px;
+    background-size: 30%, cover;
+    background-position: right bottom, center;
+  }
 }
 
 .download-background--form {

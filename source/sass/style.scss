@@ -1,8 +1,10 @@
 @import "~normalize.css/normalize.css";
 @import "variables";
 @import "font";
+@import "media";
 @import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/download-app";
 @import "blocks/download-links";
 @import "blocks/advantages";
 @import "blocks/page-footer";
@@ -40,6 +42,10 @@ body {
   background-color: #0e0e0e;
   max-width: 320px;
   margin: 0 auto;
+
+  @include breakpoint(xl) {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
