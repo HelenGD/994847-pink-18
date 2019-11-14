@@ -1,0 +1,17 @@
+.download-background {
+  background-repeat: no-repeat;
+}
+
+.download-background--home {
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-size: 80%, 350px;
+  background-position: left bottom, center 67%;
+  min-height: 392px;
+}
+
+.download-background--form {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 25%;
+  background-size: 350px;
+  min-height: 172px;
+}

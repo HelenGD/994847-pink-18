@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Логотип Pink">
-  </a>
-  <button class="page-header__button" type="button" title="Закрыть">x</button>
+  <div class="page-header__wrapper">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+    </a>
+    <button class="page-header__button" type="button" title="Закрыть">x</button>
+  </div>
 
   <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item site-list__item--active">
-          <a>Конкурс</a>
+          <a class="site-list__link">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="academy.html">HTML Academy</a>
+          <a class="site-list__link" href="academy.html">HTML Academy</a>
         </li>
       </ul>
     </div>
@@ -33,13 +37,12 @@
 
 <main class="main-contest">
   <h1 class="visually-hidden">Конкурс от Пинк</h1>
-  <section class="intro">
+  <section class="intro download-background download-background--form">
     <h2 class="intro__title">
       Конкурс на самое безбашенное путешествие с Пинк
     </h2>
   </section>
 
-  <!---- 2 задание -->
   <section class="contest">
     <div class="contest__lead">
       <p>
@@ -148,8 +151,8 @@
 
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="index.html" class="page-footer__logo">
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип «Pink»">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
     </a>
   </div>
   <div class="page-footer__social social">
@@ -168,8 +171,7 @@
   </div>
   <div class="page-footer__copyright copyright">
     <h2 class="visually-hidden">Создатель верстки</h2>
-    <p class="copyright__text">Разработано:</p>
-    <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <p class="copyright__text">Разработано<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/logo-htmlacademy-pink.svg"></a></p>
   </div>
 </footer>
 </body>

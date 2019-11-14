@@ -1,0 +1,47 @@
+.advantages__about {
+  background-color: $white;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.advantages__slogan {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  list-style-type: none;
+}
+
+.advantages__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.advantages__features {
+  background-color: $gray;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: center;
+  padding: 70px 25px 0 25px;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: $line-height;
+  text-align: center;
+}
+
+.advantages__background {
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  background-position: top center;
+  height: 270px;
+  margin-top: 40px;
+}
