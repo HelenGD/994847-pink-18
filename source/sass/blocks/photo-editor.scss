@@ -1,0 +1,24 @@
+.photo-editor {
+  background-color: $gray;
+  padding: 20px 20px 44px 20px;
+}
+
+.photo-editor__image {
+  margin: 0;
+}
+
+.photo-editor__tool {
+  list-style-type: none;
+}
+
+.photo-editor__upload-button {
+  width: 100%;
+}
+
+.photo-editor__cancel-button {
+  width: 100%;
+}
+
+.photo-editor__range-input {
+  width: 100%;
+}

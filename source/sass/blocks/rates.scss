@@ -1,0 +1,69 @@
+.rates {
+  background-color: $gray;
+  padding-top: 70px;
+}
+
+.rates__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.rates__flag {
+  font-size: 10px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $pink;
+  width: 30px;
+}
+
+.rates__price {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+}
+
+.rates__services {
+  font-size: $font-size;
+  line-height: 30px;
+  min-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  border-left: solid 2px #e5e5e5;
+  border-right: solid 2px #e5e5e5;
+  padding-left: 22px;
+  padding-right: 18px;
+}
+
+.rates__toggles {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.rates__header-wrapper {
+  background-color: #283645;
+  padding: 0 20px;
+}
+
+.rates__header {
+  border-left: solid 2px #e5e5e5;
+  border-right: solid 2px #e5e5e5;
+  min-height: 98px;
+}
+
+.rates__main {
+  background-color: $white;
+}
+
+.rates__item {
+  padding: 0 20px;
+  border-bottom: solid 2px #e5e5e5;
+}

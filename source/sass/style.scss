@@ -14,6 +14,15 @@
 @import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/site-list";
+@import "blocks/reviews";
+@import "blocks/rates";
+@import "blocks/contacts";
+@import "blocks/interactive-map";
+@import "blocks/photo-upload";
+@import "blocks/photo-editor";
+@import "blocks/contest";
+@import "blocks/form";
+@import "blocks/slider-toggles";
 
 *,
 *::before,
@@ -21,7 +30,9 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+input,
+textarea {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 

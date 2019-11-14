@@ -1,0 +1,26 @@
+.contacts {
+  background-color: $white;
+  padding: 10px 25px 23px 25px;
+  text-align: center;
+}
+
+.contacts-lead {
+  font-weight: 300;
+  font-size: 24px;
+  color: $blue-dark;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
+}
+
+.contacts__item-lead {
+  font-size: 18px;
+}
+
+.contacts__item-info {
+  font-style: normal;
+  font-size: 24px;
+  text-decoration: none;
+  color: $pink;
+}
