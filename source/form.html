@@ -44,30 +44,30 @@
   </section>
 
   <section class="contest">
-    <div class="contest__lead">
-      <p>
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
-    </div>
-    <div class="contest__wrapper">
-      <form class="form" method="post" action="http://echo.htmlacademy.ru">
-        <div class="form__fieldset">
-          <div class="form__fieldset form__fieldset--fullname">
-            <div class="form__field-text form__field-text--fullname">
-              <label class="form__text-label form__text-label--fullname" for="user-last-name">Фамилия:</label>
-              <input class="form__text-input form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
+      <div class="contest__lead">
+        <p>
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+      </div>
+      <div class="contest__wrapper">
+        <form class="form" method="post" action="http://echo.htmlacademy.ru">
+          <div class="form__fieldset">
+            <div class="form__fieldset form__fieldset--fullname">
+              <div class="form__field-text form__field-text--fullname">
+                <label class="form__text-label form__text-label--fullname" for="user-last-name">Фамилия:</label>
+                <input class="form__text-input form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
+              </div>
+              <div class="form__field-text form__field-text--fullname">
+                <label class="form__text-label form__text-label--fullname" for="user-first-name">Имя:</label>
+                <input class="form__text-input form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
+              </div>
+              <div class="form__field-text form__field-text--fullname">
+                <label class="form__text-label form__text-label--fullname" for="user-middle-name">Отчество:</label>
+                <input class="form__text-input form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+              </div>
             </div>
-            <div class="form__field-text form__field-text--fullname">
-              <label class="form__text-label form__text-label--fullname" for="user-first-name">Имя:</label>
-              <input class="form__text-input form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
-            </div>
-            <div class="form__field-text form__field-text--fullname">
-              <label class="form__text-label form__text-label--fullname" for="user-middle-name">Отчество:</label>
-              <input class="form__text-input form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
-            </div>
-          </div>
           <div class="form__fieldset form__fieldset--achievements">
-            <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+            <h2 class="form__title">Ваши безбашенные<br> достижения в путешествии</h2>
             <div class="form__checkbox-fields form__checkbox-fields--achievements">
               <div class="form__checkbox-wrapper">
                 <div class="form__field-checkbox">
@@ -102,7 +102,7 @@
             </div>
           </div>
           <div class="form__fieldset form__fieldset--contacts">
-            <h2 class="form__title form__title--contacts">Контактная информация</h2>
+            <h2 class="visually-hidden">Контактная информация</h2>
             <div class="form__text-fields form__text-fields--contacts">
               <div class="form__field-text form__field-text--contacts">
                 <label class="form__text-label form__text-label--contacts" for="user-phone">Номер телефона</label>
@@ -137,13 +137,15 @@
               <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </div>
-          <div>
+          <div class="form__sending">
             <button class="form__submit-button button button--submit" type="submit">Отправить форму</button>
             <div class="form__note">
-              <p class="form__note-symbol">* — обязательные поля</p>
+              <p class="form__note-symbol">
+                <span class="form__note-star">*</span> — обязательные поля
+              </p>
             </div>
           </div>
-        </div>
+      </div>
       </form>
     </div>
   </section>
