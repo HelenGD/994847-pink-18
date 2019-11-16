@@ -9,7 +9,7 @@
   background-color: $blue-darkest;
   padding: 28px 20px 20px 32px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     background-color: transparent;
   }
 }
@@ -25,6 +25,12 @@
   line-height: $line-height;
   color: $white;
   text-align: center;
+}
+
+.download-links__market {
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .download-links__market-item {

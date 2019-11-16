@@ -1,39 +1,37 @@
 .download-background {
   background-repeat: no-repeat;
 
-  @include breakpoint(xl) {
+  @include breakpointMd() {
     display: flex;
+    justify-content: center;
+    min-height: 330px;
   }
 
-  @include breakpoint(md) {
+  @include breakpointXl() {
     display: flex;
+    justify-content: center;
   }
 }
 
 .download-background--home {
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 80%, 350px;
-  background-position: left 108px, center -65%;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: 80%;
+  background-position: left 108px;
   padding-top: 392px;
 
-  @include breakpoint(xl) {
+  @include breakpointMd() {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     padding-top: 0;
-    min-height: 750px;
-    background-size: 30%, cover;
-    background-position: right bottom, center;
+    min-height: 619px;
+    background-size: auto 545px;
+    background-position: right bottom;
   }
 
-  @include breakpoint(md) {
+  @include breakpointXl() {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     padding-top: 0;
-    min-height: 600px;
-    background-size: 30%, cover;
-    background-position: right bottom, center;
+    min-height: 744px;
+    background-size: auto 645px;
+    background-position: center bottom;
   }
-}
-
-.download-background--form {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 25%;
-  background-size: 350px;
-  min-height: 172px;
 }

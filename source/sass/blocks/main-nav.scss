@@ -1,13 +1,33 @@
+.main-nav {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  color: $white;
+  background-color: transparentize(black, 0.5);
+  text-transform: uppercase;
+
+  @include breakpointXl() {
+    display: flex;
+  }
+}
+
 .main-nav__list {
   padding: 0;
   margin: 0;
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     display: flex;
-
+    flex-direction: space-between;
+    padding: 0 130px;
   }
+}
 
-  @include breakpoint(md) {
-    display: flex;
+.main-nav--open {
+  background-color: $blue-dark;
+
+  @include breakpointXl() {
+    background-color: transparentize(black, 0.5);
   }
 }

@@ -16,12 +16,12 @@
   margin: 0 20px;
   padding: 25px 17px 10px 17px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     width: 620px;
     margin: 0 auto;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     width: 940px;
   }
 }

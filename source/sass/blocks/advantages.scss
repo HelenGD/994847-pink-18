@@ -6,11 +6,11 @@
   padding: 48px 0;
   min-height: 214px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     min-height: 242px;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     min-height: 324px;
   }
 }
@@ -24,13 +24,13 @@
   padding: 0;
   margin: 0;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     display: flex;
     flex-direction: column;
     order: 2;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     flex-direction: row;
   }
 }
@@ -38,7 +38,7 @@
 .advantages__item {
   list-style-type: none;
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     margin-top: 0;
 
     &::before {
@@ -66,7 +66,7 @@
 .advantages__item:not(:first-child) {
   margin-top: 40px;
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     margin-top: 0;
   }
 }
@@ -78,7 +78,7 @@
   text-align: center;
   padding: 70px 25px 0 25px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     min-height: 510px;
     display: flex;
   }
@@ -97,7 +97,8 @@
   height: 270px;
   margin-top: 40px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
+    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
     display: flex;
     order: 1;
     margin-top: 0;
@@ -107,7 +108,7 @@
     min-width: 266px;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     display: none;
   }
 }

@@ -2,14 +2,14 @@
   margin: 0 auto;
   padding: 20px 20px 20px 20px;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     width: 980px;
   }
 }
@@ -24,7 +24,7 @@
   margin-bottom: 20px;
   background-color: $grey-light;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     width: 300px;
   }
 }

@@ -1,24 +1,51 @@
 .page-header {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: $blue-dark;
-  color: $white;
   min-height: 325px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 
-  @include breakpoint(xl) {
-    display: flex;
-    min-height: 112px;
+  @include breakpointMd() {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
-  @include breakpoint(md) {
-    display: flex;
-    min-height: 112px;
+  @include breakpointXl() {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
 .page-header__wrapper {
   padding: 22px 20px 25px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpointMd() {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__button {
+  @include breakpointXl() {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  display: inline-flex;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  width: 74px;
+  height: 22px;
+
+  @include breakpointMd() {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    width: 146px;
+    height: 40px;
+  }
+
+  @include breakpointXl() {
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    width: 146px;
+    height: 40px;
+  }
 }

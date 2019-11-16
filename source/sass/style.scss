@@ -4,14 +4,13 @@
 @import "media";
 @import "blocks/page-header";
 @import "blocks/main-nav";
-@import "blocks/download-app";
+@import "blocks/download-background";
 @import "blocks/download-links";
 @import "blocks/advantages";
 @import "blocks/page-footer";
 @import "blocks/gallery";
 @import "blocks/gallery-description";
 @import "blocks/post";
-@import "blocks/download-background";
 @import "blocks/intro";
 @import "blocks/social";
 @import "blocks/copyright";
@@ -44,11 +43,11 @@ body {
   max-width: 320px;
   margin: 0 auto;
 
-  @include breakpoint(md) {
+  @include breakpointMd() {
     max-width: 768px;
   }
 
-  @include breakpoint(xl) {
+  @include breakpointXl() {
     max-width: 1200px;
   }
 }
