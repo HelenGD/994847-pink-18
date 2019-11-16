@@ -4,6 +4,10 @@
   @include breakpoint(xl) {
     display: flex;
   }
+
+  @include breakpoint(md) {
+    display: flex;
+  }
 }
 
 .download-background--home {
@@ -13,6 +17,13 @@
   padding-top: 392px;
 
   @include breakpoint(xl) {
+    padding-top: 0;
+    min-height: 750px;
+    background-size: 30%, cover;
+    background-position: right bottom, center;
+  }
+
+  @include breakpoint(md) {
     padding-top: 0;
     min-height: 600px;
     background-size: 30%, cover;

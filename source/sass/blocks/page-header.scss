@@ -6,9 +6,16 @@
   text-transform: uppercase;
   background-color: $blue-dark;
   color: $white;
+  min-height: 325px;
 
   @include breakpoint(xl) {
     display: flex;
+    min-height: 112px;
+  }
+
+  @include breakpoint(md) {
+    display: flex;
+    min-height: 112px;
   }
 }
 

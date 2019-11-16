@@ -4,6 +4,15 @@
   font-size: 24px;
   text-align: center;
   padding: 48px 0;
+  min-height: 214px;
+
+  @include breakpoint(md) {
+    min-height: 242px;
+  }
+
+  @include breakpoint(xl) {
+    min-height: 324px;
+  }
 }
 
 .advantages__slogan {
@@ -14,14 +23,52 @@
 .advantages__list {
   padding: 0;
   margin: 0;
+
+  @include breakpoint(md) {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  @include breakpoint(xl) {
+    flex-direction: row;
+  }
 }
 
 .advantages__item {
   list-style-type: none;
+
+  @include breakpoint(xl) {
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 302px;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    }
+
+    &:nth-child(2)::before {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    }
+
+    &:nth-child(3)::before {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    }
+  }
 }
 
 .advantages__item:not(:first-child) {
   margin-top: 40px;
+
+  @include breakpoint(xl) {
+    margin-top: 0;
+  }
 }
 
 .advantages__features {
@@ -30,6 +77,11 @@
   line-height: $line-height;
   text-align: center;
   padding: 70px 25px 0 25px;
+
+  @include breakpoint(md) {
+    min-height: 510px;
+    display: flex;
+  }
 }
 
 .advantages__title {
@@ -44,4 +96,18 @@
   background-position: top center;
   height: 270px;
   margin-top: 40px;
+
+  @include breakpoint(md) {
+    display: flex;
+    order: 1;
+    margin-top: 0;
+    min-height: 478px;
+    background-position: left;
+    background-size: 100%;
+    min-width: 266px;
+  }
+
+  @include breakpoint(xl) {
+    display: none;
+  }
 }
