@@ -6,7 +6,7 @@
   text-align: center;
   color: $blue-dark;
 
-  @include breakpointSm() {
+  @include breakpointS() {
     display: none;
   }
 

@@ -1,0 +1,13 @@
+.layout-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpointMd() {
+    max-width: 768px;
+  }
+
+  @include breakpointXl() {
+    max-width: 936px;
+  }
+}
