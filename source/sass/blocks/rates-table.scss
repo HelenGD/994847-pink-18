@@ -1,0 +1,65 @@
+.rates-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 936px;
+  margin: 0 auto;
+  transform: translateX(-33%);
+
+  @include breakpointMd() {
+    transform: none;
+  }
+}
+
+.rates-table__head-cell {
+  background-color: $blue-dark;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border-left: solid 2px $grey;
+  border-right: solid 2px $grey;
+  vertical-align: middle;
+  height: 98px;
+  min-width: 278px;
+
+  &:first-child {
+    display: none;
+    border: 0;
+    background: transparent;
+  }
+
+  @include breakpointMd() {
+    min-width: 25%;
+
+    &:first-child {
+      display: table-cell;
+    }
+  }
+}
+
+.rates-table__data-cell {
+  background-color: $white;
+  border: solid 2px $grey;
+  height: 63px;
+  padding: 0 24px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  &:first-child {
+    display: none;
+  }
+
+  @include breakpointMd() {
+    width: 25%;
+
+    &:first-child {
+      display: table-cell;
+    }
+  }
+}

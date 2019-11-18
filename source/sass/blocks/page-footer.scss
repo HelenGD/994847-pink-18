@@ -1,16 +1,24 @@
 .page-footer {
+  max-width: 936px;
+  margin: auto;
   background-color: $white;
   padding: 40px 0;
   text-align: center;
   color: $blue-dark;
 
+  @include breakpointSm() {
+    display: none;
+  }
+
   @include breakpointMd() {
+    min-height: 127px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
   }
 
   @include breakpointXl() {
+    min-height: 224px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;

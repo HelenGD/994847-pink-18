@@ -8,29 +8,31 @@
 <body>
 
 <header class="page-header">
-  <nav class="main-nav main-nav--open">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo"></a>
-      <button class="page-header__button" type="button" title="Закрыть">x</button>
-    </div>
+  <div class="main-nav__container main-nav--open">
+    <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo"></a>
+        <button class="page-header__button" type="button" title="Закрыть">x</button>
+      </div>
 
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="academy.html">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="academy.html">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <section class="download-app">
     <div class="download-background download-background--home">
@@ -126,35 +128,66 @@
 
   <section class="rates">
     <h2 class="visually-hidden">Тарифы</h2>
-    <div class="rates__wrapper">
-      <div class="rates__header-wrapper">
-        <div class="rates__header rates__header--flag">
-          <div class="rates__flag">Хит</div>
-          <div class="rates__name">Стандарт</div>
-          <div class="rates__price">3,99 USD</div>
-        </div>
-      </div>
-      <div class="rates__main">
-        <div class="rates__item">
-          <p class="rates__services">
-            Розовый фильтр
+
+    <table class="rates-table">
+      <thead>
+        <tr>
+          <th class="rates-table__head-cell"></th>
+          <th class="rates-table__head-cell">
+            База
+            <div class="rates__price">1,99 USD</div>
+          </th>
+          <th class="rates-table__head-cell">
+            <span class="rates__flag">Хит</span>
+            Стандарт
+            <div class="rates__price">3,99 USD</div>
+          </th>
+          <th class="rates-table__head-cell">
+            Анлим
+            <div class="rates__price">9,99 USD</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="rates-table__data-cell">Розовый фильтр</td>
+          <td class="rates-table__data-cell">
             <span class="rates__feature-status rates__feature-status--on">Включено</span>
-          </p>
-        </div>
-        <div class="rates__item">
-          <p class="rates__services">
-            Смайлики
+          </td>
+          <td class="rates-table__data-cell">
             <span class="rates__feature-status rates__feature-status--on">Включено</span>
-          </p>
-        </div>
-        <div class="rates__item">
-          <p class="rates__services">
-            Комментарии
+          </td>
+          <td class="rates-table__data-cell">
             <span class="rates__feature-status rates__feature-status--off">Выключено</span>
-          </p>
-        </div>
-      </div>
-    </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="rates-table__data-cell">Смайлики</td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--on">Включено</span>
+          </td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--on">Включено</span>
+          </td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--off">Выключено</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="rates-table__data-cell">Комментарии</td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--on">Включено</span>
+          </td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--on">Включено</span>
+          </td>
+          <td class="rates-table__data-cell">
+            <span class="rates__feature-status rates__feature-status--off">Выключено</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <ul class="rates__toggles slider">
       <li class="slider__toggle"><a href="slide-one.html" aria-label="Перейти на первый слайд">1</a></li>
       <li class="slider__toggle slider__toggle--active"><a aria-label="Вы находитесь на втором слайде">2</a></li>
@@ -171,7 +204,7 @@
         <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </div>
       <div class="contacts__item  contacts__item--email">
-        <b class="contacts__item-lead">Пишите:</b>
+        <b class="contacts__item-lead">Пишите:</b><br>
         <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__item  contacts__item--address">
@@ -180,7 +213,6 @@
       </div>
     </div>
   </section>
-</main>
 
 <section class="interactive-map">
   <h2 class="visually-hidden">Схема проезда</h2>
@@ -188,5 +220,32 @@
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8c006552ca7d3adc16aec11d81a5e3ba98a5f88c12c2a4ab9ecacfba7f05b35&amp;source=constructor"
           allowfullscreen></iframe>
 </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+    </a>
+  </div>
+  <div class="page-footer__social social">
+    <h2 class="visually-hidden">Мы в соцсетях</h2>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в Ютубе</a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <h2 class="visually-hidden">Создатель верстки</h2>
+    <p class="copyright__text">Разработано<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/logo-htmlacademy-pink.svg"></a></p>
+  </div>
+</footer>
 </body>
 </html>

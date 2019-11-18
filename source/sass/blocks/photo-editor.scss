@@ -1,14 +1,37 @@
 .photo-editor {
   background-color: $gray;
   padding: 20px 20px 44px 20px;
+
+  @include breakpointMd() {
+    min-height: 511px;
+  }
+
+  @include breakpointXl() {
+    width: 940px;
+    margin: auto;
+  }
 }
 
 .photo-editor__image {
   margin: 0;
 }
 
+.photo-editor__tools {
+  @include breakpointXl() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
 .photo-editor__tool {
   list-style-type: none;
+}
+
+.photo-editor__button {
+  @include breakpointXl() {
+    display: flex;
+  }
 }
 
 .photo-editor__upload-button {
@@ -21,4 +44,16 @@
 
 .photo-editor__range-input {
   width: 100%;
+}
+
+.photo-editor__wrapper {
+
+  @include breakpointMd() {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include breakpointXl() {
+    display: flex;
+  }
 }

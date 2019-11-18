@@ -1,7 +1,18 @@
+.contest {
+  @include breakpointXl() {
+    max-width: 936px;
+    margin: auto;
+  }
+}
+
 .contest__lead {
   background-color: $white;
   font-size: $font-size;
   line-height: 30px;
   text-align: center;
   padding: 50px 20px 50px 20px;
+
+  @include breakpointMd() {
+    min-height: 250px;
+  }
 }

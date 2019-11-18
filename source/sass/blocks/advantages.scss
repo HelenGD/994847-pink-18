@@ -32,6 +32,8 @@
 
   @include breakpointXl() {
     flex-direction: row;
+    max-width: 936px;
+    margin: auto;
   }
 }
 

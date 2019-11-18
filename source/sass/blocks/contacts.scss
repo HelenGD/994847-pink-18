@@ -2,12 +2,25 @@
   background-color: $white;
   padding: 10px 25px 23px 25px;
   text-align: center;
+
+  @include breakpointMd() {
+    min-height: 400px;
+  }
+
 }
 
 .contacts-lead {
   font-weight: 300;
   font-size: 24px;
   color: $blue-dark;
+}
+
+.contacts__items {
+  @include breakpointMd() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .contacts__item {
@@ -23,4 +36,22 @@
   font-size: 24px;
   text-decoration: none;
   color: $pink;
+}
+
+.contacts__item--email {
+  @include breakpointXl() {
+    order: 3;
+  }
+}
+
+.contacts__item--phone {
+  @include breakpointXl() {
+    order: 1;
+  }
+}
+
+.contacts__item--address {
+  @include breakpointXl() {
+    order: 2;
+  }
 }

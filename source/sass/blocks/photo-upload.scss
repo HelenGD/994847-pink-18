@@ -1,3 +1,9 @@
+.photo-upload {
+  @include breakpointXl() {
+    background-color: $white;
+  }
+}
+
 .photo-upload__lead {
   background-color: $white;
   font-size: $font-size;

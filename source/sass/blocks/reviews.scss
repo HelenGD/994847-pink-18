@@ -10,10 +10,26 @@
   font-size: 18px;
   line-height: 30px;
   color: $black;
+
+  @include breakpointMd() {
+    order: 2;
+  }
 }
 
 .reviews__item {
   margin: 0;
+
+  @include breakpointMd() {
+    display: flex;
+    flex-direction: column;
+    min-height: 346px;
+  }
+
+  @include breakpointXl() {
+    display: flex;
+    flex-direction: column;
+    min-height: 415px;
+  }
 }
 
 .reviews__text {
@@ -21,6 +37,10 @@
   line-height: 30px;
   text-align: center;
   color: $blue-dark;
+
+  @include breakpointMd() {
+    order: 1;
+  }
 }
 
 .reviews__toggles {
