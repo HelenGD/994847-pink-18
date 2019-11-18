@@ -1,11 +1,11 @@
 @mixin breakpointMd() {
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     @content;
   }
 }
 
 @mixin breakpointXl() {
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     @content;
   }
 }
