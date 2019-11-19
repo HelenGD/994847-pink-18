@@ -1,6 +1,17 @@
 .post {
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 20px 20px 20px;
+
+  @include breakpointMd() {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include breakpointXl() {
+    width: 980px;
+  }
 }
 
 .post__photo {
@@ -10,14 +21,12 @@
 
 .post__item {
   list-style-type: none;
-}
+  margin-bottom: 20px;
+  background-color: $grey-light;
 
-.post__panorama-rubric {
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  color: $white;
-  background-color: $pink;
+  @include breakpointMd() {
+    width: 300px;
+  }
 }
 
 .post__author {
@@ -30,8 +39,6 @@
 }
 
 .post__wrapper {
-  background-color: $grey-light;
-  margin-bottom: 20px;
   padding: 25px 17px 10px 17px;
 }
 

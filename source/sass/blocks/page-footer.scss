@@ -3,4 +3,28 @@
   padding: 40px 0;
   text-align: center;
   color: $blue-dark;
+
+  @include breakpointMd() {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include breakpointXl() {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: inline-flex;
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 40px;
+
+  @include breakpointXl() {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+  }
 }

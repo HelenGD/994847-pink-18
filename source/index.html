@@ -8,14 +8,12 @@
 <body>
 
 <header class="page-header">
-  <div class="page-header__wrapper">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
-    </a>
-    <button class="page-header__button" type="button" title="Закрыть">x</button>
-  </div>
+  <nav class="main-nav main-nav--open">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo"></a>
+      <button class="page-header__button" type="button" title="Закрыть">x</button>
+    </div>
 
-  <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -33,43 +31,45 @@
       </ul>
     </div>
   </nav>
-</header>
 
-<main class="page-main">
-  <div class="download-background download-background--home">
-    <h1 class="visually-hidden">Приложение Pink - взгляните на жизнь иначе</h1>
-  </div>
-  <section class="download-links">
-    <h2 class="visually-hidden">Скачивание приложения</h2>
-    <div class="download-links__wrapper">
-      <div class="download-links__container">
-        <a class="download-links__button" href="button.html">Скачать приложение</a>
-      </div>
-      <ul class="download-links__market">
-        <li class="download-links__market-item">
-          <a class="download-links__market-link download-links__market-link--apple" href="https://apple.com" target="_blank">
-            apple
-          </a>
-        </li>
-        <li class="download-links__market-item">
-          <a class="download-links__market-link download-links__market-link--android" href="https://google.com" target="_blank">
-            android
-          </a>
-        </li>
-        <li class="download-links__market-item">
-          <a class="download-links__market-link download-links__market-link--windows" href="https://windows.com" target="_blank">
-            windows
-          </a>
-        </li>
-      </ul>
-      <div class="download-links__info">
-        <p>
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+  <section class="download-app">
+    <div class="download-background download-background--home">
+      <h1 class="visually-hidden">Приложение Pink - взгляните на жизнь иначе</h1>
+      <div class="download-links">
+        <h2 class="visually-hidden">Скачивание приложения</h2>
+        <div class="download-links__wrapper">
+          <div class="download-links__container">
+            <a class="download-links__button" href="button.html">Скачать приложение</a>
+          </div>
+          <ul class="download-links__market">
+            <li class="download-links__market-item">
+              <a class="download-links__market-link download-links__market-link--apple" href="https://apple.com" target="_blank">
+                apple
+              </a>
+            </li>
+            <li class="download-links__market-item">
+              <a class="download-links__market-link download-links__market-link--android" href="https://google.com" target="_blank">
+                android
+              </a>
+            </li>
+            <li class="download-links__market-item">
+              <a class="download-links__market-link download-links__market-link--windows" href="https://windows.com" target="_blank">
+                windows
+              </a>
+            </li>
+          </ul>
+          <div class="download-links__info">
+            <p>
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+</header>
 
+<main class="page-main">
   <section class="advantages">
     <h2 class="visually-hidden">Наши преимущества</h2>
     <div class="advantages__about">

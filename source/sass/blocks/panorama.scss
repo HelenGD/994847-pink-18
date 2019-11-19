@@ -1,0 +1,27 @@
+.panorama__photo {
+  width: 100%;
+  display: block;
+}
+
+.panorama__rubric {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+  background-color: $pink;
+}
+
+.panorama__post-wrapper {
+  background-color: $grey-light;
+  margin: 0 20px;
+  padding: 25px 17px 10px 17px;
+
+  @include breakpointMd() {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @include breakpointXl() {
+    width: 940px;
+  }
+}

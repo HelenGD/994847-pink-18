@@ -1,0 +1,11 @@
+@mixin breakpointMd() {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin breakpointXl() {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
