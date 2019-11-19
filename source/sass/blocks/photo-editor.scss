@@ -47,7 +47,6 @@
 }
 
 .photo-editor__wrapper {
-
   @include breakpointMd() {
     display: flex;
     justify-content: space-between;
