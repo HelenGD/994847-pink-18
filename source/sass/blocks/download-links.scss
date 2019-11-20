@@ -7,11 +7,17 @@
 
 .download-links__wrapper {
   background-color: $blue-darkest;
-  padding: 55px 20px 20px 32px;
+  padding: 55px 55px 20px 32px;
 
   @include breakpointMd() {
     background-color: transparent;
-    width: 53%;
+    width: 60%;
+  }
+
+  @include breakpointXl() {
+    background-color: transparent;
+    width: 58%;
+    padding-top: 85px;
   }
 }
 
@@ -27,6 +33,7 @@
 
   @include breakpointMd() {
     display: block;
+    font-size: 50px;
   }
 }
 
@@ -77,6 +84,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px 20px 10px 20px;
+
+  @include breakpointXl() {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .download-links__market-item {
