@@ -6,4 +6,20 @@
 .site-list__item {
   list-style-type: none;
   padding: 22px;
+  text-align: center;
+  border-bottom: 1px solid #010101;
+  border-top: 1px solid #485461;
+}
+
+.site-list__item--active {
+
+}
+
+.site-list__link:hover {
+  color: $pink;
+}
+
+.site-list__link:active {
+  color: $white;
+  opacity: 0.3;
 }

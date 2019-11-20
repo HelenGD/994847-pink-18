@@ -8,6 +8,8 @@
 
   @include breakpointMd() {
     min-height: 242px;
+    font-size: 40px;
+    margin-bottom: 0;
   }
 
   @include breakpointXl() {
@@ -18,16 +20,22 @@
 .advantages__slogan {
   margin: 0;
   margin-bottom: 40px;
+
+  @include breakpointMd() {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  padding-top: 40px;
 
   @include breakpointMd() {
     display: flex;
     flex-direction: column;
     order: 2;
+    padding-left: 41px;
   }
 
   @include breakpointXl() {
@@ -67,6 +75,10 @@
 .advantages__item:not(:first-child) {
   margin-top: 40px;
 
+  @include breakpointMd() {
+    margin-top: 0;
+  }
+
   @include breakpointXl() {
     margin-top: 0;
   }
@@ -77,11 +89,16 @@
   font-size: $font-size;
   line-height: $line-height;
   text-align: center;
-  padding: 70px 25px 0 25px;
+  padding: 17px 25px 0 25px;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 
   @include breakpointMd() {
     min-height: 510px;
     display: flex;
+    text-align: left;
   }
 }
 
@@ -90,6 +107,10 @@
   font-size: 18px;
   line-height: $line-height;
   text-align: center;
+
+  @include breakpointMd() {
+    text-align: left;
+  }
 }
 
 .advantages__background {
@@ -106,7 +127,7 @@
     min-height: 478px;
     background-position: left;
     background-size: 100%;
-    min-width: 266px;
+    min-width: 268px;
   }
 
   @include breakpointXl() {

@@ -7,16 +7,54 @@
 
 .download-links__wrapper {
   background-color: $blue-darkest;
-  padding: 28px 20px 20px 32px;
+  padding: 55px 20px 20px 32px;
 
   @include breakpointMd() {
     background-color: transparent;
+    width: 53%;
+  }
+}
+
+.download-links__title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  color: $white;
+
+  @include breakpointS() {
+    display: none;
+  }
+
+  @include breakpointMd() {
+    display: block;
   }
 }
 
 .download-links__button {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
   text-decoration: none;
   color: $white;
+  border: solid 3px $white;
+  border-radius: 30px;
+  padding: 14px 21px 17px 25px;
+  display: inline-flex;
+
+  @include breakpointMd() {
+    padding: 14px 33px 17px 37px;
+  }
+}
+
+.download-links__button:hover {
+  background-color: $white;
+  color: $pink;
+}
+
+.download-links__button:active {
+  background-color: $white;
+  color: $pink-rgba;
 }
 
 .download-links__info {
@@ -25,14 +63,47 @@
   line-height: $line-height;
   color: $white;
   text-align: center;
+
+  @include breakpointMd() {
+    font-size: 18px;
+  }
 }
 
 .download-links__market {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px 10px 20px;
 }
 
 .download-links__market-item {
   list-style-type: none;
+}
+
+
+.download-links__market-link {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download-links__market-link--apple {
+  background-image: url("../img/logo-apple.svg");
+  width: 47px;
+  height: 56px;
+}
+
+.download-links__market-link--android {
+  background-image: url("../img/logo-android.svg");
+  width: 43px;
+  height: 47px;
+}
+
+.download-links__market-link--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  width: 44px;
+  height: 41px;
 }

@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  border-bottom: 1px solid #010101;
 
   @include breakpointMd() {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -18,6 +19,8 @@
   padding: 22px 20px 25px 20px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #010101;
+
 
   @include breakpointMd() {
     display: flex;
@@ -26,6 +29,9 @@
 }
 
 .page-header__button {
+  background-color: #283645;
+  border: none;
+
   @include breakpointXl() {
     display: none;
   }
@@ -48,4 +54,21 @@
     width: 146px;
     height: 40px;
   }
+}
+
+.page-header__button--closed {
+  display: block;
+  width: 24px;
+  height: 23px;
+  border: none;
+  background-color: $blue-dark;
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.page-header__button-fill:hover {
+  fill: $pink;
+}
+
+.page-header__button-fill:active {
+  fill: $pink-rgba;
 }
