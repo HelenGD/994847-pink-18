@@ -1,18 +1,30 @@
 .site-list__link {
   text-decoration: none;
   color: $white;
+
+  @include breakpointXl() {
+    padding-bottom: 15px;
+  }
 }
 
 .site-list__item {
   list-style-type: none;
   padding: 22px;
   text-align: center;
-  border-bottom: 1px solid #010101;
-  border-top: 1px solid #485461;
+  border-bottom: 1px solid $gray-border;
+  border-top: 1px solid $blue-border;
+
+  @include breakpointXl() {
+    border: none;
+    padding: 0;
+    margin-left: 82px;
+  }
 }
 
-.site-list__item--active {
-
+.site-list__link--active {
+  @include breakpointXl() {
+    border-bottom: 2px solid #fff;
+  }
 }
 
 .site-list__link:hover {

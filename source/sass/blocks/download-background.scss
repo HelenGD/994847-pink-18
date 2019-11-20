@@ -3,13 +3,13 @@
 
   @include breakpointMd() {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 330px;
   }
 
   @include breakpointXl() {
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
   }
 }
 

@@ -10,7 +10,7 @@
   @include breakpointXl() {
     width: 100%;
     padding-top: 0;
-    background: $gray
+    background: $gray;
   }
 }
 
@@ -34,15 +34,14 @@
     display: block;
     min-height: 415px;
     width: 640px;
-    margin: 0 auto;;
+    margin: 0 auto;
   }
 
   @include breakpointXl() {
-    margin-bottom: 0;
-    width: 960px;
     display: block;
     min-height: 415px;
-    width: 640px;
+    width: $desktop-container-width;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -53,7 +52,7 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    padding-left: 315px;
+    padding-left: 50%;
     background-image: url("../../img/icon-editor-diagram-fill.svg"), url("../../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: 28px 111px, 12px 55px;
@@ -68,9 +67,13 @@
     font-size: 97px;
     font-weight: bold;
     line-height: 150px;
-    color: #d22856;
+    color: $pink;
     left: 73px;
     top: 131px;
+  }
+
+  @include breakpointXl() {
+    padding-left: 350px;
   }
 }
 
@@ -94,8 +97,7 @@
     font-size: $font-size;
     font-weight: lighter;
     line-height: $line-height;
-    margin: 0;
-    margin-bottom: 14px;
+    margin: 20px 0;
   }
 
   @include breakpointXl() {
@@ -115,14 +117,12 @@
     color: #d22856;
     font-size: 14px;
     padding-left: 5px;
-    width: 226px;
   }
 
   @include breakpointXl() {
     font-size: 18px;
     line-height: 34px;
     padding-left: 11px;
-    width: 300px;
   }
 }
 

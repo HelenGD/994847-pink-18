@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
 
   @include breakpointMd() {
-    max-width: 768px;
+    max-width: 660px;
   }
 
   @include breakpointXl() {

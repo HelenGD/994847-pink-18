@@ -26,6 +26,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @include breakpointXl() {
+    padding: 0;
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__button {
@@ -37,22 +42,51 @@
   }
 }
 
-.page-header__logo {
-  display: inline-flex;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  width: 74px;
-  height: 22px;
+.page-header__logo-mobile {
+  display: block;
 
   @include breakpointMd() {
-    background-image: url("../img/logo-pink-white-tablet.svg");
-    width: 146px;
-    height: 40px;
+    display: none;
   }
 
   @include breakpointXl() {
-    background-image: url("../img/logo-pink-white-desktop.svg");
-    width: 146px;
-    height: 40px;
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @include breakpointMd() {
+    display: block;
+  }
+
+  @include breakpointXl() {
+    display: none;
+  }
+}
+
+.page-header__logo-link {
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $white-rgba;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @include breakpointMd() {
+    display: none;
+  }
+
+  @include breakpointXl() {
+    display: block;
   }
 }
 
@@ -61,8 +95,6 @@
   width: 24px;
   height: 23px;
   border: none;
-  background-color: $blue-dark;
-  background-image: url("../img/icon-menu-cross.svg");
 }
 
 .page-header__button-fill:hover {
@@ -71,4 +103,12 @@
 
 .page-header__button-fill:active {
   fill: $pink-rgba;
+}
+
+.page-header__logo--mobile:hover {
+  fill: $pink;
+}
+
+.page-header__logo-mobile-fill:hover {
+  fill: $pink;
 }

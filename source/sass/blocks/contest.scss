@@ -1,6 +1,6 @@
 .contest {
   @include breakpointXl() {
-    max-width: 936px;
+    max-width: $desktop-container-width;
     margin: auto;
   }
 }
