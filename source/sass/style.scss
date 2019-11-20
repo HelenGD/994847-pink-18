@@ -4,6 +4,8 @@
 @import "media";
 @import "blocks/page-header";
 @import "blocks/main-nav";
+@import "blocks/layout-container";
+@import "blocks/main-contest";
 @import "blocks/download-background";
 @import "blocks/download-links";
 @import "blocks/advantages";
@@ -17,6 +19,7 @@
 @import "blocks/site-list";
 @import "blocks/reviews";
 @import "blocks/rates";
+@import "blocks/rates-table";
 @import "blocks/contacts";
 @import "blocks/interactive-map";
 @import "blocks/photo-upload";
@@ -48,7 +51,8 @@ body {
   }
 
   @include breakpointXl() {
-    max-width: 1200px;
+    max-width: 100%;
+    background-color: $white;
   }
 }
 

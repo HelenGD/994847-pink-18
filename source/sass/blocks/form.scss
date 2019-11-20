@@ -1,6 +1,28 @@
+.form__fieldset {
+  @include breakpointMd() {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include breakpointXl() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
 .form__fieldset--fullname {
   background-color: $white;
   padding: 0 22px 20px 22px;
+
+  @include breakpointMd() {
+    order: 1;
+  }
+
+  @include breakpointXl() {
+    order: 1;
+    width: 50%;
+  }
 }
 
 .form__text-label {
@@ -10,6 +32,11 @@
   text-transform: uppercase;
   color: $pink;
   padding-left: 24px;
+
+  @include breakpointMd() {
+    padding-left: 0;
+    margin-right: 20px;
+  }
 }
 
 .form__text-input {
@@ -19,8 +46,6 @@
   color: $blue-dark;
   width: 100%;
   padding-left: 24px;
-  margin-top: 16px;
-  margin-bottom: 30px;
   height: 60px;
   border: solid 2px #e5e5e5;
 
@@ -32,6 +57,18 @@
 .form__fieldset--achievements {
   background-color: $gray;
   padding: 40px 22px;
+
+  @include breakpointMd() {
+    order: 4;
+  }
+
+  @include breakpointXl() {
+    order: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+  }
 }
 
 .form__title {
@@ -47,16 +84,45 @@
 .form__fieldset--contacts {
   background-color: $white;
   padding: 40px 22px;
+
+  @include breakpointMd() {
+    order: 3;
+  }
+
+  @include breakpointXl() {
+    order: 3;
+    width: 100%;
+  }
 }
 
 .form__fieldset--apps {
   background-color: $gray;
   padding: 40px 22px;
+
+  @include breakpointMd() {
+    order: 2;
+  }
+
+  @include breakpointXl() {
+    order: 2;
+    width: 50%;
+    background-color: $white;
+  }
 }
 
 .form__fieldset--emotions {
   background-color: $white;
   padding: 40px 22px;
+
+  @include breakpointMd() {
+    order: 5;
+  }
+
+  @include breakpointXl() {
+    order: 5;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .form__textarea {
@@ -72,6 +138,18 @@
 .form__sending {
   background-color: $white;
   padding: 0 22px 20px 22px;
+
+  @include breakpointMd() {
+    order: 6;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  @include breakpointXl() {
+    order: 6;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .form__checkbox-input {
@@ -90,8 +168,108 @@
 
 .form__submit-button {
   width: 100%;
+
+  @include breakpointMd() {
+    width: 50%;
+  }
 }
 
 .form__note-star {
   color: $pink;
+}
+
+.form__field-text--fullname {
+  padding-top: 16px;
+  padding-bottom: 30px;
+  align-items: center;
+
+  @include breakpointMd() {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__field-text--contacts {
+  @include breakpointMd() {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include breakpointXl() {
+    width: 100%;
+    margin: 0 37px;
+  }
+}
+
+.form__text-label--contacts {
+  @include breakpointMd() {
+    order: 2;
+  }
+
+  @include breakpointXl() {
+    padding-left: 24px;
+  }
+}
+
+.form__text-input--contacts {
+  @include breakpointMd() {
+    order: 1;
+  }
+}
+
+.form__text-fields--contacts {
+  @include breakpointXl() {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__checkbox-fields--achievements {
+  @include breakpointXl() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__field-checkbox {
+  @include breakpointXl() {
+    width: 33.33333%;
+  }
+}
+
+.form__field-checkbox--one {
+  @include breakpointXl() {
+    order: 1;
+  }
+}
+
+.form__field-checkbox--three {
+  @include breakpointXl() {
+    order: 2;
+  }
+}
+
+.form__field-checkbox--five {
+  @include breakpointXl() {
+    order: 3;
+  }
+}
+
+.form__field-checkbox--two {
+  @include breakpointXl() {
+    order: 4;
+  }
+}
+
+.form__field-checkbox--four {
+  @include breakpointXl() {
+    order: 5;
+  }
+}
+
+.form__field-checkbox--six {
+  @include breakpointXl() {
+    order: 6;
+  }
 }

@@ -1,3 +1,9 @@
+@mixin breakpointS() {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
 @mixin breakpointMd() {
   @media (min-width: $tablet-width) {
     @content;

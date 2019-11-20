@@ -42,43 +42,43 @@
 <main class="main-gallery">
   <h1 class="visually-hidden">Галерея фотографий</h1>
   <div class="gallery__wrapper">
-  <section class="gallery-description">
-    <p class="gallery-description__lead">
-      Взгляните на фотографии, которые выкладывают пользователи!<br>
-      Видите, как не хватает ваших?
-    </p>
-  </section>
-  <section class="panorama">
-    <div class="panorama__photo-wrapper">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-      <img class="panorama__photo" src="./img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
-      </picture>
-      <span class="panorama__rubric">Панорама дня</span>
-    </div>
-    <div class="panorama__post-wrapper">
-      <header class="post__header">
-        <p class="post__author">
-          Анна <span class="post__time">(5 минут назад)</span>
-        </p>
-      </header>
-      <div>
-        <p class="post__text">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
-          задавайте свои вопросы!
-        </p>
+    <section class="gallery-description">
+      <p class="gallery-description__lead">
+        Взгляните на фотографии, которые выкладывают пользователи!<br>
+        Видите, как не хватает ваших?
+      </p>
+    </section>
+    <section class="panorama">
+      <div class="panorama__photo-wrapper">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+          <img class="panorama__photo" src="./img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
+        </picture>
+        <span class="panorama__rubric">Панорама дня</span>
       </div>
-      <div class="post__action">
-        <button class="post__like-btn" type="button" title="Мне нравится">
-          Мне нравится
-        </button>
-        <a class="post__stats" href="likes.html">
-          Hравится: <span class="post__stats-count">215</span>
-        </a>
+      <div class="panorama__post-wrapper">
+        <header class="post__header">
+          <p class="post__author">
+            Анна <span class="post__time">(5 минут назад)</span>
+          </p>
+        </header>
+        <div>
+          <p class="post__text">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе,
+            задавайте свои вопросы!
+          </p>
+        </div>
+        <div class="post__action">
+          <button class="post__like-btn" type="button" title="Мне нравится">
+            Мне нравится
+          </button>
+          <a class="post__stats" href="likes.html">
+            Hравится: <span class="post__stats-count">215</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
     <ul class="post">
       <li class="post__item">
         <div class="post__photo-wrapper">
@@ -112,8 +112,10 @@
       <li class="post__item">
         <div class="post__photo-wrapper">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
             <img class="post__photo" src="./img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антонa">
           </picture>
         </div>
@@ -139,8 +141,10 @@
       <li class="post__item">
         <div class="post__photo-wrapper">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
             <img class="post__photo" src="./img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Борисa">
           </picture>
         </div>
@@ -255,25 +259,28 @@
     </div>
     <div class="photo-editor">
       <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
-        <figure class="photo-editor__image">
-          <picture>
-            <img src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
-          </picture>
-        </figure>
         <div class="photo-editor__wrapper">
-          <ul class="photo-editor__tools">
+          <figure class="photo-editor__image">
+            <picture>
+              <img src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
+            </picture>
+          </figure>
+          <div class="photo-editor__tools">
+          <ul>
             <li class="photo-editor__tool">Обрезка</li>
             <li class="photo-editor__tool">Цветокоррекция</li>
             <li class="photo-editor__tool">Контраст</li>
           </ul>
+
+          <div class="photo-editor__range">
+            <input class="photo-editor__range-input" type="range" id="range" name="range" value="15" min="0" max="20">
+            <label class="visually-hidden" for="range">Диапазон</label>
+          </div>
+          <div class="photo-editor__button">
+            <button class="photo-editor__upload-button" type="submit">Запостить</button>
+            <button class="photo-editor__cancel-button" type="reset">Отмена</button>
+          </div>
         </div>
-        <div class="photo-editor__range">
-          <input class="photo-editor__range-input" type="range" id="range" name="range" value="15" min="0" max="20">
-          <label class="visually-hidden" for="range">Диапазон</label>
-        </div>
-        <div class="photo-editor__button">
-          <button class="photo-editor__upload-button" type="submit">Запостить</button>
-          <button class="photo-editor__cancel-button" type="reset">Отмена</button>
         </div>
       </form>
     </div>
@@ -300,7 +307,8 @@
   </div>
   <div class="page-footer__copyright copyright">
     <h2 class="visually-hidden">Создатель верстки</h2>
-    <p class="copyright__text">Разработано<a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/logo-htmlacademy-pink.svg"></a></p>
+    <p class="copyright__text">Разработано<a class="copyright__logo" npm href="https://htmlacademy.ru/intensive/adaptive"><img
+      src="./img/logo-htmlacademy-pink.svg"></a></p>
   </div>
 </footer>
 

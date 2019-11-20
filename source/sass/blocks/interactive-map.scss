@@ -1,4 +1,14 @@
 .interactive-map__frame {
-  min-width: 320px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
   border: none;
+
+  @include breakpointMd() {
+    min-height: 372px;
+  }
+
+  @include breakpointXl() {
+    min-height: 502px;
+  }
 }
