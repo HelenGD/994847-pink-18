@@ -23,7 +23,7 @@
 
 .site-list__link--active {
   @include breakpointXl() {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -32,6 +32,5 @@
 }
 
 .site-list__link:active {
-  color: $white;
   opacity: 0.3;
 }

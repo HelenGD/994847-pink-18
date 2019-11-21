@@ -11,10 +11,11 @@
   }
 
   @include breakpointMd() {
-    min-height: 127px;
-    padding: 0 20px;
+    /*     min-height: 127px;*/
+    padding: 42px 20px 39px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   @include breakpointXl() {
@@ -22,6 +23,8 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 37px;
   }
 }
 
@@ -36,3 +39,12 @@
     background-image: url("../img/logo-pink-blue-desktop.svg");
   }
 }
+
+.page-footer__copyright {
+  @include breakpointMd() {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+  }
+}
+

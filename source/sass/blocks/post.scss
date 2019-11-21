@@ -73,4 +73,17 @@
 
 .post__action {
   margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.post__like-btn {
+  background-color: #f2f2f2;
+  border: none;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
 }
