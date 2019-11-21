@@ -39,7 +39,7 @@
 }
 
 .post__wrapper {
-  padding: 25px 17px 10px 17px;
+  padding: 25px 17px 26px 17px;
 }
 
 .post__time {
@@ -72,9 +72,13 @@
 }
 
 .post__action {
-  margin-top: 16px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
+
+  @include breakpointMd() {
+    justify-content: space-between;
+  }
 }
 
 .post__like-btn {
@@ -86,4 +90,17 @@
   width: 13px;
   height: 12px;
   margin-right: 19px;
+
+  @include breakpointMd() {
+    order: 1;
+  }
+}
+
+.post__action--panorama {
+
+  @include breakpointMd() {
+    position: absolute;
+    top: 24px;
+    right: 29px;
+  }
 }

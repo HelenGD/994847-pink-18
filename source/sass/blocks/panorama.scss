@@ -1,24 +1,43 @@
+.panorama {
+  position: relative;
+}
+
 .panorama__photo {
   width: 100%;
   display: block;
 }
 
 .panorama__rubric {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 7px 23px 6px;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
   background-color: $pink;
+
+  @include breakpointMd() {
+    top: 43px;
+  }
+
+  @include breakpointXl() {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .panorama__post-wrapper {
   background-color: $grey-light;
   margin: 0 20px;
-  padding: 25px 17px 10px 17px;
+  padding: 25px 17px 26px 17px;
 
   @include breakpointMd() {
     width: 620px;
     margin: 0 auto;
+    position: relative;
   }
 
   @include breakpointXl() {
