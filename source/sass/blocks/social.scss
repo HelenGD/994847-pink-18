@@ -3,6 +3,10 @@
 }
 
 .social__list {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+
   @include breakpointMd() {
     display: inline-flex;
     margin: 0;
@@ -12,12 +16,21 @@
 }
 
 .social__item {
+  padding-right: 16px;
   @include breakpointMd() {
     padding-right: 16px;
   }
 }
 
 .social__link {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @include breakpointMd() {
     width: 46px;
     height: 46px;
@@ -38,6 +51,7 @@
 }
 
 .social__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
   @include breakpointMd() {
     background-image: url("../img/icon-twitter.svg");
   }
@@ -45,12 +59,14 @@
 
 
 .social__link--facebook {
+  background-image: url("../img/icon-facebook.svg");
   @include breakpointMd() {
     background-image: url("../img/icon-facebook.svg");
   }
 }
 
 .social__link--youtube {
+  background-image: url("../img/icon-youtube.svg");
   @include breakpointMd() {
     background-image: url("../img/icon-youtube.svg");
   }

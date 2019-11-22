@@ -34,7 +34,8 @@
 }
 
 .page-header__button {
-  background-color: #283645;
+  cursor: pointer;
+  background-color: transparent;
   border: none;
 
   @include breakpointXl() {
@@ -90,25 +91,27 @@
   }
 }
 
-.page-header__button--closed {
-  display: block;
-  width: 24px;
-  height: 23px;
-  border: none;
+.page-header__icon-burger,
+.page-header__icon-close {
+  color: $white;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page-header__button-fill:hover {
-  fill: $pink;
+.page-header__icon-close {
+  display: none;
 }
 
-.page-header__button-fill:active {
-  fill: $pink-rgba;
+.main-nav--open .page-header__icon-close {
+  display: initial;
 }
 
-.page-header__logo--mobile:hover {
-  fill: $pink;
-}
-
-.page-header__logo-mobile-fill:hover {
-  fill: $pink;
+.main-nav--open .page-header__icon-burger {
+  display: none;
 }

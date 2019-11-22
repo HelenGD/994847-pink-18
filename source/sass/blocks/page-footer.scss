@@ -7,7 +7,7 @@
   color: $blue-dark;
 
   @include breakpointS() {
-    display: none;
+    display: block;
   }
 
   @include breakpointMd() {
@@ -23,28 +23,63 @@
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 36px;
     padding-bottom: 37px;
   }
 }
 
 .page-footer__logo {
-  display: inline-flex;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
-  width: 146px;
-  height: 40px;
+  color: $blue-dark;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: $blue-dark;
+  }
+}
+
+.page-footer__icon-mobile {
+  @include breakpointXl() {
+    display: none;
+  }
+}
+
+.page-footer__icon-desktop {
+  display: none;
 
   @include breakpointXl() {
-    background-image: url("../img/logo-pink-blue-desktop.svg");
+    display: initial;
+  }
+}
+
+.page-footer__social {
+  margin-top: 43px;
+  margin-bottom: 50px;
+
+  @include breakpointMd() {
+    margin: 0;
   }
 }
 
 .page-footer__copyright {
+  display: flex;
+  justify-content: center;
+
   @include breakpointMd() {
-    display: flex;
     align-items: center;
     padding-top: 5px;
+  }
+}
+
+.page-footer--home {
+  display: none;
+
+  @include breakpointMd() {
+    display: flex;
   }
 }
 

@@ -146,7 +146,22 @@
   }
 
   @include breakpointXl() {
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 }
 
+.advantages__description {
+  @include breakpointXl() {
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+  }
+
+  @include breakpointXl() {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

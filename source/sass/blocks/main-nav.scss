@@ -14,6 +14,7 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
+  position: relative;
 
   @include breakpointXl() {
     display: flex;
@@ -45,5 +46,21 @@
 
   @include breakpointXl() {
     background-color: transparentize(black, 0.5);
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--open .main-nav__wrapper {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: $blue-dark;
+
+  @include breakpointXl() {
+    position: static;
+    background-color: transparent;
   }
 }

@@ -26,6 +26,9 @@
 
   @include breakpointMd() {
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -39,7 +42,14 @@
 }
 
 .post__wrapper {
-  padding: 25px 17px 26px 17px;
+  padding: 25px 17px 22px 17px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpointMd() {
+    padding: 25px 17px 26px 17px;
+  }
 }
 
 .post__time {
@@ -72,13 +82,19 @@
 }
 
 .post__action {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 
   @include breakpointMd() {
     justify-content: space-between;
+    margin-top: auto;
+    padding-top: 20px;
   }
+}
+
+.post__picture {
+  display: flex;
 }
 
 .post__like-btn {
@@ -93,14 +109,17 @@
 
   @include breakpointMd() {
     order: 1;
+    margin-left: 16px;
   }
 }
 
 .post__action--panorama {
-
+  margin-top: 20px;
   @include breakpointMd() {
     position: absolute;
-    top: 24px;
+    top: 6px;
     right: 29px;
+    display: flex;
+    align-items: center;
   }
 }
