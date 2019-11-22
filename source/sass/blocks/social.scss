@@ -1,5 +1,10 @@
 .social__item {
   list-style-type: none;
+  padding-right: 16px;
+
+  @include breakpointMd() {
+    padding-right: 16px;
+  }
 }
 
 .social__list {
@@ -12,13 +17,6 @@
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-  }
-}
-
-.social__item {
-  padding-right: 16px;
-  @include breakpointMd() {
-    padding-right: 16px;
   }
 }
 
@@ -52,22 +50,12 @@
 
 .social__link--twitter {
   background-image: url("../img/icon-twitter.svg");
-  @include breakpointMd() {
-    background-image: url("../img/icon-twitter.svg");
-  }
 }
-
 
 .social__link--facebook {
   background-image: url("../img/icon-facebook.svg");
-  @include breakpointMd() {
-    background-image: url("../img/icon-facebook.svg");
-  }
 }
 
 .social__link--youtube {
   background-image: url("../img/icon-youtube.svg");
-  @include breakpointMd() {
-    background-image: url("../img/icon-youtube.svg");
-  }
 }

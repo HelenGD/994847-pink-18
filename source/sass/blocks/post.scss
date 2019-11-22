@@ -98,7 +98,7 @@
 }
 
 .post__like-btn {
-  background-color:$grey-light;
+  background-color: $grey-light;
   border: none;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
@@ -115,6 +115,7 @@
 
 .post__action--panorama {
   margin-top: 20px;
+
   @include breakpointMd() {
     position: absolute;
     top: 6px;
