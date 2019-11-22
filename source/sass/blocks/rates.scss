@@ -38,8 +38,8 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  border-left: solid 2px #e5e5e5;
-  border-right: solid 2px #e5e5e5;
+  border-left: solid 2px $grey;
+  border-right: solid 2px $grey;
   padding-left: 22px;
   padding-right: 18px;
 }
@@ -51,13 +51,13 @@
 }
 
 .rates__header-wrapper {
-  background-color: #283645;
+  background-color: $blue-dark;
   padding: 0 20px;
 }
 
 .rates__header {
-  border-left: solid 2px #e5e5e5;
-  border-right: solid 2px #e5e5e5;
+  border-left: solid 2px $grey;
+  border-right: solid 2px $grey;
   min-height: 98px;
 }
 
@@ -67,5 +67,5 @@
 
 .rates__item {
   padding: 0 20px;
-  border-bottom: solid 2px #e5e5e5;
+  border-bottom: solid 2px $grey;
 }

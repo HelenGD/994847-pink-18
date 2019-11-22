@@ -27,7 +27,7 @@
   height: 46px;
   display: inline-flex;
   border-radius: 50%;
-  border: 3px solid #e9ebec;
+  border: 3px solid $gray-light-border;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -36,13 +36,13 @@
     height: 46px;
     display: inline-flex;
     border-radius: 50%;
-    border: 3px solid #e9ebec;
+    border: 3px solid $gray-light-border;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   &:hover {
-    border-color: #283645;
+    border-color: $blue-dark;
   }
 
   &:active {

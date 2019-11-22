@@ -1,13 +1,13 @@
 .page-header {
-  min-height: 325px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #010101;
+  border-bottom: 1px solid $gray-darker-border;
 
   @include breakpointMd() {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
   }
 
   @include breakpointXl() {
@@ -15,16 +15,22 @@
   }
 }
 
+.page-header__photo,
+.page-header__form {
+  background-size: auto;
+}
+
 .page-header__wrapper {
-  padding: 22px 20px 25px 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #010101;
+  align-items: center;
+  border-bottom: 1px solid $gray-darker-border;
+  min-height: 66px;
 
 
   @include breakpointMd() {
-    display: flex;
-    justify-content: space-between;
+    min-height: 110px;
   }
 
   @include breakpointXl() {

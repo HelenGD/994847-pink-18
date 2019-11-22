@@ -51,6 +51,10 @@
 
 .main-nav__wrapper {
   display: none;
+
+  @include breakpointXl() {
+    display: block;
+  }
 }
 
 .main-nav--open .main-nav__wrapper {
