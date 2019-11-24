@@ -98,6 +98,7 @@
 
 .slider__arrow {
   display: none;
+  color: $blue-rgba;
 
   @include breakpointXl() {
     display: block;
@@ -115,6 +116,14 @@
     outline: none;
     cursor: pointer;
     z-index: 1;
+  }
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  &:active {
+    color: $blue-rgba-light;
   }
 }
 

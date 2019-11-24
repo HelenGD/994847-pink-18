@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -88,7 +89,6 @@
       </div>
       <div class="contest__wrapper">
         <form class="form" method="post" action="http://echo.htmlacademy.ru">
-          <div class="form__fieldset">
             <div class="form__fieldset form__fieldset--fullname">
               <div class="form__field-text form__field-text--fullname">
                 <label class="form__text-label form__text-label--fullname" for="user-last-name">Фамилия:</label>
@@ -103,81 +103,80 @@
                 <input class="form__text-input form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
               </div>
             </div>
-          <div class="form__fieldset form__fieldset--achievements">
-            <h2 class="form__title">Ваши безбашенные<br> достижения в путешествии</h2>
-            <div class="form__checkbox-fields form__checkbox-fields--achievements">
-              <div class="form__field-checkbox form__field-checkbox--one">
-                <input class="form__checkbox-input" type="checkbox" id="achivements-one" name="Достижения" value="Сделал селфи с акулой" checked>
-                <label class="form__checkbox-label form__checkbox-label--one" for="achivements-one">Сделал селфи с акулой</label>
-              </div>
-              <div class="form__field-checkbox form__field-checkbox--two">
-                <input class="form__checkbox-input" type="checkbox" id="achivements-two" name="Достижения" value="Обгорел на пляже" checked>
-                <label class="form__checkbox-label form__checkbox-label--two" for="achivements-two">Обгорел на пляже</label>
-              </div>
-              <div class="form__field-checkbox form__field-checkbox--three">
-                <input class="form__checkbox-input" type="checkbox" id="achivements-three" name="Достижения" value="Видел Чака Норриса">
-                <label class="form__checkbox-label form__checkbox-label--three" for="achivements-three">Видел Чака Норриса</label>
-              </div>
-              <div class="form__field-checkbox form__field-checkbox--four">
-                <input class="form__checkbox-input form__checkbox-input--four" type="checkbox" id="achivements-four" name="Достижения" value="Накупил сувениров">
-                <label class="form__checkbox-label form__checkbox-label--four" for="achivements-four">Накупил сувениров</label>
-              </div>
-              <div class="form__field-checkbox form__field-checkbox--five">
-                <input class="form__checkbox-input form__checkbox-input--five" type="checkbox" id="achivements-five" name="Достижения" value="Удержал башню" checked>
-                <label class="form__checkbox-label form__checkbox-label--five" for="achivements-five">Удержал башню</label>
-              </div>
-              <div class="form__field-checkbox form__field-checkbox--six">
-                <input class="form__checkbox-input form__checkbox-input--six" type="checkbox" id="achivements-six" name="Достижения" value="Разгромил отель">
-                <label class="form__checkbox-label form__checkbox-label--six" for="achivements-six">Разгромил отель</label>
-              </div>
-            </div>
-          </div>
-          <div class="form__fieldset form__fieldset--contacts">
-            <h2 class="visually-hidden">Контактная информация</h2>
-            <div class="form__text-fields form__text-fields--contacts">
-              <div class="form__field-text form__field-text--contacts">
-                <label class="form__text-label form__text-label--contacts" for="user-phone">Номер телефона</label>
-                <input class="form__text-input form__text-input--contacts" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__field-text form__field-text--contacts">
-                <label class="form__text-label form__text-label--contacts" for="user-email">Адрес почты</label>
-                <input class="form__text-input form__text-input--contacts" id="user-email" type="email" name="e-mail" placeholder="Введите почту *" required>
+            <div class="form__fieldset form__fieldset--achievements form__legend">
+              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+              <div class="form__checkbox-fields form__checkbox-fields--achievements">
+                <div class="form__field-checkbox form__field-checkbox--one">
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-one" name="Достижения" value="Сделал селфи с акулой" checked>
+                  <label class="form__checkbox-label form__checkbox-label--one" for="achivements-one">Сделал селфи с акулой</label>
+                </div>
+                <div class="form__field-checkbox form__field-checkbox--two">
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-two" name="Достижения" value="Обгорел на пляже" checked>
+                  <label class="form__checkbox-label form__checkbox-label--two" for="achivements-two">Обгорел на пляже</label>
+                </div>
+                <div class="form__field-checkbox form__field-checkbox--three">
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-three" name="Достижения" value="Видел Чака Норриса">
+                  <label class="form__checkbox-label form__checkbox-label--three" for="achivements-three">Видел Чака Норриса</label>
+                </div>
+                <div class="form__field-checkbox form__field-checkbox--four">
+                  <input class="form__checkbox-input form__checkbox-input--four" type="checkbox" id="achivements-four" name="Достижения" value="Накупил сувениров">
+                  <label class="form__checkbox-label form__checkbox-label--four" for="achivements-four">Накупил сувениров</label>
+                </div>
+                <div class="form__field-checkbox form__field-checkbox--five">
+                  <input class="form__checkbox-input form__checkbox-input--five" type="checkbox" id="achivements-five" name="Достижения" value="Удержал башню" checked>
+                  <label class="form__checkbox-label form__checkbox-label--five" for="achivements-five">Удержал башню</label>
+                </div>
+                <div class="form__field-checkbox form__field-checkbox--six">
+                  <input class="form__checkbox-input form__checkbox-input--six" type="checkbox" id="achivements-six" name="Достижения" value="Разгромил отель">
+                  <label class="form__checkbox-label form__checkbox-label--six" for="achivements-six">Разгромил отель</label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form__fieldset form__fieldset--apps">
-            <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
-            <div class="form__radio-fields form__radio-fields--apps">
-              <div class="form__field-radio">
-                <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
-                <label class="form__radio-label" for="ios">Pink для iOS</label>
-              </div>
-              <div class="form__field-radio">
-                <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
-                <label class="form__radio-label" for="android">Pink на Android</label>
-              </div>
-              <div class="form__field-radio">
-                <input class="form__radio-input" type="radio" id="windows-phone" name="Приложение" value="Windows Phone">
-                <label class="form__radio-label" for="windows-phone">Windows Phone</label>
+            <div class="form__fieldset form__fieldset--contacts form__legend">
+              <h2 class="form__title">Контактная информация</h2>
+              <div class="form__text-fields form__text-fields--contacts">
+                <div class="form__field-text form__field-text--contacts">
+                  <label class="form__text-label form__text-label--contacts" for="user-phone">Номер телефона</label>
+                  <input class="form__text-input form__text-input--contacts" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__field-text form__field-text--contacts">
+                  <label class="form__text-label form__text-label--contacts" for="user-email">Адрес почты</label>
+                  <input class="form__text-input form__text-input--contacts" id="user-email" type="email" name="e-mail" placeholder="Введите почту *" required>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form__fieldset form__fieldset--emotions">
-            <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
-            <div class="form__textarea-fields form__textarea-fields--emotions">
-              <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <div class="form__fieldset form__legend form__fieldset--apps">
+              <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
+              <div class="form__radio-fields form__radio-fields--apps">
+                <div class="form__field-radio">
+                  <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
+                  <label class="form__radio-label" for="ios">Pink для iOS</label>
+                </div>
+                <div class="form__field-radio">
+                  <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
+                  <label class="form__radio-label" for="android">Pink на Android</label>
+                </div>
+                <div class="form__field-radio">
+                  <input class="form__radio-input" type="radio" id="windows-phone" name="Приложение" value="Windows Phone">
+                  <label class="form__radio-label" for="windows-phone">Windows Phone</label>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="form__sending">
-            <button class="form__submit-button button button--submit" type="submit">Отправить форму</button>
-            <div class="form__note">
-              <p class="form__note-symbol">
-                <span class="form__note-star">*</span> — обязательные поля
-              </p>
+            <div class="form__fieldset form__legend form__fieldset--emotions">
+              <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
+              <div class="form__textarea-fields form__textarea-fields--emotions">
+                <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
             </div>
-          </div>
-      </div>
-      </form>
+            <div class="form__sending">
+              <button class="form__submit-button button button--submit" type="submit">Отправить форму</button>
+              <div class="form__note">
+                <p class="form__note-symbol">
+                  <span class="form__note-star">*</span> — обязательные <span class="form__add-text">для заполнения</span> поля
+                </p>
+              </div>
+            </div>
+        </form>
     </div>
   </section>
 </main>

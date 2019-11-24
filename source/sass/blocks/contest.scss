@@ -10,13 +10,17 @@
   font-size: $font-size;
   line-height: 30px;
   text-align: center;
-  padding: 50px 20px 50px 20px;
+  padding: 0 20px 0 20px;
+  min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include breakpointMd() {
-    min-height: 250px;
     font-size: 18px;
     width: 530px;
     margin: 0 auto;
+    min-height: 256px;
   }
 
   @include breakpointXl() {
@@ -28,7 +32,7 @@
 }
 
 .contest__paragraph {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .contest__add {

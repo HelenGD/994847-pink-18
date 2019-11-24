@@ -12,7 +12,7 @@
   padding: 22px;
   text-align: center;
   border-bottom: 1px solid $gray-darker-border;
-  border-top: 1px solid $gray-darker-border;
+  border-top: 1px solid $blue-border;
 
   @include breakpointXl() {
     border: none;
