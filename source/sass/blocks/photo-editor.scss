@@ -9,6 +9,7 @@
   @include breakpointXl() {
     width: 940px;
     margin: auto;
+    padding: 50px 20px 0 80px;
   }
 }
 
@@ -17,15 +18,11 @@
 }
 
 .photo-editor__tools {
-
-  @include breakpointMd() {
-
-  }
-
   @include breakpointXl() {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 60px;
   }
 }
 
@@ -37,6 +34,12 @@
 
   @include breakpointMd() {
     flex-direction: column;
+    padding: 0 20px 27px 40px;
+  }
+
+  @include breakpointXl() {
+    max-width: 75%;
+    max-height: 55%;
   }
 }
 
@@ -87,7 +90,13 @@
 .photo-editor__buttons {
   padding-top: 38px;
 
+  @include breakpointMd() {
+    padding-left: 40px;
+    padding-top: 38px;
+  }
+
   @include breakpointXl() {
+    padding-top: 92px;
     display: flex;
     align-items: flex-start;
   }
@@ -148,6 +157,7 @@
   background-image: url("../img/icon-editor-fill.svg");
 
   @include breakpointMd() {
+    background-image: url("../img/icon-editor-fill2.svg");
     background-size: 24px;
   }
 
@@ -160,6 +170,7 @@
   background-image: url("../img/icon-editor-contrast.svg");
 
   @include breakpointMd() {
+    background-image: url("../img/icon-editor-contrast2.svg");
     background-size: 16px;
   }
 
@@ -176,6 +187,10 @@
   padding: 14px 88px 17px;
   background-color: $grey-light;
   border-radius: 30px;
+
+  @include breakpointMd() {
+    max-width: 260px;
+  }
 }
 
 .photo-editor__upload-button {

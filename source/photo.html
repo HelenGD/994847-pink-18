@@ -269,7 +269,9 @@
         <div class="photo-editor__wrapper">
           <figure class="photo-editor__image">
             <picture>
-              <img src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <img src="./img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
             </picture>
           </figure>
           <div class="photo-editor__tools">
