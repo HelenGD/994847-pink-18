@@ -15,20 +15,75 @@
   color: $white;
 }
 
-.rates__flag {
-  font-size: 10px;
-  line-height: 21px;
+.rates-table__head-cell {
+  position: relative;
+
+  @include breakpointMd() {
+    font-size: 16px;
+  }
+}
+
+.rates-table__head-cell--hit::before {
+  position: absolute;
+  content: "";
+  height: 73px;
+  width: 74px;
+  top: 0;
+  left: -2px;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
+  vertical-align: center;
   text-transform: uppercase;
   color: $white;
-  background-color: $pink;
-  width: 30px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+
+  @include breakpointMd() {
+    height: 61px;
+    width: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  @include breakpointXl() {
+    height: 73px;
+    width: 74px;
+    background-image: url("../img/bg-hit.svg");
+  }
+}
+
+.rates-table__head-cell--hit::after {
+  position: absolute;
+  content: "хит";
+  transform: rotate(-45deg);
+  z-index: 11;
+  top: 20px;
+  left: 10px;
+  font-size: $font-size;
+  line-height: 1;
+  font-weight: normal;
+
+  @include breakpointMd() {
+    top: 13px;
+    left: 7px;
+  }
+
+  @include breakpointXl() {
+    top: 20px;
+    left: 10px;
+  }
 }
 
 .rates__price {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 300;
   color: $white;
+
+  @include breakpointMd() {
+    font-size: 18px;
+  }
 }
 
 .rates__services {
@@ -48,6 +103,10 @@
   margin: 0;
   padding: 20px 0;
   text-align: center;
+
+  @include breakpointMd() {
+    display: none;
+  }
 }
 
 .rates__header-wrapper {
@@ -68,4 +127,63 @@
 .rates__item {
   padding: 0 20px;
   border-bottom: solid 2px $grey;
+}
+
+.rates-table__text {
+  @include breakpointMd() {
+    display: none;
+  }
+
+  @include breakpointXl() {
+    display: block;
+  }
+}
+
+.rates-table__data-cell--yes::before {
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+}
+
+.rates-table__data-cell--no::before {
+  width: 31px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rates-table__data-cell:first-child {
+  @include breakpointMd() {
+    text-transform: none;
+    padding: 0 0 0 15px;
+  }
+
+  @include breakpointXl() {
+    text-transform: uppercase;
+    padding: 0 24px;
+  }
+}
+
+.rates-table__data-cell {
+  position: relative;
+}
+
+.rates-table__data-cell::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include breakpointMd() {
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  @include breakpointXl() {
+    right: 20px;
+    transform: translateY(-50%);
+  }
 }

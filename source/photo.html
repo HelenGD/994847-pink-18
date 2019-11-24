@@ -273,19 +273,33 @@
             </picture>
           </figure>
           <div class="photo-editor__tools">
-          <ul>
-            <li class="photo-editor__tool">Обрезка</li>
-            <li class="photo-editor__tool">Цветокоррекция</li>
-            <li class="photo-editor__tool">Контраст</li>
+          <ul class="photo-editor__tools-list">
+            <li class="photo-editor__tool photo-editor__tool--crop">
+              <div class="photo-editor__range">
+                <input class="photo-editor__range-input" type="range" id="range-crop" name="range" value="15" min="0" max="20">
+                <label class="visually-hidden" for="range-crop">Диапазон</label>
+              </div>
+            </li>
+            <li class="photo-editor__tool photo-editor__tool--color">
+              <div class="photo-editor__range">
+                <input class="photo-editor__range-input" type="range" id="range-color" name="range" value="15" min="0" max="20">
+                <label class="visually-hidden" for="range-color">Диапазон</label>
+              </div>
+            </li>
+            <li class="photo-editor__tool photo-editor__tool--contrast">
+              <div class="photo-editor__range">
+                <input class="photo-editor__range-input" type="range" id="range-contrast" name="range" value="15" min="0" max="20">
+                <label class="visually-hidden" for="range-contrast">Диапазон</label>
+              </div>
+            </li>
           </ul>
-
           <div class="photo-editor__range">
             <input class="photo-editor__range-input" type="range" id="range" name="range" value="15" min="0" max="20">
             <label class="visually-hidden" for="range">Диапазон</label>
           </div>
-          <div class="photo-editor__button">
-            <button class="photo-editor__upload-button" type="submit">Запостить</button>
-            <button class="photo-editor__cancel-button" type="reset">Отмена</button>
+          <div class="photo-editor__buttons">
+            <button class="photo-editor__button photo-editor__upload-button" type="submit">Запостить</button>
+            <button class="photo-editor__button photo-editor__cancel-button" type="reset">Отмена</button>
           </div>
         </div>
         </div>

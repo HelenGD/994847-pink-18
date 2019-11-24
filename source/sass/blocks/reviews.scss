@@ -1,7 +1,11 @@
 .reviews {
   background-color: $white;
-  padding: 49px 22px 50px 22px;
+  padding: 0 22px 50px 22px;
   text-align: center;
+
+  @include breakpointXl() {
+    max-height: 460px;
+  }
 }
 
 .reviews__author-name {
@@ -14,6 +18,10 @@
   @include breakpointMd() {
     order: 2;
   }
+
+  @include breakpointXl() {
+    font-size: 24px;
+  }
 }
 
 .reviews__item {
@@ -22,13 +30,12 @@
   @include breakpointMd() {
     display: flex;
     flex-direction: column;
-    min-height: 346px;
+    min-height: 224px;
   }
 
   @include breakpointXl() {
     display: flex;
     flex-direction: column;
-    min-height: 415px;
   }
 }
 
@@ -39,11 +46,83 @@
   color: $blue-dark;
 
   @include breakpointMd() {
+    font-size: 18px;
     order: 1;
+  }
+
+  @include breakpointXl() {
+    padding: 0 95px;
   }
 }
 
 .reviews__toggles {
+  /*margin: 0;
+  padding: 0;*/
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  text-align: center;
+
+  @include breakpointXl() {
+    display: none;
+  }
 }
+
+.reviews__age {
+  display: none;
+
+  @include breakpointMd() {
+    display: block;
+    font-size: $font-size;
+    line-height: 30px;
+    text-align: center;
+    color: $blue-dark;
+    order: 2;
+  }
+
+  @include breakpointXl() {
+    font-size: 18px;
+  }
+}
+
+.reviews__wrapper {
+  @include breakpointXl() {
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 8px;
+    background-image: url(../img/icon-quotes.svg);
+    background-size: 80px 63px;
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+  }
+}
+
+.slider__arrow {
+  display: none;
+
+  @include breakpointXl() {
+    display: block;
+    position: absolute;
+    top: 220px;
+    width: 60px;
+    height: 42px;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 22px 41px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.slider__arrow--next {
+  @include breakpointXl() {
+    left: auto;
+    right: 0;
+  }
+}
+
+

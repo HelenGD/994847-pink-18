@@ -1,0 +1,40 @@
+.slider__toggle {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.slider__toggle-link {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: $gray-toggle;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle:first-child {
+  margin-left: 22px;
+}
+
+.slider__toggle--active {
+  border-color: $blue-dark;
+}
+
+.slider__toggle--active .slider__toggle-link {
+  background-color: $white;
+}
+
