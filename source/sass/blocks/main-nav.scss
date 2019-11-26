@@ -57,6 +57,7 @@
   position: absolute;
   width: 100%;
   background-color: $blue-dark;
+  z-index: 10;
 
   @include breakpointXl() {
     position: static;

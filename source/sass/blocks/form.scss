@@ -461,12 +461,60 @@
 }
 
 .form__text-fields--contacts {
+  @include breakpointMd() {
+  }
+
   @include breakpointXl() {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 }
+
+.form__field-text--contacts-number {
+  position: relative;
+
+  &::after {
+    display: none;
+
+    @include breakpointMd() {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      background-color: $grey;
+    }
+  }
+}
+
+.form__field-text--contacts-mail {
+  position: relative;
+
+  &::after {
+    display: none;
+
+    @include breakpointMd() {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      background-color: $grey;
+    }
+  }
+}
+
 
 .form__checkbox-fields--achievements {
   @include breakpointXl() {
