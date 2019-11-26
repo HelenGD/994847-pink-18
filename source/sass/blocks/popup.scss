@@ -100,9 +100,9 @@
 }
 
 .popup__footer--success {
-    padding-top: 48px;
-    padding-bottom: 52px;
-    background-color: $grey-light;
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: $grey-light;
 
   @include breakpointXl() {
     padding-left: 160px;
@@ -111,21 +111,21 @@
 }
 
 .popup__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $green-button;
-    border: 0;
-    margin: 0;
-    padding: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-    height: 60px;
-    width: 276px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $green-button;
+  border: 0;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  height: 60px;
+  width: 276px;
 
   @include breakpointMd() {
     width: 296px;
