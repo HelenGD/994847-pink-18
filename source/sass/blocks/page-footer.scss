@@ -48,11 +48,17 @@
   }
 }
 
-.page-footer__icon-desktop {
+.page-footer__logo-glasses--desktop {
   display: none;
 
   @include breakpointXl() {
     display: initial;
+  }
+}
+
+.page-footer__logo-glasses--mobile {
+  @include breakpointXl() {
+    display: none;
   }
 }
 

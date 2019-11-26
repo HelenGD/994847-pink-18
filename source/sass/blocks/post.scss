@@ -3,7 +3,7 @@
   padding: 20px 20px 20px 20px;
 
   @include breakpointMd() {
-    width: 660px;
+    max-width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -95,6 +95,8 @@
 
 .post__picture {
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .post__like-btn {
