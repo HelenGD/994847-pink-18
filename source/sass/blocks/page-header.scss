@@ -16,7 +16,7 @@
 }
 
 .page-header__photo,
-.page-header__form {
+.page-header--form {
   background-size: cover;
 }
 
@@ -89,11 +89,35 @@
   display: none;
 
   @include breakpointMd() {
-    display: none;
+    display: block;
+  }
+}
+
+.page-header__logo-star {
+  display: none;
+
+  @include breakpointXl() {
+    display: initial;
+  }
+}
+
+.page-header__logo-glasses--desktop {
+  display: none;
+
+  @include breakpointXl() {
+    display: initial;
+  }
+}
+
+.page-header__logo-glasses--tablet {
+  display: none;
+
+  @include breakpointMd() {
+    display: initial;
   }
 
   @include breakpointXl() {
-    display: block;
+    display: none;
   }
 }
 
@@ -120,4 +144,52 @@
 
 .main-nav--open .page-header__icon-burger {
   display: none;
+}
+
+.page-header__container {
+  background-color: transparentize(black, 0.5);
+}
+
+.page-header__nav {
+  max-width: $desktop-container-width;
+  margin: auto;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+
+  @include breakpointXl() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+    min-height: 110px;
+  }
+}
+
+.page-header__container--open {
+  background-color: $blue-dark;
+
+  @include breakpointXl() {
+    background-color: transparentize(black, 0.5);
+  }
+}
+
+.page-header__container--open .main-nav__wrapper {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: $blue-dark;
+
+  @include breakpointXl() {
+    position: static;
+    background-color: transparent;
+  }
 }
