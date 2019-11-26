@@ -89,11 +89,35 @@
   display: none;
 
   @include breakpointMd() {
-    display: none;
+    display: block;
+  }
+}
+
+.page-header__logo-star {
+  display: none;
+
+  @include breakpointXl() {
+    display: initial;
+  }
+}
+
+.page-header__logo-glasses--desktop {
+  display: none;
+
+  @include breakpointXl() {
+    display: initial;
+  }
+}
+
+.page-header__logo-glasses--tablet {
+  display: none;
+
+  @include breakpointMd() {
+    display: initial;
   }
 
   @include breakpointXl() {
-    display: block;
+    display: none;
   }
 }
 
