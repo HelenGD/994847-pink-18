@@ -1,6 +1,6 @@
 .form__legend {
   position: relative;
-  max-width: 936px;
+  width: 100%;
 
   @include breakpointMd() {
     display: flex;
@@ -16,6 +16,7 @@
     flex-direction: row;
     margin: 0 auto;
     margin-bottom: 70px;
+    max-width: 936px;
   }
 }
 
@@ -23,10 +24,10 @@
   background-color: $white;
   padding: 0 20px;
   margin-bottom: 40px;
+  width: 100%;
 
   @include breakpointMd() {
     order: 1;
-    width: 100%;
     padding-bottom: 0;
     margin-bottom: 70px;
   }

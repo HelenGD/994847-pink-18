@@ -10,7 +10,7 @@
   }
 
   @include breakpointXl() {
-    width: 980px;
+    max-width: 980px;
   }
 }
 
