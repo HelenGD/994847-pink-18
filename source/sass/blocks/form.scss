@@ -71,7 +71,7 @@
   }
 
   &:hover {
-   border-color: $blue-dark;
+    border-color: $blue-dark;
   }
 
   &:active {
@@ -462,9 +462,6 @@
 }
 
 .form__text-fields--contacts {
-  @include breakpointMd() {
-  }
-
   @include breakpointXl() {
     width: 100%;
     display: flex;
@@ -484,7 +481,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url(../img/icon-phone.svg);
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 60px;
@@ -506,7 +503,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url(../img/icon-mail.svg);
+      background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 60px;

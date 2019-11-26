@@ -72,7 +72,6 @@
 }
 
 .contacts__item--address {
-
   @include breakpointMd() {
     max-width: 220px;
   }

@@ -89,7 +89,6 @@
       width: 48px;
       height: 44px;
     }
-
   }
 
   @include breakpointMd() {
@@ -143,15 +142,6 @@
     align-items: flex-start;
     justify-content: space-between;
   }
-}
-
-.photo-editor__upload-button {
-  margin-bottom: 12px;
-  width: 100%;
-}
-
-.photo-editor__cancel-button {
-  width: 100%;
 }
 
 .photo-editor__range-input {
@@ -264,6 +254,8 @@
 .photo-editor__upload-button {
   color: $pink;
   border: 3px solid $pink;
+  margin-bottom: 12px;
+  width: 100%;
 
   &:hover {
     color: $white;
@@ -278,6 +270,7 @@
 .photo-editor__cancel-button {
   color: $blue-rgba-light;
   border: 3px solid $blue-rgba-light;
+  width: 100%;
 
   &:hover {
     border: 3px solid $gray-rgba;

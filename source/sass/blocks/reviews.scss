@@ -89,7 +89,7 @@
     position: relative;
     padding-top: 180px;
     padding-bottom: 8px;
-    background-image: url(../img/icon-quotes.svg);
+    background-image: url("../img/icon-quotes.svg");
     background-size: 80px 63px;
     background-repeat: no-repeat;
     background-position: 50% 72px;
@@ -133,5 +133,3 @@
     right: 0;
   }
 }
-
-
