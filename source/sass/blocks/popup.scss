@@ -37,7 +37,7 @@
 
 .popup__body--error {
   @include breakpointMd() {
-    36px 66px 34px;
+    padding: 36px 66px 34px;
   }
 
   @include breakpointXl() {
