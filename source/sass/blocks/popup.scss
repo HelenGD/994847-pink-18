@@ -127,6 +127,19 @@
   height: 60px;
   width: 276px;
 
+  &:hover {
+    background-color: $green-button-hover;
+  }
+
+  &:active {
+    color: $green-button-color;
+  }
+
+  &[disabled] {
+    color: $white;
+    background-color: $grey;
+  }
+
   @include breakpointMd() {
     width: 296px;
   }
