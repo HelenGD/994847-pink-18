@@ -26,6 +26,9 @@
 
   @include breakpointMd() {
     width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -39,14 +42,21 @@
 }
 
 .post__wrapper {
-  padding: 25px 17px 10px 17px;
+  padding: 25px 17px 22px 17px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpointMd() {
+    padding: 25px 17px 26px 17px;
+  }
 }
 
 .post__time {
   font-weight: 300;
   font-size: 12px;
   line-height: $line-height;
-  color: #283645;
+  color: $blue-dark;
   text-transform: uppercase;
 }
 
@@ -54,7 +64,7 @@
   margin: 0;
   font-size: $font-size;
   line-height: $line-height;
-  color: #283645;
+  color: $blue-dark;
 }
 
 .post__photo-wrapper--panorama {
@@ -72,5 +82,45 @@
 }
 
 .post__action {
-  margin-top: 16px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  @include breakpointMd() {
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 20px;
+  }
+}
+
+.post__picture {
+  display: flex;
+}
+
+.post__like-btn {
+  background-color: $grey-light;
+  border: none;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
+
+  @include breakpointMd() {
+    order: 1;
+    margin-left: 16px;
+  }
+}
+
+.post__action--panorama {
+  margin-top: 20px;
+
+  @include breakpointMd() {
+    position: absolute;
+    top: 6px;
+    right: 29px;
+    display: flex;
+    align-items: center;
+  }
 }

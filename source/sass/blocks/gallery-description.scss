@@ -13,4 +13,9 @@
   line-height: 30px;
   text-align: center;
   color: $blue-dark;
+
+  @include breakpointMd() {
+    font-size: 18px;
+    padding-top: 50px;
+  }
 }

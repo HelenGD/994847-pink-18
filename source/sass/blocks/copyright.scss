@@ -1,4 +1,22 @@
 .copyright__text {
   font-size: $font-size;
   line-height: 18px;
+  margin-right: 10px;
+
+  @include breakpointMd() {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+}
+
+.copyright__logo {
+  color: $pink;
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

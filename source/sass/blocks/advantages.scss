@@ -3,36 +3,49 @@
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  padding: 48px 0;
+  padding: 36px 0;
   min-height: 214px;
 
   @include breakpointMd() {
     min-height: 242px;
+    font-size: 40px;
+    margin-bottom: 0;
   }
 
   @include breakpointXl() {
     min-height: 324px;
+    font-size: 50px;
   }
 }
 
 .advantages__slogan {
   margin: 0;
   margin-bottom: 40px;
+
+  @include breakpointMd() {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  padding-top: 60px;
 
   @include breakpointMd() {
     display: flex;
     flex-direction: column;
     order: 2;
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 
   @include breakpointXl() {
     flex-direction: row;
     margin: 0 auto;
+    width: $desktop-container-width;
+    max-width: 100%;
   }
 }
 
@@ -41,6 +54,8 @@
 
   @include breakpointXl() {
     margin-top: 0;
+    text-align: center;
+    padding: 0 31px;
 
     &::before {
       content: "";
@@ -67,6 +82,10 @@
 .advantages__item:not(:first-child) {
   margin-top: 40px;
 
+  @include breakpointMd() {
+    margin-top: 0;
+  }
+
   @include breakpointXl() {
     margin-top: 0;
   }
@@ -77,11 +96,42 @@
   font-size: $font-size;
   line-height: $line-height;
   text-align: center;
-  padding: 70px 25px 0 25px;
+  padding: 0 25px 0 25px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 
   @include breakpointMd() {
-    min-height: 510px;
+    min-height: auto;
     display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-position: top center;
+    height: 270px;
+    margin-top: 40px;
+
+    @include breakpointMd() {
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+      display: flex;
+      order: 1;
+      margin-top: 0;
+      min-height: 478px;
+      background-position: left;
+      background-size: 100%;
+      min-width: 268px;
+    }
+
+    @include breakpointXl() {
+      display: none;
+    }
   }
 }
 
@@ -90,26 +140,28 @@
   font-size: 18px;
   line-height: $line-height;
   text-align: center;
-}
-
-.advantages__background {
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
-  background-position: top center;
-  height: 270px;
-  margin-top: 40px;
 
   @include breakpointMd() {
-    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
-    display: flex;
-    order: 1;
-    margin-top: 0;
-    min-height: 478px;
-    background-position: left;
-    background-size: 100%;
-    min-width: 266px;
+    text-align: left;
   }
 
   @include breakpointXl() {
-    display: none;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.advantages__description {
+  @include breakpointXl() {
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: center;
+  }
+
+  @include breakpointXl() {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

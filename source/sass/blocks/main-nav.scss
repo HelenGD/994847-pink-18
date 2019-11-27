@@ -1,22 +1,7 @@
-.main-nav {
-  max-width: 936px;
-  margin: auto;
-  flex-grow: 1;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 32px;
-  text-align: center;
-  color: $white;
-  text-transform: uppercase;
-
-  @include breakpointXl() {
-    display: flex;
-  }
-}
-
 .main-nav__list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 
   @include breakpointXl() {
     display: flex;
@@ -24,14 +9,10 @@
   }
 }
 
-.main-nav__container {
-  background-color: transparentize(black, 0.5);
-}
-
-.main-nav--open {
-  background-color: $blue-dark;
+.main-nav__wrapper {
+  display: none;
 
   @include breakpointXl() {
-    background-color: transparentize(black, 0.5);
+    display: block;
   }
 }

@@ -1,3 +1,13 @@
+.download-links {
+  @include breakpointMd() {
+    width: $desktop-container-width;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .download-links__container {
   font-size: 18px;
   font-weight: bold;
@@ -7,16 +17,65 @@
 
 .download-links__wrapper {
   background-color: $blue-darkest;
-  padding: 28px 20px 20px 32px;
+  padding: 28px 20px 20px 19px;
 
   @include breakpointMd() {
     background-color: transparent;
+    width: 300px;
+    margin-left: 20px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  @include breakpointXl() {
+    margin-left: 0;
+  }
+}
+
+.download-links__title {
+  @include breakpointS() {
+    display: none;
+  }
+
+  @include breakpointMd() {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    color: $white;
+  }
+
+  @include breakpointXl() {
+    font-size: 50px;
   }
 }
 
 .download-links__button {
-  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
   color: $white;
+  text-decoration: none;
+  border: solid 3px $white;
+  border-radius: 30px;
+  padding: 14px 0 17px 0;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+
+  @include breakpointMd() {
+    padding: 14px 33px 17px 37px;
+  }
+}
+
+.download-links__button:hover {
+  background-color: $white;
+  color: $pink;
+}
+
+.download-links__button:active {
+  background-color: $white;
+  color: $pink-rgba;
 }
 
 .download-links__info {
@@ -25,14 +84,51 @@
   line-height: $line-height;
   color: $white;
   text-align: center;
+
+  @include breakpointMd() {
+    font-size: 18px;
+  }
 }
 
 .download-links__market {
   text-align: center;
   margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 30px 20px 10px 20px;
+
+  @include breakpointXl() {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 
 .download-links__market-item {
   list-style-type: none;
+}
+
+
+.download-links__market-link {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download-links__market-link--apple {
+  background-image: url("../img/logo-apple.svg");
+  width: 47px;
+  height: 56px;
+}
+
+.download-links__market-link--android {
+  background-image: url("../img/logo-android.svg");
+  width: 43px;
+  height: 47px;
+}
+
+.download-links__market-link--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  width: 44px;
+  height: 41px;
 }

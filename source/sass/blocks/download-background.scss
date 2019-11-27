@@ -3,13 +3,13 @@
 
   @include breakpointMd() {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 330px;
   }
 
   @include breakpointXl() {
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
   }
 }
 
@@ -17,7 +17,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: 80%;
   background-position: left 108px;
-  padding-top: 392px;
+  padding-top: 385px;
 
   @include breakpointMd() {
     background-image: url("../img/iphone-hand-tablet@1x.png");

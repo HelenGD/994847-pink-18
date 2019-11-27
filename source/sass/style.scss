@@ -9,6 +9,7 @@
 @import "blocks/download-background";
 @import "blocks/download-links";
 @import "blocks/advantages";
+@import "blocks/advantages-science";
 @import "blocks/page-footer";
 @import "blocks/gallery";
 @import "blocks/gallery-description";
@@ -47,7 +48,7 @@ body {
   margin: 0 auto;
 
   @include breakpointMd() {
-    max-width: 768px;
+    max-width: 660px;
   }
 
   @include breakpointXl() {
