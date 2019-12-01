@@ -138,11 +138,11 @@
   display: none;
 }
 
-.main-nav--open .page-header__icon-close {
+.page-header__container--open .page-header__icon-close {
   display: initial;
 }
 
-.main-nav--open .page-header__icon-burger {
+.page-header__container--open .page-header__icon-burger {
   display: none;
 }
 
@@ -150,7 +150,7 @@
   background-color: transparentize(black, 0.5);
 }
 
-.page-header__nav {
+.page-header__toolbar {
   max-width: $desktop-container-width;
   margin: auto;
   flex-grow: 1;
@@ -181,7 +181,7 @@
   }
 }
 
-.page-header__container--open .main-nav__wrapper {
+.page-header__container--open .main-nav {
   display: block;
   position: absolute;
   z-index: 10;
