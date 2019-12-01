@@ -265,6 +265,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @include breakpointXl() {
+    width: 183px;
+  }
 }
 
 .photo-editor__cancel-button {
@@ -281,6 +285,10 @@
     color: $white-rgba;
     background-color: $blue-rgba;
     border: 3px solid $blue-rgba;
+  }
+
+  @include breakpointXl() {
+    width: 183px;
   }
 }
 
