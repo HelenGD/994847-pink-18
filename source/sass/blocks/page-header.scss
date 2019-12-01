@@ -148,6 +148,7 @@
 
 .page-header__container {
   background-color: transparentize(black, 0.5);
+  position: relative;
 }
 
 .page-header__toolbar {
@@ -160,7 +161,6 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
-  position: relative;
 
   @include breakpointXl() {
     display: flex;
@@ -185,6 +185,7 @@
   display: block;
   position: absolute;
   z-index: 10;
+  left: 0;
   width: 100%;
   background-color: $blue-dark;
 
