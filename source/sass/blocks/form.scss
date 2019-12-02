@@ -236,6 +236,7 @@
   justify-content: center;
   flex-wrap: wrap;
   font-size: $font-size;
+  line-height: 30px;
 
   @include breakpointMd() {
     order: 6;

@@ -115,14 +115,3 @@
   }
 }
 
-.post__action--panorama {
-  margin-top: 20px;
-
-  @include breakpointMd() {
-    position: absolute;
-    top: 6px;
-    right: 29px;
-    display: flex;
-    align-items: center;
-  }
-}

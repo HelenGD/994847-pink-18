@@ -80,6 +80,7 @@
 .advantages-science__title {
   @include breakpointMd() {
     font-size: 30px;
+    line-height: 36px;
     padding-right: 67px;
     width: 170px;
     margin-bottom: 0;
@@ -88,6 +89,7 @@
 
   @include breakpointXl() {
     width: 390px;
+    line-height: 30px;
     padding-left: 10px;
   }
 }
@@ -115,14 +117,16 @@
   @include breakpointMd() {
     text-decoration: underline;
     color: $pink;
-    font-size: 14px;
+    font-size: $font-size;
+    line-height: $line-height;
     padding-left: 5px;
   }
 
   @include breakpointXl() {
     font-size: 18px;
-    line-height: 34px;
+    line-height: 30px;
     padding-left: 11px;
+    text-decoration: none;
   }
 }
 

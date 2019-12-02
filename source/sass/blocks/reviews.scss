@@ -4,7 +4,7 @@
   text-align: center;
 
   @include breakpointXl() {
-    max-height: 460px;
+    min-height: 460px;
   }
 }
 
@@ -56,11 +56,8 @@
 }
 
 .reviews__toggles {
-  /*margin: 0;
-  padding: 0;*/
   margin: 0;
   padding: 20px 0;
-  text-align: center;
 
   @include breakpointXl() {
     display: none;

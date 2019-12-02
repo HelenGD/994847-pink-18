@@ -48,7 +48,7 @@
   }
 }
 
-.page-footer__logo-glasses--desktop {
+.page-footer__logo-glasses-desktop {
   display: none;
 
   @include breakpointXl() {
@@ -56,7 +56,7 @@
   }
 }
 
-.page-footer__logo-glasses--mobile {
+.page-footer__logo-glasses-mobile {
   @include breakpointXl() {
     display: none;
   }

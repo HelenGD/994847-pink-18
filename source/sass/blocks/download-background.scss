@@ -11,33 +11,15 @@
 .download-background--home {
   position: relative;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-size: 80%;
-  background-position: left 108px;
-  padding-top: 385px;
-
-  &::before {
-    content: "Взгляните на жизнь иначе!";
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    color: #ffffff;
-    width: 256px;
-    z-index: 1;
-
-    @include breakpointMd() {
-      display: none;
-    }
-  }
+  background-size: auto;
+  background-position: left 110px;
+  padding-top: 396px;
 
   @include breakpointMd() {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     padding-top: 0;
     min-height: 619px;
-    background-size: auto 545px;
+    //background-size: auto 545px;
     background-position: right bottom;
   }
 
@@ -45,7 +27,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     padding-top: 0;
     min-height: 744px;
-    background-size: auto 645px;
+    //background-size: auto 645px;
     background-position: center bottom;
   }
 }
