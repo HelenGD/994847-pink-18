@@ -37,13 +37,15 @@
   box-sizing: border-box;
 }
 
-html,
 input,
 textarea {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: inherit;
 }
 
 body {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
   width: 100%;
   margin: 0 auto;
   background-color: $white;
