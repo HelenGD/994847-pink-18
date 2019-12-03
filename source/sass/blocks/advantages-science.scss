@@ -1,8 +1,8 @@
 .advantages-science {
-  background-color: $white;
-  padding-top: 42px;
+  display: none;
 
   @include breakpointMd() {
+    display: block;
     padding-top: 1px;
     margin: 0 auto;
   }
@@ -28,10 +28,7 @@
 }
 
 .advantages-science__about {
-  display: none;
-
   @include breakpointMd() {
-    display: block;
     min-height: 415px;
     width: 640px;
     margin: 0 auto;
@@ -91,7 +88,6 @@
   @include breakpointMd() {
     font-size: 30px;
     line-height: 36px;
-    padding-right: 67px;
     width: 170px;
     margin-bottom: 0;
     margin-top: 0;

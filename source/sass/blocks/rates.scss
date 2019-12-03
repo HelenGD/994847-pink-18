@@ -149,6 +149,8 @@
 }
 
 .rates-table__text {
+  margin-right: 24px;
+
   @include breakpointMd() {
     display: none;
   }

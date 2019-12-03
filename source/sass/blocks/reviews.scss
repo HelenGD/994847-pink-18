@@ -1,9 +1,10 @@
 .reviews {
   background-color: $white;
-  padding: 0 22px 50px 22px;
+  padding: 42px 22px 50px 22px;
   text-align: center;
 
   @include breakpointXl() {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -107,6 +108,7 @@
     top: 213px;
     cursor: pointer;
     z-index: 1;
+    border: none;
   }
 
   &:hover {
