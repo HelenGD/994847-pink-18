@@ -8,7 +8,8 @@
   }
 
   @include breakpointXl() {
-    padding: 50px 25px 23px 25px;
+    padding: 63px 25px 0 25px;
+    min-height: auto;
   }
 }
 
@@ -23,6 +24,12 @@
     max-width: 370px;
     margin: 0 auto;
   }
+
+  @include breakpointXl() {
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 500px;
+  }
 }
 
 .contacts__items {
@@ -30,12 +37,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 57px;
+    padding-top: 59px;
   }
 }
 
 .contacts__item {
   margin-bottom: 28px;
+
+  @include breakpointXl() {
+    margin: 0;
+  }
 }
 
 .contacts__item-lead {
@@ -44,6 +55,8 @@
 }
 
 .contacts__item-info {
+  display: block;
+  margin-top: 20px;
   font-style: normal;
   font-size: 24px;
   font-weight: 300;

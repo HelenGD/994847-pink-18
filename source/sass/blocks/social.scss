@@ -3,7 +3,7 @@
   padding-right: 16px;
 
   @include breakpointMd() {
-    padding-right: 16px;
+    padding: 0 10px;
   }
 }
 

@@ -26,8 +26,8 @@
   @include breakpointXl() {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     padding-top: 0;
-    min-height: 744px;
+    min-height: 743px;
     //background-size: auto 645px;
-    background-position: center bottom;
+    background-position: 58% bottom;
   }
 }

@@ -43,7 +43,7 @@
 .rates-table__data-cell {
   background-color: $white;
   border: solid 2px $grey;
-  height: 63px;
+  height: 60px;
   padding: 0 24px;
   font-size: 14px;
   line-height: 30px;
@@ -60,6 +60,18 @@
 
     &:first-child {
       display: table-cell;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include breakpointXl() {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
     }
   }
 }

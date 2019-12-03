@@ -14,8 +14,13 @@
   }
 
   @include breakpointXl() {
-    min-height: 324px;
+    min-height: 314px;
     font-size: 50px;
+    line-height: 60px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -47,6 +52,7 @@
     margin: 0 auto;
     width: $desktop-container-width;
     max-width: 100%;
+    padding: 0;
   }
 }
 
@@ -104,6 +110,7 @@
   background-position: 50% 0;
 
   @include breakpointMd() {
+    padding-top: 10px;
     min-height: auto;
     display: flex;
     text-align: left;
@@ -148,21 +155,19 @@
 
   @include breakpointXl() {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1;
     text-align: center;
+    margin: 0;
+    margin-top: 54px;
   }
 }
 
 .advantages__description {
   @include breakpointXl() {
-    font-size: $font-size;
-    line-height: $line-height;
-    text-align: center;
-  }
-
-  @include breakpointXl() {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+    margin: 0;
+    margin-top: 25px;
   }
 }

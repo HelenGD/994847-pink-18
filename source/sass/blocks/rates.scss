@@ -10,7 +10,11 @@
   }
 
   @include breakpointXl() {
+    padding-top: 171px;
     padding-bottom: 98px;
+    background-image: url(../img/bg-triangle-white.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 }
 
@@ -29,15 +33,19 @@
   @include breakpointMd() {
     font-size: 16px;
   }
+
+  @include breakpointXl() {
+    font-size: 17px;
+  }
 }
 
 .rates-table__head-cell--hit::before {
   position: absolute;
   content: "";
-  height: 73px;
-  width: 74px;
+  height: 72px;
+  width: 73px;
   top: 0;
-  left: -2px;
+  left: 0;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
@@ -55,8 +63,8 @@
   }
 
   @include breakpointXl() {
-    height: 73px;
-    width: 74px;
+    height: 72px;
+    width: 73px;
     background-image: url("../img/bg-hit.svg");
   }
 }
@@ -91,6 +99,10 @@
 
   @include breakpointMd() {
     font-size: 18px;
+  }
+
+  @include breakpointXl() {
+    font-size: 24px;
   }
 }
 
@@ -140,21 +152,19 @@
   @include breakpointMd() {
     display: none;
   }
-
-  @include breakpointXl() {
-    display: block;
-  }
 }
 
 .rates-table__data-cell--yes::before {
   width: 31px;
   height: 21px;
   background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .rates-table__data-cell--no::before {
-  width: 31px;
-  height: 26px;
+  width: 27px;
+  height: 27px;
   background-image: url("../img/icon-no.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -168,13 +178,18 @@
   }
 
   @include breakpointXl() {
-    text-transform: uppercase;
-    padding: 0 24px;
+    padding: 0 22px;
+    font-size: 18px;
   }
 }
 
 .rates-table__data-cell {
   position: relative;
+
+  @include breakpointXl() {
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 
 .rates-table__data-cell::before {
@@ -191,6 +206,9 @@
 
   @include breakpointXl() {
     right: 20px;
-    transform: translateY(-50%);
+    transform: none;
+    position: static;
+    display: inline-flex;
+    vertical-align: middle;
   }
 }
