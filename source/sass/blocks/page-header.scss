@@ -32,6 +32,7 @@
   align-items: center;
   border-bottom: 1px solid $gray-darker-border;
   min-height: 66px;
+  height: 1px;
 
 
   @include breakpointMd() {
@@ -102,7 +103,7 @@
   display: none;
 
   @include breakpointXl() {
-    display: initial;
+    display: inline;
   }
 }
 
@@ -110,7 +111,7 @@
   display: none;
 
   @include breakpointXl() {
-    display: initial;
+    display: inline;
   }
 }
 
@@ -118,7 +119,7 @@
   display: none;
 
   @include breakpointMd() {
-    display: initial;
+    display: inline;
   }
 
   @include breakpointXl() {
@@ -144,7 +145,7 @@
 }
 
 .page-header__container--open .page-header__icon-close {
-  display: initial;
+  display: inline;
 }
 
 .page-header__container--open .page-header__icon-burger {

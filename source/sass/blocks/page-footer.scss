@@ -52,7 +52,7 @@
   display: none;
 
   @include breakpointXl() {
-    display: initial;
+    display: inline;
   }
 }
 

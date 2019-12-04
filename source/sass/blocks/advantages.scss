@@ -6,6 +6,7 @@
   text-align: center;
   padding: 36px 0;
   min-height: 214px;
+  height: 1px;
 
   @include breakpointMd() {
     min-height: 242px;

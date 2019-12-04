@@ -12,10 +12,6 @@
     font-size: 50px;
     padding-top: 81px;
   }
-
-  @include breakpointXl() {
-    margin: 0 auto;
-  }
 }
 
 .intro__title--form {
