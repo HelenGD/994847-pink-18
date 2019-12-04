@@ -1,4 +1,4 @@
-.panorama {
+.panorama__photo-wrapper {
   position: relative;
 }
 
@@ -70,6 +70,8 @@
 }
 
 .panorama__post-action {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
 
   @include breakpointMd() {
@@ -106,6 +108,3 @@
   text-transform: uppercase;
 }
 
-.panorama__post-stats-count {
-
-}

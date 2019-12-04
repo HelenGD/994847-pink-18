@@ -70,225 +70,245 @@
 </header>
 
 <main class="main-gallery">
-  <h1 class="visually-hidden">Галерея фотографий</h1>
-  <div class="gallery-wrapper">
-    <section class="gallery-description">
+  <section class="gallery-wrapper">
+    <h2 class="visually-hidden">Галерея фотографий</h2>
+    <div class="gallery-description">
       <p class="gallery-description__lead">
         Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
       </p>
-    </section>
-    <section class="panorama">
+    </div>
+    <div class="panorama">
       <div class="panorama__photo-wrapper">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-          <img class="panorama__photo" src="./img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
-        </picture>
+        <a href="img/panorama-desktop@1x.jpg" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__photo" src="./img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
+          </picture>
+        </a>
         <span class="panorama__rubric">Панорама дня</span>
       </div>
       <div class="panorama__post-wrapper">
-        <header class="panorama__post-header">
+        <div class="panorama__post-header">
           <p class="panorama__post-author">
             Анна <span class="panorama__post-time">(5 минут назад)</span>
           </p>
-        </header>
+        </div>
         <p class="panorama__post-text">
           Прыгать или нет? Напишите в коментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе,
           задавайте свои&nbsp;вопросы!
         </p>
         <div class="panorama__post-action">
           <button class="panorama__post-like-btn" type="button" title="Мне нравится"></button>
-          <a class="panorama__post-stats" href="likes.html">
+          <div class="panorama__post-stats">
             Hравится: <span class="panorama__post-stats-count">215</span>
-          </a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
     <ul class="post">
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
-            <img class="post__photo" src="./img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левонa">
-          </picture>
+          <a href="img/photo-car-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <img class="post__photo" src="./img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левонa">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Левон <span class="post__time">(5 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">
             Вчера он на луну летал, сегодня в руки к нам попал.
           </p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">356</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)"
-                    srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
-            <img class="post__photo" src="./img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антонa">
-          </picture>
+          <a href="img/photo-drumset-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                      srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="post__photo" src="./img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антонa">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Антон <span class="post__time">(12 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">Соседи будут рады!</p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">666</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)"
-                    srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
-            <img class="post__photo" src="./img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Борисa">
-          </picture>
+          <a href="img/photo-window-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                      srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+              <img class="post__photo" src="./img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Борисa">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Борис <span class="post__time">(20 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">215</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
-            <img class="post__photo" src="./img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
-          </picture>
+          <a href="img/photo-fair-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="post__photo" src="./img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Сергей <span class="post__time">(25 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">Самая кубанская в мире!</p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">4</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
-            <img class="post__photo" src="./img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
-          </picture>
+          <a href="img/photo-pov-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="post__photo" src="./img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Максим <span class="post__time">(40 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">Где снег-то?</p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">150</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
       <li class="post__item">
         <div class="post__photo-wrapper">
-          <picture class="post__picture">
-            <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
-            <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Надежда">
-          </picture>
+          <a href="img/photo-wing-desktop@1x.jpg" target="_blank">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Надежда">
+            </picture>
+          </a>
         </div>
         <div class="post__wrapper">
-          <header class="post__header">
+          <div class="post__header">
             <p class="post__author">
               Надежда <span class="post__time">(45 часов назад)</span>
             </p>
-          </header>
+          </div>
           <p class="post__text">Всем GM и взаимные лайки!</p>
           <div class="post__action">
             <button class="post__like-btn" type="button" title="Мне нравится"></button>
-            <a class="post__stats" href="likes.html">
+            <div class="post__stats">
               Hравится: <span class="post__stats-count">2560</span>
-            </a>
+            </div>
           </div>
         </div>
       </li>
     </ul>
-  </div>
+  </section>
 
   <section class="photo-upload">
-    <div class="photo-upload__lead">
-      <p>
-        Затмите их всех!<br> Выкладывайте все, что накопилось&nbsp;в телефоне!
-      </p>
-    </div>
+    <h2 class="visually-hidden">Загруженные изображения</h2>
+    <p class="photo-upload__lead">
+      Затмите их всех!<br> Выкладывайте все, что накопилось&nbsp;в телефоне!
+    </p>
     <div class="photo-editor">
       <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
         <div class="photo-editor__wrapper">
           <figure class="photo-editor__image">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
-              <img class="photo-editor__image-road" src="./img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
-            </picture>
+            <a href="img/photo-road-desktop@1x.jpg" target="_blank">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                <img class="photo-editor__image-road" src="./img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
+              </picture>
+            </a>
           </figure>
           <div class="photo-editor__tools">
-          <ul class="photo-editor__tools-list">
-            <li class="photo-editor__tool photo-editor__tool--crop">
-              <div class="photo-editor__range">
+          <div class="photo-editor__tools-list">
+            <div class="photo-editor__tool-container">
+              <button type="button" class="photo-editor__tool photo-editor__tool--crop"></button>
+              <span class="photo-editor__range">
                 <input class="photo-editor__range-input" type="range" id="range-crop" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-crop">Диапазон</label>
-              </div>
-            </li>
-            <li class="photo-editor__tool photo-editor__tool--color">
-              <div class="photo-editor__range">
+              </span>
+            </div>
+
+            <div class="photo-editor__tool-container">
+              <button type="button" class="photo-editor__tool photo-editor__tool--color"></button>
+              <span class="photo-editor__range">
                 <input class="photo-editor__range-input" type="range" id="range-color" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-color">Диапазон</label>
-              </div>
-            </li>
-            <li class="photo-editor__tool photo-editor__tool--contrast">
-              <div class="photo-editor__range">
+              </span>
+            </div>
+
+            <div class="photo-editor__tool-container">
+              <button type="button" class="photo-editor__tool photo-editor__tool--contrast"></button>
+              <span class="photo-editor__range">
                 <input class="photo-editor__range-input" type="range" id="range-contrast" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-contrast">Диапазон</label>
-              </div>
-            </li>
-          </ul>
+              </span>
+            </div>
+          </div>
           <div class="photo-editor__range">
             <input class="photo-editor__range-input" type="range" id="range" name="range" value="15" min="0" max="20">
             <label class="visually-hidden" for="range">Диапазон</label>

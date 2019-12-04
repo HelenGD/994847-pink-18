@@ -1,5 +1,5 @@
 .rates-table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   width: 100%;
   max-width: $desktop-container-width;
@@ -19,8 +19,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  border-left: solid 2px $grey;
-  border-right: solid 2px $grey;
+  border-left: solid 1px $grey;
+  border-right: solid 1px $grey;
   vertical-align: middle;
   height: 98px;
   min-width: 278px;
@@ -42,7 +42,7 @@
 
 .rates-table__data-cell {
   background-color: $white;
-  border: solid 2px $grey;
+  border: solid 1px $grey;
   height: 60px;
   padding: 0 24px;
   font-size: 14px;

@@ -60,6 +60,10 @@
 .photo-editor__tool {
   list-style-type: none;
   min-height: 44px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
 
   &:first-child {
     @include breakpointMd() {
@@ -94,22 +98,31 @@
   @include breakpointMd() {
     display: flex;
     align-items: center;
-    padding: 23px 0;
     padding-right: 18px;
-    border-bottom: 1px solid $gray-rgba;
   }
 
   @include breakpointMd() {
-    padding: 15px 0;
     padding-right: 18px;
   }
 }
 
-.photo-editor__tool .photo-editor__range {
+.photo-editor__tools-list .photo-editor__range {
   display: none;
 
   @include breakpointMd() {
     display: block;
+  }
+}
+
+.photo-editor__tool-container {
+  display: flex;
+  align-items: center;
+
+  @include breakpointMd() {
+    border-bottom: 1px solid $gray-rgba;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 

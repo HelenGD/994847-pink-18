@@ -4,6 +4,9 @@
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
   @include breakpointMd() {
     padding-bottom: 70px;
@@ -12,9 +15,6 @@
   @include breakpointXl() {
     padding-top: 171px;
     padding-bottom: 98px;
-    background-image: url(../img/bg-triangle-white.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
   }
 }
 
@@ -29,6 +29,7 @@
 
 .rates-table__head-cell {
   position: relative;
+  overflow: hidden;
 
   @include breakpointMd() {
     font-size: 16px;
@@ -39,55 +40,27 @@
   }
 }
 
-.rates-table__head-cell--hit::before {
+.rates-table__hit {
   position: absolute;
-  content: "";
-  height: 72px;
-  width: 73px;
-  top: 0;
-  left: 0;
+  height: 29px;
+  width: 200px;
+  background-color: $pink;
+  top: 11px;
+  left: -73px;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
-  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   color: $white;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
+  transform: rotate(-45deg);
   z-index: 10;
 
   @include breakpointMd() {
-    height: 61px;
-    width: 61px;
-    background-image: url("../img/bg-hit-tablet.svg");
   }
 
   @include breakpointXl() {
-    height: 72px;
-    width: 73px;
-    background-image: url("../img/bg-hit.svg");
-  }
-}
-
-.rates-table__head-cell--hit::after {
-  position: absolute;
-  content: "хит";
-  transform: rotate(-45deg);
-  z-index: 11;
-  top: 20px;
-  left: 10px;
-  font-size: $font-size;
-  line-height: 1;
-  font-weight: normal;
-
-  @include breakpointMd() {
-    top: 13px;
-    left: 7px;
-  }
-
-  @include breakpointXl() {
-    top: 20px;
-    left: 10px;
   }
 }
 
@@ -149,7 +122,8 @@
 }
 
 .rates-table__text {
-  margin-right: 24px;
+  margin: 0;
+  padding-right: 24px;
 
   @include breakpointMd() {
     display: none;

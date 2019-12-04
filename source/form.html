@@ -74,29 +74,27 @@
   <h1 class="visually-hidden">Конкурс от Пинк</h1>
 
   <section class="contest">
-      <div class="contest__lead">
-        <p class="contest__paragraph">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          <span class="contest__add"> Пожалуйста, заполните форму ниже:</span>
-        </p>
-      </div>
+      <p class="contest__lead">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:
+      </p>
       <div class="contest__wrapper">
         <form class="form" method="post" action="http://echo.htmlacademy.ru">
-            <div class="form__fieldset form__fieldset--fullname">
+            <fieldset class="form__fieldset form__fieldset--fullname">
               <div class="form__field-text form__field-text--fullname">
                 <label class="form__text-label form__text-label--fullname" for="user-last-name">Фамилия:</label>
-                <input class="form__text-input form__text-input--last-name" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию *">
+                <input class="form__text-input form__text-input--last-name" id="user-last-name" type="text" name="Surname" placeholder="Укажите фамилию *">
               </div>
               <div class="form__field-text form__field-text--fullname">
                 <label class="form__text-label form__text-label--fullname" for="user-first-name">Имя:</label>
-                <input class="form__text-input form__text-input--first-name" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя *" required>
+                <input class="form__text-input form__text-input--first-name" id="user-first-name" type="text" name="Name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="form__field-text form__field-text--fullname">
                 <label class="form__text-label form__text-label--fullname" for="user-middle-name">Отчество:</label>
-                <input class="form__text-input form__text-input--middle-name" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+                <input class="form__text-input form__text-input--middle-name" id="user-middle-name" type="text" name="Patronymic" placeholder="Ну и отчество тоже">
               </div>
-            </div>
-            <div class="form__fieldset form__fieldset--achievements form__legend">
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--achievements form__legend">
               <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
               <div class="form__checkbox-fields form__checkbox-fields--achievements">
                 <div class="form__field-checkbox form__field-checkbox--one">
@@ -124,8 +122,8 @@
                   <label class="form__checkbox-label form__checkbox-label--six" for="achivements-six">Разгромил отель</label>
                 </div>
               </div>
-            </div>
-            <div class="form__fieldset form__fieldset--contacts form__legend">
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--contacts form__legend">
               <h2 class="form__title">Контактная информация</h2>
               <div class="form__text-fields form__text-fields--contacts">
                 <div class="form__field-text form__field-text--contacts form__field-text--contacts-number">
@@ -137,8 +135,8 @@
                   <input class="form__text-input form__text-input--contacts form__text-input--contacts-mail" id="user-email" type="email" name="e-mail" placeholder="Введите почту *" required>
                 </div>
               </div>
-            </div>
-            <div class="form__fieldset form__legend form__fieldset--apps">
+            </fieldset>
+            <fieldset class="form__fieldset form__legend form__fieldset--apps">
               <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
               <div class="form__radio-fields form__radio-fields--apps">
                 <div class="form__field-radio">
@@ -154,20 +152,18 @@
                   <label class="form__radio-label" for="windows-phone">Windows Phone</label>
                 </div>
               </div>
-            </div>
-            <div class="form__fieldset form__legend form__fieldset--emotions">
+            </fieldset>
+            <fieldset class="form__fieldset form__legend form__fieldset--emotions">
               <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
               <div class="form__textarea-fields form__textarea-fields--emotions">
                 <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
-            </div>
+            </fieldset>
             <div class="form__sending">
               <button class="form__submit-button button button--submit" type="submit">Отправить форму</button>
-              <div class="form__note">
                 <p class="form__note-symbol">
                   <span class="form__note-star">*</span> — обязательные <span class="form__add-text">для заполнения</span> поля
                 </p>
-              </div>
             </div>
         </form>
     </div>

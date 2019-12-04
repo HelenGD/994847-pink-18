@@ -49,6 +49,7 @@
 
   @include breakpointMd() {
     padding: 25px 17px 26px 17px;
+    min-height: 155px;
   }
 }
 
