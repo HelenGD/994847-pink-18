@@ -4,7 +4,7 @@
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
@@ -56,12 +56,6 @@
   color: $white;
   transform: rotate(-45deg);
   z-index: 10;
-
-  @include breakpointMd() {
-  }
-
-  @include breakpointXl() {
-  }
 }
 
 .rates__price {
