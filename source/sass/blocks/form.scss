@@ -44,6 +44,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: 37px;
+    padding: 0;
+    margin-top: 17px;
+    margin-bottom: 0;
   }
 }
 
@@ -81,6 +84,10 @@
 
   &:active {
     border-color: $pink;
+  }
+
+  @include breakpointXl() {
+    padding-left: 19px;
   }
 }
 
@@ -177,6 +184,7 @@
     width: calc(50% - 37px);
     background-color: $white;
     margin-left: 37px;
+    margin-top: 8px;
   }
 }
 
@@ -290,6 +298,7 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 35px;
+
   }
 }
 
@@ -307,6 +316,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include breakpointXl() {
+    margin-bottom: 33px;
   }
 }
 
@@ -355,6 +368,12 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 35px;
+
+    @include breakpointMd() {
+      margin-left: 14px;
+      margin-top: 4px;
+      margin-right: 21px;
+    }
   }
 }
 
@@ -386,6 +405,7 @@
   margin: 0;
   padding: 10px 0;
   height: 60px;
+  border-radius: 4px;
 
   &:hover {
     background-color: $green-button-hover;
@@ -422,7 +442,7 @@
     align-items: center;
   }
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     padding-top: 0;
     padding-bottom: 56px;
   }
@@ -444,7 +464,7 @@
 
   @include breakpointXl() {
     width: 100%;
-    margin: 0 37px;
+    margin: 0;
   }
 }
 
@@ -609,5 +629,12 @@
 
   @include breakpointXl() {
     display: inline;
+  }
+}
+
+
+.form__field-text--contacts:first-child {
+  @include breakpointXl() {
+    margin-right: 70px;
   }
 }

@@ -26,10 +26,11 @@
   }
 
   @include breakpointXl() {
-    min-height: 250px;
+    min-height: 222px;
     font-size: 18px;
     width: 796px;
     margin: 0 auto;
+    padding-top: 24px;
   }
 }
 
