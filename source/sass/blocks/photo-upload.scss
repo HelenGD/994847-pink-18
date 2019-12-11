@@ -1,6 +1,7 @@
 .photo-upload {
   @include breakpointXl() {
     background-color: $white;
+    padding-bottom: 28px;
   }
 }
 
@@ -15,5 +16,9 @@
 
   @include breakpointMd() {
     font-size: 18px;
+  }
+
+  @include breakpointXl() {
+    padding: 20px 30px 67px 32px;
   }
 }

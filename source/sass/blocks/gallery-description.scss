@@ -18,4 +18,9 @@
     font-size: 18px;
     padding-top: 50px;
   }
+
+  @include breakpointXl() {
+    font-size: 18px;
+    padding-top: 39px;
+  }
 }

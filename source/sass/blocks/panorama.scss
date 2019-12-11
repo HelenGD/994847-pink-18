@@ -5,6 +5,10 @@
 .panorama__photo {
   width: 100%;
   display: block;
+
+  @include breakpointXl() {
+    max-height: 506px;
+  }
 }
 
 .panorama__rubric {
@@ -25,14 +29,14 @@
 
   @include breakpointXl() {
     top: 54px;
-    right: 130px;
+    right: 360px;
   }
 }
 
 .panorama__post-wrapper {
   background-color: $grey-light;
   margin: 0 20px;
-  padding: 25px 17px 26px 17px;
+  padding: 25px 17px 25px 27px;
 
   @include breakpointMd() {
     width: 620px;
@@ -80,6 +84,10 @@
     right: 29px;
     display: flex;
     align-items: center;
+  }
+
+  @include breakpointXl() {
+    right: 13px;
   }
 }
 

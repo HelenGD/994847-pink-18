@@ -9,7 +9,7 @@
   @include breakpointXl() {
     width: 940px;
     margin: auto;
-    padding: 50px 50px 50px 80px;
+    padding: 56px 50px 57px 80px;
   }
 }
 
@@ -36,7 +36,7 @@
   }
 
   @include breakpointXl() {
-    padding-left: 60px;
+    padding-left: 49px;
     width: 75%;
   }
 }
@@ -50,10 +50,6 @@
   @include breakpointMd() {
     flex-direction: column;
     padding: 0 10px 27px 40px;
-  }
-
-  @include breakpointXl() {
-    padding: 0 0 27px 40px;
   }
 }
 
@@ -124,6 +120,15 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  @include breakpointXl() {
+    padding-top: 0;
+    padding-bottom: 12px;
+  }
+}
+
+.photo-editor__tool-container:not(:first-child) {
+  padding-top: 14px;
 }
 
 .photo-editor__buttons {
@@ -281,6 +286,7 @@
 
   @include breakpointXl() {
     width: 183px;
+    margin-bottom: 0;
   }
 }
 
