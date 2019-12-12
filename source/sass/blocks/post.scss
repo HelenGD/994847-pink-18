@@ -3,14 +3,14 @@
   padding: 20px 20px 20px 20px;
 
   @include breakpointMd() {
-    width: 660px;
+    max-width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   @include breakpointXl() {
-    width: 980px;
+    max-width: 980px;
   }
 }
 
@@ -49,6 +49,7 @@
 
   @include breakpointMd() {
     padding: 25px 17px 26px 17px;
+    min-height: 155px;
   }
 }
 
@@ -95,6 +96,8 @@
 
 .post__picture {
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .post__like-btn {
@@ -110,17 +113,5 @@
   @include breakpointMd() {
     order: 1;
     margin-left: 16px;
-  }
-}
-
-.post__action--panorama {
-  margin-top: 20px;
-
-  @include breakpointMd() {
-    position: absolute;
-    top: 6px;
-    right: 29px;
-    display: flex;
-    align-items: center;
   }
 }

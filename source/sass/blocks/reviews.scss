@@ -1,7 +1,12 @@
 .reviews {
   background-color: $white;
-  padding: 49px 22px 50px 22px;
+  padding: 42px 22px 50px 22px;
   text-align: center;
+
+  @include breakpointXl() {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .reviews__author-name {
@@ -14,6 +19,12 @@
   @include breakpointMd() {
     order: 2;
   }
+
+  @include breakpointXl() {
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
 }
 
 .reviews__item {
@@ -22,13 +33,12 @@
   @include breakpointMd() {
     display: flex;
     flex-direction: column;
-    min-height: 346px;
+    min-height: 224px;
   }
 
   @include breakpointXl() {
     display: flex;
     flex-direction: column;
-    min-height: 415px;
   }
 }
 
@@ -37,13 +47,85 @@
   line-height: 30px;
   text-align: center;
   color: $blue-dark;
+  margin: 0;
 
   @include breakpointMd() {
+    font-size: 18px;
     order: 1;
+  }
+
+  @include breakpointXl() {
+    padding: 0 95px;
+    margin: 18px 0;
   }
 }
 
 .reviews__toggles {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+
+  @include breakpointXl() {
+    display: none;
+  }
+}
+
+.reviews__age {
+  display: none;
+
+  @include breakpointMd() {
+    display: block;
+    font-size: $font-size;
+    line-height: 30px;
+    text-align: center;
+    color: $blue-dark;
+    order: 2;
+  }
+
+  @include breakpointXl() {
+    font-size: 18px;
+  }
+}
+
+.reviews__wrapper {
+  @include breakpointXl() {
+    position: relative;
+    padding-top: 167px;
+    padding-bottom: 0;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 80px 63px;
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+  }
+}
+
+.slider__arrow {
+  display: none;
+  color: $blue-rgba;
+
+  @include breakpointXl() {
+    display: block;
+    position: absolute;
+    top: 213px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  &:hover {
+    color: $blue-dark;
+  }
+
+  &:active {
+    color: $blue-rgba-light;
+  }
+}
+
+.slider__arrow--next {
+  @include breakpointXl() {
+    left: auto;
+    right: 0;
+  }
 }

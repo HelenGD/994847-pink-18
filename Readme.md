@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Гонтарева](https://up.htmlacademy.ru/adaptive/18/user/994847).
-* Наставник: [Анастасия Шевченко](https://htmlacademy.ru/profile/id125164).
+* Наставник: [Натали Белоева].
 
 ---
 

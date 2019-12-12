@@ -1,0 +1,47 @@
+.slider {
+  text-align: center;
+}
+
+.slider__toggle {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.slider__toggle-btn {
+  display: inline-flex;
+  width: 6px;
+  height: 6px;
+  background-color: $gray-toggle;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &:hover {
+    background-color: $blue-dark;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle:first-child {
+  margin-left: 22px;
+}
+
+.slider__toggle--active {
+  border-color: $blue-dark;
+}
+
+.slider__toggle--active .slider__toggle-btn {
+  background-color: $white;
+}

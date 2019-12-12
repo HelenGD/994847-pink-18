@@ -1,23 +1,28 @@
 .page-header {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: contain;
+  background-image: url("../img/bg-back-mobile-2@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  background-color: $blue-darkest;
+  background-size: auto 462px;
   border-bottom: 1px solid $gray-darker-border;
 
   @include breakpointMd() {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
+    background-color: $blue-darkest;
+    background-size: auto 729px;
   }
 
   @include breakpointXl() {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: $blue-darkest;
+    background-size: auto 853px;
+    border-bottom: 0;
   }
 }
 
-.page-header__photo,
+.page-header--photo,
 .page-header--form {
-  background-size: auto;
+  //background-size: auto 462px;
 }
 
 .page-header__wrapper {
@@ -27,6 +32,7 @@
   align-items: center;
   border-bottom: 1px solid $gray-darker-border;
   min-height: 66px;
+  height: 1px;
 
 
   @include breakpointMd() {
@@ -97,23 +103,23 @@
   display: none;
 
   @include breakpointXl() {
-    display: initial;
+    display: inline;
   }
 }
 
-.page-header__logo-glasses--desktop {
+.page-header__logo-glasses-desktop {
   display: none;
 
   @include breakpointXl() {
-    display: initial;
+    display: inline;
   }
 }
 
-.page-header__logo-glasses--tablet {
+.page-header__logo-glasses-tablet {
   display: none;
 
   @include breakpointMd() {
-    display: initial;
+    display: inline;
   }
 
   @include breakpointXl() {
@@ -138,19 +144,20 @@
   display: none;
 }
 
-.main-nav--open .page-header__icon-close {
-  display: initial;
+.page-header__container--open .page-header__icon-close {
+  display: inline;
 }
 
-.main-nav--open .page-header__icon-burger {
+.page-header__container--open .page-header__icon-burger {
   display: none;
 }
 
 .page-header__container {
   background-color: transparentize(black, 0.5);
+  position: relative;
 }
 
-.page-header__nav {
+.page-header__toolbar {
   max-width: $desktop-container-width;
   margin: auto;
   flex-grow: 1;
@@ -160,7 +167,6 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
-  position: relative;
 
   @include breakpointXl() {
     display: flex;
@@ -181,9 +187,11 @@
   }
 }
 
-.page-header__container--open .main-nav__wrapper {
+.page-header__container--open .main-nav {
   display: block;
   position: absolute;
+  z-index: 10;
+  left: 0;
   width: 100%;
   background-color: $blue-dark;
 

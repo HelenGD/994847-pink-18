@@ -10,9 +10,43 @@
   font-size: $font-size;
   line-height: 30px;
   text-align: center;
-  padding: 50px 20px 50px 20px;
+  padding: 0 20px 0 20px;
+  min-height: 175px;
+  height: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 
   @include breakpointMd() {
+    font-size: 18px;
+    width: 530px;
+    margin: 0 auto;
+    min-height: 256px;
+  }
+
+  @include breakpointXl() {
     min-height: 250px;
+    font-size: 18px;
+    width: 796px;
+    margin: 0 auto;
+  }
+}
+
+.contest__paragraph {
+  margin: 0;
+}
+
+.contest__add {
+  @include breakpointS() {
+    display: none;
+  }
+
+  @include breakpointMd() {
+    display: inline;
+    background-color: $white;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }

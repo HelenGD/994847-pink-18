@@ -1,0 +1,161 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 10;
+  width: 320px;
+  border-radius: 5px;
+  display: none;
+}
+
+.popup--success {
+  @include breakpointMd() {
+    width: 460px;
+  }
+
+  @include breakpointXl() {
+    width: 780px;
+  }
+}
+
+.popup--error {
+  @include breakpointMd() {
+    width: 460px;
+  }
+
+  @include breakpointXl() {
+    width: 780px;
+  }
+}
+
+.popup__body {
+  padding: 40px 20px 0;
+}
+
+.popup__body--error {
+  @include breakpointMd() {
+    padding: 36px 66px 34px;
+  }
+
+  @include breakpointXl() {
+    padding: 40px 190px 39px;
+  }
+}
+
+.popup__body--success {
+  padding-bottom: 30px;
+
+  @include breakpointMd() {
+    padding: 36px 57px 34px;
+  }
+
+  @include breakpointXl() {
+    padding: 40px 160px 39px;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+  font-weight: bold;
+  text-align: center;
+
+  @include breakpointMd() {
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @include breakpointXl() {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 22px;
+  }
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $blue-dark;
+  text-align: center;
+
+  @include breakpointMd() {
+    font-size: 18px;
+  }
+}
+
+.popup__footer {
+  padding: 38px 20px 50px;
+
+  @include breakpointMd() {
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.popup__footer--success {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: $grey-light;
+
+  @include breakpointXl() {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+.popup__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $green-button;
+  border: 0;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  height: 60px;
+  width: 276px;
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+
+  &:active {
+    color: $green-button-color;
+  }
+
+  &[disabled] {
+    color: $white;
+    background-color: $grey;
+  }
+
+  @include breakpointMd() {
+    width: 296px;
+  }
+}
+
+.popup__footer--error {
+  @include breakpointMd() {
+    padding-top: 48px;
+    padding-bottom: 52px;
+    background-color: $white;
+  }
+
+  @include breakpointXl() {
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: $grey-light;
+  }
+}

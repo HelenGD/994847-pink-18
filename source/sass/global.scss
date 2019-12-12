@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+input,
+textarea {
+  font-size: inherit;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+
+  @include breakpointMd() {
+    width: 100%;
+  }
+
+  @include breakpointXl() {
+    max-width: 100%;
+    background-color: $white;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

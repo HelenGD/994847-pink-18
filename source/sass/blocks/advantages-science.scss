@@ -1,8 +1,8 @@
 .advantages-science {
-  background-color: $white;
-  padding-top: 42px;
+  display: none;
 
   @include breakpointMd() {
+    display: block;
     padding-top: 1px;
     margin: 0 auto;
   }
@@ -23,15 +23,12 @@
   }
 
   @include breakpointXl() {
-    width: 960px;
+    width: $desktop-container-width;
   }
 }
 
 .advantages-science__about {
-  display: none;
-
   @include breakpointMd() {
-    display: block;
     min-height: 415px;
     width: 640px;
     margin: 0 auto;
@@ -39,7 +36,7 @@
 
   @include breakpointXl() {
     display: block;
-    min-height: 415px;
+    min-height: auto;
     width: $desktop-container-width;
     max-width: 100%;
     margin: 0 auto;
@@ -53,42 +50,53 @@
     flex-direction: column;
     position: relative;
     padding-left: 50%;
-    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position: 28px 111px, 12px 55px;
-    background-size: 206px 204px, 242px 277px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
   &::before {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 298px;
+    height: 345px;
     content: "24";
-    font-size: 97px;
+    padding-top: 32px;
+    font-size: 121px;
     font-weight: bold;
-    line-height: 150px;
-    color: $pink;
-    left: 73px;
-    top: 131px;
+    line-height: 1;
+    color: #d22856;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: center 69px, center;
+    left: 0;
+    top: 65px;
   }
 
   @include breakpointXl() {
-    padding-left: 350px;
+    padding-left: 39%;
+    min-height: 477px;
+    justify-content: flex-start;
+    padding-top: 159px;
+    padding-bottom: 0;
+    padding-right: 45px;
   }
 }
 
 .advantages-science__title {
   @include breakpointMd() {
     font-size: 30px;
-    padding-right: 67px;
+    line-height: 36px;
     width: 170px;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   @include breakpointXl() {
-    width: 390px;
-    padding-left: 10px;
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 24px;
   }
 }
 
@@ -101,12 +109,10 @@
   }
 
   @include breakpointXl() {
-    padding-right: 0;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 24px;
-    padding-left: 12px;
-    width: 538px;
+    margin: 0;
+    margin-bottom: 36px;
     font-weight: 400;
   }
 }
@@ -115,14 +121,14 @@
   @include breakpointMd() {
     text-decoration: underline;
     color: $pink;
-    font-size: 14px;
-    padding-left: 5px;
+    font-size: $font-size;
+    line-height: $line-height;
   }
 
   @include breakpointXl() {
     font-size: 18px;
-    line-height: 34px;
-    padding-left: 11px;
+    line-height: 1;
+    text-decoration: none;
   }
 }
 

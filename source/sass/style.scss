@@ -1,7 +1,8 @@
-@import "~normalize.css/normalize.css";
-@import "variables";
-@import "font";
+@import "../../node_modules/normalize.scss/normalize";
 @import "media";
+@import "variables";
+@import "global";
+@import "font";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/layout-container";
@@ -27,45 +28,6 @@
 @import "blocks/photo-editor";
 @import "blocks/contest";
 @import "blocks/form";
-@import "blocks/slider-toggles";
+@import "blocks/slider";
 @import "blocks/panorama";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-input,
-textarea {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-body {
-  background-color: #0e0e0e;
-  max-width: 320px;
-  margin: 0 auto;
-
-  @include breakpointMd() {
-    max-width: 660px;
-  }
-
-  @include breakpointXl() {
-    max-width: 100%;
-    background-color: $white;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "blocks/popup";

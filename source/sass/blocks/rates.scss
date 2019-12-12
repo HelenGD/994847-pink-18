@@ -4,6 +4,18 @@
   padding-left: 20px;
   padding-right: 20px;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include breakpointMd() {
+    padding-bottom: 70px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 171px;
+    padding-bottom: 98px;
+  }
 }
 
 .rates__name {
@@ -15,20 +27,50 @@
   color: $white;
 }
 
-.rates__flag {
-  font-size: 10px;
-  line-height: 21px;
-  text-align: center;
+.rates-table__head-cell {
+  position: relative;
+  overflow: hidden;
+
+  @include breakpointMd() {
+    font-size: 16px;
+  }
+
+  @include breakpointXl() {
+    font-size: 17px;
+  }
+}
+
+.rates-table__hit {
+  position: absolute;
+  height: 29px;
+  width: 200px;
+  background-color: $pink;
+  top: 11px;
+  left: -73px;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   color: $white;
-  background-color: $pink;
-  width: 30px;
+  transform: rotate(-45deg);
+  z-index: 10;
 }
 
 .rates__price {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 300;
   color: $white;
+
+  @include breakpointMd() {
+    font-size: 18px;
+  }
+
+  @include breakpointXl() {
+    font-size: 24px;
+  }
 }
 
 .rates__services {
@@ -47,7 +89,10 @@
 .rates__toggles {
   margin: 0;
   padding: 20px 0;
-  text-align: center;
+
+  @include breakpointMd() {
+    display: none;
+  }
 }
 
 .rates__header-wrapper {
@@ -68,4 +113,72 @@
 .rates__item {
   padding: 0 20px;
   border-bottom: solid 2px $grey;
+}
+
+.rates-table__text {
+  margin: 0;
+  padding-right: 24px;
+
+  @include breakpointMd() {
+    display: none;
+  }
+}
+
+.rates-table__data-cell--yes::before {
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.rates-table__data-cell--no::before {
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-no.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rates-table__data-cell:first-child {
+  @include breakpointMd() {
+    text-transform: none;
+    padding: 0 0 0 15px;
+  }
+
+  @include breakpointXl() {
+    padding: 0 22px;
+    font-size: 18px;
+  }
+}
+
+.rates-table__data-cell {
+  position: relative;
+
+  @include breakpointXl() {
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+.rates-table__data-cell::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include breakpointMd() {
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  @include breakpointXl() {
+    right: 20px;
+    transform: none;
+    position: static;
+    display: inline-flex;
+    vertical-align: middle;
+  }
 }

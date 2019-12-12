@@ -1,4 +1,4 @@
-.panorama {
+.panorama__photo-wrapper {
   position: relative;
 }
 
@@ -43,4 +43,67 @@
   @include breakpointXl() {
     width: 940px;
   }
+}
+
+.panorama__post-author {
+  margin: 0;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: left;
+  color: $blue-dark;
+}
+
+.panorama__post-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: $line-height;
+  color: $blue-dark;
+  text-transform: uppercase;
+}
+
+.panorama__post-text {
+  margin: 0;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $blue-dark;
+}
+
+.panorama__post-action {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  @include breakpointMd() {
+    position: absolute;
+    top: 6px;
+    right: 29px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.panorama__post-like-btn {
+  background-color: $grey-light;
+  border: none;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
+
+  @include breakpointMd() {
+    order: 1;
+    margin-left: 16px;
+  }
+}
+
+.panorama__post-stats {
+  color: $pink;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: $line-height;
+  text-align: left;
+  text-transform: uppercase;
 }
