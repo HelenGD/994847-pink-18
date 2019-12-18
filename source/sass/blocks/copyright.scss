@@ -1,13 +1,16 @@
 .copyright__text {
   font-size: $font-size;
-  line-height: 18px;
+  line-height: 1;
   margin-right: 10px;
 
   @include breakpointMd() {
     padding-right: 14px;
-    font-size: 18px;
-    line-height: 18px;
     margin: 0;
+    margin-bottom: 5px;
+  }
+
+  @include breakpointXl() {
+    font-size: 18px;
     margin-bottom: 12px;
   }
 }

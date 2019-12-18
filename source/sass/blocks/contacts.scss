@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  padding: 10px 25px 23px 25px;
+  padding: 10px 25px 31px 25px;
   text-align: center;
 
   @include breakpointMd() {
@@ -23,12 +23,15 @@
     font-size: 40px;
     max-width: 370px;
     margin: 0 auto;
+    margin-top: 35px;
+    line-height: 49px;
   }
 
   @include breakpointXl() {
     font-size: 50px;
     line-height: 60px;
     max-width: 500px;
+    margin-top: 0;
   }
 }
 
@@ -37,15 +40,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 45px;
+  }
+
+  @include breakpointXl() {
     padding-top: 59px;
   }
 }
 
 .contacts__item {
-  margin-bottom: 28px;
+  margin-bottom: 50px;
+  width: 50%;
+  flex-shrink: 0;
 
   @include breakpointXl() {
     margin: 0;
+    width: 33.33333%;
+    margin-bottom: 28px;
   }
 }
 
@@ -54,12 +65,17 @@
   line-height: 1;
   display: block;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 7px;
+
+  @include breakpointXl() {
+    margin-bottom: 27px;
+  }
 }
 
 .contacts__item-info {
   font-style: normal;
   font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
   text-decoration: none;
   color: $pink;
@@ -78,21 +94,26 @@
 .contacts__item--email {
   @include breakpointXl() {
     order: 3;
+    padding-left: 15px;
   }
 }
 
 .contacts__item--phone {
   @include breakpointXl() {
     order: 1;
+    padding-right: 12px;
   }
 }
 
 .contacts__item--address {
   @include breakpointMd() {
     max-width: 220px;
+    margin-bottom: 0;
   }
 
   @include breakpointXl() {
     order: 2;
+    max-width: none;
+    padding: 0 20px;
   }
 }

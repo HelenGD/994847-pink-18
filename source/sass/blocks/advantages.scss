@@ -2,11 +2,14 @@
   background-color: $white;
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.5;
   text-align: center;
-  padding: 36px 0;
   min-height: 214px;
   height: 1px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 48px;
 
   @include breakpointMd() {
     min-height: 242px;
@@ -18,10 +21,6 @@
     min-height: 314px;
     font-size: 50px;
     line-height: 60px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 
@@ -43,9 +42,9 @@
     display: flex;
     flex-direction: column;
     order: 2;
-    width: 50%;
+    width: 321px;
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
   }
 
   @include breakpointXl() {
@@ -54,16 +53,20 @@
     width: $desktop-container-width;
     max-width: 100%;
     padding: 0;
+    justify-content: space-between;
   }
 }
 
 .advantages__item {
   list-style-type: none;
+  margin-bottom: 34px;
 
   @include breakpointXl() {
     margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
-    padding: 0 31px;
+    padding: 0 30px;
+    width: 300px;
 
     &::before {
       content: "";
@@ -111,12 +114,17 @@
   background-position: 50% 0;
 
   @include breakpointMd() {
-    padding-top: 10px;
     min-height: auto;
     display: flex;
     text-align: left;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 0 10px 0 20px;
+  }
+
+  @include breakpointXl() {
+    padding: 0 25px;
+    padding-top: 10px;
   }
 
   &::after {
@@ -132,10 +140,10 @@
       display: flex;
       order: 1;
       margin-top: 0;
-      min-height: 478px;
+      min-height: 483px;
       background-position: left;
-      background-size: 98%;
-      min-width: 268px;
+      background-size: contain;
+      min-width: 270px;
     }
 
     @include breakpointXl() {
@@ -152,6 +160,7 @@
 
   @include breakpointMd() {
     text-align: left;
+    margin: 0;
   }
 
   @include breakpointXl() {
@@ -164,6 +173,9 @@
 }
 
 .advantages__description {
+  margin: 0;
+  margin-top: 12px;
+
   @include breakpointXl() {
     font-size: 18px;
     line-height: 30px;

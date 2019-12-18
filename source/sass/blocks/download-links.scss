@@ -5,11 +5,13 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding-bottom: 13px;
   }
 
   @include breakpointXl() {
     min-height: 743px;
     margin: 0;
+    padding-bottom: 15px;
   }
 }
 
@@ -43,7 +45,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 50px;
   font-weight: 300;
   text-align: center;
   color: $white;
@@ -61,13 +63,13 @@
     font-weight: 300;
     color: $white;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
 
   @include breakpointXl() {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 52px;
+    margin-bottom: 49px;
     width: 100%;
     padding: 0;
     margin-left: 0;
@@ -78,8 +80,7 @@
 
 .download-links__button {
   font-size: 18px;
-  line-height: 18px;
-  text-align: center;
+  line-height: 1;
   color: $white;
   text-decoration: none;
   border: solid 3px $white;
@@ -95,8 +96,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @include breakpointXl() {
     font-size: 21px;
-    line-height: 1;
   }
 }
 
@@ -116,6 +119,8 @@
   line-height: $line-height;
   color: $white;
   text-align: center;
+  margin: 0;
+  margin-top: 17px;
 
   @include breakpointMd() {
     font-size: 18px;
@@ -128,7 +133,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 30px 20px 10px 20px;
+  padding: 45px 46px 10px 46px;
 
   @include breakpointXl() {
     padding-top: 66px;

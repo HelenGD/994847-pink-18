@@ -11,8 +11,18 @@
 
 .main-nav {
   display: none;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  width: 100%;
 
   @include breakpointXl() {
     display: block;
+    position: static;
+    width: auto;
   }
+}
+
+.main-nav--nojs {
+  position: static;
 }

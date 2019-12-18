@@ -9,11 +9,12 @@
   background-size: 100% auto;
 
   @include breakpointMd() {
-    padding-bottom: 70px;
+    padding-top: 88px;
+    padding-bottom: 71px;
   }
 
   @include breakpointXl() {
-    padding-top: 171px;
+    padding-top: 160px;
     padding-bottom: 98px;
   }
 }
@@ -45,8 +46,8 @@
   height: 29px;
   width: 200px;
   background-color: $pink;
-  top: 11px;
-  left: -73px;
+  top: 5px;
+  left: -80px;
   font-size: 14px;
   line-height: 14px;
   display: flex;
@@ -56,6 +57,11 @@
   color: $white;
   transform: rotate(-45deg);
   z-index: 10;
+
+  @include breakpointXl() {
+    top: 11px;
+    left: -73px;
+  }
 }
 
 .rates__price {

@@ -62,22 +62,40 @@
     width: 298px;
     height: 345px;
     content: "24";
-    padding-top: 32px;
-    font-size: 121px;
     font-weight: bold;
     line-height: 1;
     color: #d22856;
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
     background-repeat: no-repeat;
     background-position: center 69px, center;
-    left: 0;
-    top: 65px;
+
+    @include breakpointMd() {
+      width: 238px;
+      height: 276px;
+      background-size: 202px, 238px;
+      background-position: center 55px, center;
+      left: 11px;
+      top: 58px;
+      padding-top: 26px;
+      font-size: 95px;
+    }
+
+    @include breakpointXl() {
+      width: 298px;
+      height: 345px;
+      background-size: 253px, 298px;
+      background-position: center 69px, center;
+      left: 0;
+      top: 65px;
+      padding-top: 32px;
+      font-size: 121px;
+    }
   }
 
   @include breakpointXl() {
-    padding-left: 39%;
     min-height: 477px;
     justify-content: flex-start;
+    padding-left: 39%;
     padding-top: 159px;
     padding-bottom: 0;
     padding-right: 45px;
@@ -105,7 +123,7 @@
     font-size: $font-size;
     font-weight: lighter;
     line-height: $line-height;
-    margin: 20px 0;
+    margin: 11px 0;
   }
 
   @include breakpointXl() {
