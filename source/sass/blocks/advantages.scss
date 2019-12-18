@@ -3,18 +3,22 @@
   font-weight: 300;
   font-size: 24px;
   text-align: center;
-  min-height: 214px;
+  min-height: 217px;
   height: 1px;
   padding: 0;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  line-height: 48px;
+  justify-content: flex-start;
+  line-height: 30px;
 
   @include breakpointMd() {
+    padding-top: 0;
     min-height: 242px;
     font-size: 40px;
     margin-bottom: 0;
+    line-height: 48px;
+    justify-content: center;
   }
 
   @include breakpointXl() {
@@ -26,7 +30,7 @@
 
 .advantages__slogan {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 
   @include breakpointMd() {
     margin-bottom: 0;
@@ -36,7 +40,7 @@
 .advantages__list {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
+  padding-top: 81px;
 
   @include breakpointMd() {
     display: flex;
@@ -59,11 +63,14 @@
 
 .advantages__item {
   list-style-type: none;
-  margin-bottom: 34px;
+  margin-bottom: 0;
+
+  @include breakpointMd() {
+    margin-bottom: 34px;
+  }
 
   @include breakpointXl() {
     margin-top: 0;
-    margin-bottom: 0;
     text-align: center;
     padding: 0 30px;
     width: 300px;
@@ -91,7 +98,7 @@
 }
 
 .advantages__item:not(:first-child) {
-  margin-top: 40px;
+  margin-top: 31px;
 
   @include breakpointMd() {
     margin-top: 0;
@@ -132,7 +139,7 @@
     display: block;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
     background-position: top center;
-    height: 270px;
+    height: 278px;
     margin-top: 40px;
 
     @include breakpointMd() {
@@ -141,6 +148,7 @@
       order: 1;
       margin-top: 0;
       min-height: 483px;
+      height: 270px;
       background-position: left;
       background-size: contain;
       min-width: 270px;
@@ -157,10 +165,10 @@
   font-size: 18px;
   line-height: $line-height;
   text-align: center;
+  margin: 0;
 
   @include breakpointMd() {
     text-align: left;
-    margin: 0;
   }
 
   @include breakpointXl() {

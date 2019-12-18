@@ -1,8 +1,9 @@
 .rates {
   background-color: $gray;
-  padding-top: 70px;
+  padding-top: 91px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 44px;
   overflow: hidden;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -46,7 +47,7 @@
   height: 29px;
   width: 200px;
   background-color: $pink;
-  top: 5px;
+  top: 14px;
   left: -80px;
   font-size: 14px;
   line-height: 14px;
@@ -57,6 +58,11 @@
   color: $white;
   transform: rotate(-45deg);
   z-index: 10;
+
+  @include breakpointMd() {
+    top: 5px;
+    left: -80px;
+  }
 
   @include breakpointXl() {
     top: 11px;
@@ -94,7 +100,8 @@
 
 .rates__toggles {
   margin: 0;
-  padding: 20px 0;
+  margin-top: 34px;
+  padding: 0;
 
   @include breakpointMd() {
     display: none;

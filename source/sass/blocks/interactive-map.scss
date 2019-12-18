@@ -22,6 +22,7 @@
   width: 100%;
   display: block;
   border: none;
+  height: 196px;
 
   @include breakpointMd() {
     min-height: 373px;

@@ -1,6 +1,6 @@
 .reviews {
   background-color: $white;
-  padding: 42px 22px 50px 22px;
+  padding: 42px 22px 39px 22px;
   text-align: center;
 
   @include breakpointMd() {
@@ -56,8 +56,10 @@
   text-align: center;
   color: $blue-dark;
   margin: 0;
+  margin-top: 13px;
 
   @include breakpointMd() {
+    margin-top: 0;
     font-size: 18px;
     order: 1;
   }
@@ -70,10 +72,11 @@
 
 .reviews__toggles {
   margin: 0;
-  padding: 20px 0;
+  margin-top: 27px;
+  padding: 0;
 
   @include breakpointMd() {
-    padding: 0;
+    margin-top: 0;
   }
 
   @include breakpointXl() {

@@ -1,10 +1,11 @@
 .contacts {
   background-color: $white;
-  padding: 10px 25px 31px 25px;
+  padding: 10px 25px 17px 25px;
   text-align: center;
 
   @include breakpointMd() {
     min-height: 400px;
+    padding-bottom: 31px;
   }
 
   @include breakpointXl() {
@@ -16,14 +17,17 @@
 .contacts-lead {
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 29px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 36px;
   color: $blue-dark;
 
   @include breakpointMd() {
     font-size: 40px;
     max-width: 370px;
-    margin: 0 auto;
     margin-top: 35px;
+    margin-bottom: 0;
     line-height: 49px;
   }
 
@@ -49,9 +53,14 @@
 }
 
 .contacts__item {
-  margin-bottom: 50px;
-  width: 50%;
+  margin-bottom: 23px;
+  width: 100%;
   flex-shrink: 0;
+
+  @include breakpointMd() {
+    width: 50%;
+    margin-bottom: 50px;
+  }
 
   @include breakpointXl() {
     margin: 0;

@@ -86,17 +86,17 @@
       background-size: 253px, 298px;
       background-position: center 69px, center;
       left: 0;
-      top: 65px;
+      top: 31px;
       padding-top: 32px;
       font-size: 121px;
     }
   }
 
   @include breakpointXl() {
-    min-height: 477px;
+    min-height: 444px;
     justify-content: flex-start;
     padding-left: 39%;
-    padding-top: 159px;
+    padding-top: 125px;
     padding-bottom: 0;
     padding-right: 45px;
   }
