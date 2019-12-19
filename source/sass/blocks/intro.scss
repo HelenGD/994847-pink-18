@@ -1,6 +1,5 @@
 .intro__title {
   font-size: 24px;
-  line-height: 1.3;
   font-weight: 300;
   text-align: center;
   color: $white;
@@ -10,6 +9,12 @@
 
   @include breakpointMd() {
     font-size: 50px;
+    line-height: 58px;
+    padding-top: 71px;
+  }
+
+  @include breakpointXl() {
+    line-height: 65px;
     padding-top: 59px;
   }
 }
@@ -22,6 +27,10 @@
 
 .intro {
   @include breakpointMd() {
+    min-height: 328px;
+  }
+
+  @include breakpointXl() {
     min-height: 283px;
   }
 }

@@ -4,6 +4,7 @@
 
   @include breakpointMd() {
     min-height: 448px;
+    padding-bottom: 54px;
   }
 
   @include breakpointXl() {
@@ -15,6 +16,14 @@
 
 .photo-editor__image {
   margin: 0;
+
+  @include breakpointMd() {
+    padding-top: 37px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 0;
+  }
 }
 
 .photo-editor__image-road {
@@ -49,6 +58,10 @@
 
   @include breakpointMd() {
     flex-direction: column;
+    padding: 20px 0 27px 35px;
+  }
+
+  @include breakpointXl() {
     padding: 0 10px 27px 40px;
   }
 }
@@ -94,10 +107,10 @@
   @include breakpointMd() {
     display: flex;
     align-items: center;
-    padding-right: 18px;
+    padding-right: 0;
   }
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     padding-right: 18px;
   }
 }
@@ -116,14 +129,15 @@
 
   @include breakpointMd() {
     border-bottom: 1px solid $gray-rgba;
-    padding-right: 30px;
+    padding-right: 18px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 
   @include breakpointXl() {
     padding-top: 0;
     padding-bottom: 12px;
+    padding-right: 30px;
   }
 }
 
@@ -151,14 +165,17 @@
 
   @include breakpointMd() {
     margin-top: 0;
-    padding-left: 40px;
+    padding-left: 37px;
     padding-top: 38px;
+    padding-right: 13px;
   }
 
   @include breakpointXl() {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 0;
   }
 }
 
@@ -282,6 +299,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @include breakpointMd() {
+    margin-bottom: 24px;
   }
 
   @include breakpointXl() {

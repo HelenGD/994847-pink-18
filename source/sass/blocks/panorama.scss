@@ -6,16 +6,41 @@
   width: 100%;
   display: block;
 
+  @include breakpointMd() {
+    height: 509px;
+  }
+
   @include breakpointXl() {
+    height: auto;
     max-height: 506px;
   }
 }
 
-.panorama__rubric {
+.panorama__rubric-wrapper {
   position: absolute;
-  right: 20px;
-  top: 0;
-  padding: 7px 23px 6px;
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+
+  @include breakpointMd() {
+    width: 620px;
+    top: 57px;
+  }
+
+  @include breakpointXl() {
+    width: 940px;
+    top: 55px;
+  }
+}
+
+.panorama__rubric {
+  display: inline-flex;
+  padding: 0 22px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
@@ -81,7 +106,7 @@
   @include breakpointMd() {
     position: absolute;
     top: 6px;
-    right: 29px;
+    right: 10px;
     display: flex;
     align-items: center;
   }

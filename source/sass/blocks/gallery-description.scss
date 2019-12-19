@@ -1,26 +1,26 @@
 .gallery-description {
-  padding: 54px 0 0 0;
+  padding-top: 54px;
   min-height: 228px;
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     min-height: 240px;
   }
 }
 
 .gallery-description__lead {
-  margin: 0;
   font-size: $font-size;
   line-height: 30px;
   text-align: center;
   color: $blue-dark;
+  margin: 0 auto;
 
   @include breakpointMd() {
     font-size: 18px;
-    padding-top: 50px;
+    padding-top: 39px;
+    max-width: 500px;
   }
 
   @include breakpointXl() {
-    font-size: 18px;
-    padding-top: 39px;
+    max-width: 600px;
   }
 }

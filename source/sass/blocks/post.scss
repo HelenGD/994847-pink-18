@@ -29,6 +29,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 17px;
+  }
+
+  @include breakpointXl() {
+    margin-bottom: 20px;
   }
 }
 
@@ -96,10 +101,6 @@
   @include breakpointMd() {
     justify-content: space-between;
     margin-top: auto;
-    padding-top: 20px;
-  }
-
-  @include breakpointXl() {
     padding-top: 12px;
   }
 }

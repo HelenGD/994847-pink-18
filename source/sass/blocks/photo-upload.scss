@@ -16,6 +16,7 @@
 
   @include breakpointMd() {
     font-size: 18px;
+    padding: 26px 30px 69px 32px;
   }
 
   @include breakpointXl() {
