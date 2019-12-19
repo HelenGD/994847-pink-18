@@ -20,6 +20,8 @@
   position: absolute;
   max-width: 100%;
   left: 50%;
+  top: 0;
+  width: 280px;
   transform: translateX(-50%);
   display: flex;
   justify-content: flex-end;
@@ -61,12 +63,13 @@
 .panorama__post-wrapper {
   background-color: $grey-light;
   margin: 0 20px;
-  padding: 25px 17px 25px 27px;
+  padding: 18px 0 20px 18px;
 
   @include breakpointMd() {
     width: 620px;
     margin: 0 auto;
     position: relative;
+    padding: 25px 17px 25px 27px;
   }
 
   @include breakpointXl() {
@@ -101,9 +104,10 @@
 .panorama__post-action {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 9px;
 
   @include breakpointMd() {
+    margin-top: 20px;
     position: absolute;
     top: 6px;
     right: 10px;

@@ -1,12 +1,13 @@
 .post {
   margin: 0 auto;
-  padding: 46px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 
   @include breakpointMd() {
     max-width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 46px 20px 20px 20px;
   }
 
   @include breakpointXl() {
@@ -21,7 +22,7 @@
 
 .post__item {
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background-color: $grey-light;
 
   @include breakpointMd() {
@@ -53,7 +54,7 @@
 }
 
 .post__wrapper {
-  padding: 25px 17px 22px 17px;
+  padding: 18px 17px 22px 17px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -119,10 +120,11 @@
   background-position: top center;
   width: 13px;
   height: 12px;
-  margin-right: 14px;
+  margin-right: 20px;
 
   @include breakpointMd() {
     order: 1;
     margin-left: 16px;
+    margin-right: 14px;
   }
 }

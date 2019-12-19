@@ -2,7 +2,7 @@
   max-width: $desktop-container-width;
   margin: auto;
   background-color: $white;
-  padding: 40px 0;
+  padding: 23px 0;
   text-align: center;
   color: $blue-dark;
 
@@ -62,8 +62,8 @@
 }
 
 .page-footer__social {
-  margin-top: 43px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 37px;
 
   @include breakpointMd() {
     margin: 0;
@@ -94,9 +94,15 @@
 }
 
 .page-footer__wrapper {
-  width: 33.33333%;
   flex-shrink: 0;
-  text-align: left;
+  text-align: center;
+  margin-top: 14px;
+
+  @include breakpointMd() {
+    margin-top: 0;
+    text-align: left;
+    width: 33.33333%;
+  }
 
   @include breakpointXl() {
     padding-bottom: 11px;

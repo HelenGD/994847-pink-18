@@ -1,6 +1,13 @@
 .gallery-description {
-  padding-top: 54px;
-  min-height: 228px;
+  padding: 0 35px;
+  padding-top: 45px;
+  min-height: 184px;
+
+  @include breakpointMd() {
+    padding: 0;
+    padding-top: 54px;
+    min-height: 228px;
+  }
 
   @include breakpointXl() {
     min-height: 240px;

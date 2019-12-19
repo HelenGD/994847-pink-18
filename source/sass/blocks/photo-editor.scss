@@ -54,7 +54,8 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 42px 0;
+  padding: 42px 17px;
+  padding-bottom: 34px;
 
   @include breakpointMd() {
     flex-direction: column;
@@ -88,6 +89,7 @@
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     @include breakpointMd() {
       margin-right: 30px;
@@ -142,11 +144,13 @@
 }
 
 .photo-editor__tool-container:not(:first-child) {
-  padding-top: 14px;
+  @include breakpointMd() {
+    padding-top: 14px;
+  }
 }
 
 .photo-editor__buttons {
-  margin-top: 38px;
+  margin-top: 35px;
   padding-top: 38px;
   position: relative;
 
@@ -252,6 +256,7 @@
 
 .photo-editor__tool--contrast::before {
   background-image: url("../img/icon-editor-contrast.svg");
+  background-size: 33px;
 
   @include breakpointMd() {
     background-image: url("../img/icon-editor-contrast2.svg");
@@ -333,9 +338,9 @@
 }
 
 .photo-editor__range {
-  width: 100%;
   border-bottom: 2px solid $blue-dark;
   position: relative;
+  margin: 0 20px;
 
   &::before {
     content: "";
@@ -348,5 +353,9 @@
     border: 2px solid $pink;
     background: $white;
     border-radius: 50%;
+  }
+
+  @include breakpointMd() {
+    margin: 0;
   }
 }
