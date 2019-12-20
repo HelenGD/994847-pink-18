@@ -55,7 +55,7 @@
 
   @include breakpointMd() {
     position: static;
-    transform: unset;
+    transform: none;
     width: 230px;
     display: block;
     font-size: 40px;

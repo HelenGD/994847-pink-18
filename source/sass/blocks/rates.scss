@@ -179,12 +179,11 @@
   content: "";
   position: absolute;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
 
   @include breakpointMd() {
     right: 50%;
     transform: translate(50%, -50%);
+    top: auto;
   }
 
   @include breakpointXl() {
