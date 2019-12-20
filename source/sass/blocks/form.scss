@@ -43,9 +43,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 37px;
     padding: 0;
-    margin-top: 17px;
+    padding-right: 35px;
+    margin-top: 16px;
     margin-bottom: 0;
   }
 }
@@ -71,7 +71,7 @@
   color: $blue-dark;
   width: 100%;
   padding-left: 24px;
-  height: 60px;
+  height: 62px;
   border: solid 2px $grey;
 
   &::placeholder {
@@ -108,7 +108,8 @@
     order: 4;
     display: flex;
     flex-direction: column;
-    padding: 34px 60px;
+    padding: 30px 57px 32px;
+    margin-bottom: 65px;
   }
 }
 
@@ -155,6 +156,10 @@
 
   @include breakpointXl() {
     order: 3;
+    padding: 0 56px;
+    padding-top: 42px;
+    padding-bottom: 13px;
+    margin-bottom: 65px;
   }
 }
 
@@ -184,7 +189,9 @@
     width: calc(50% - 37px);
     background-color: $white;
     margin-left: 37px;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 64px;
+    padding: 54px 60px;
   }
 }
 
@@ -203,7 +210,8 @@
   @include breakpointXl() {
     order: 5;
     flex-direction: column;
-    padding: 45px 60px;
+    padding: 42px 56px 43px;
+    margin-bottom: 66px
   }
 }
 
@@ -217,7 +225,7 @@
   text-align: left;
   color: $blue-dark;
   width: 100%;
-  padding: 24px 20px;
+  padding: 15px 19px;
   margin: 0;
   border-color: $grey;
   display: block;
@@ -236,7 +244,7 @@
   }
 
   @include breakpointXl() {
-    height: 124px;
+    height: 128px;
   }
 }
 
@@ -297,8 +305,7 @@
     background-size: 22px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 35px;
-
+    margin-right: 21px;
   }
 }
 
@@ -404,7 +411,7 @@
   border: 0;
   margin: 0;
   padding: 10px 0;
-  height: 60px;
+  height: 62px;
   border-radius: 4px;
 
   &:hover {
@@ -425,7 +432,7 @@
   }
 
   @include breakpointXl() {
-    width: 296px;
+    width: 300px;
   }
 }
 
@@ -444,7 +451,7 @@
 
   @include breakpointXl() {
     padding-top: 0;
-    padding-bottom: 56px;
+    padding-bottom: 54px;
   }
 
   &:first-child {
@@ -480,6 +487,11 @@
   @include breakpointMd() {
     order: 2;
     padding-left: 24px;
+  }
+
+  @include breakpointXl() {
+    padding-left: 19px;
+    padding-top: 11px;
   }
 }
 
@@ -591,36 +603,42 @@
 .form__field-checkbox--one {
   @include breakpointXl() {
     order: 1;
+    width: 315px;
   }
 }
 
 .form__field-checkbox--three {
   @include breakpointXl() {
     order: 2;
+    width: 295px;
   }
 }
 
 .form__field-checkbox--five {
   @include breakpointXl() {
     order: 3;
+    width: auto;
   }
 }
 
 .form__field-checkbox--two {
   @include breakpointXl() {
     order: 4;
+    width: 315px;
   }
 }
 
 .form__field-checkbox--four {
   @include breakpointXl() {
     order: 5;
+    width: 295px;
   }
 }
 
 .form__field-checkbox--six {
   @include breakpointXl() {
     order: 6;
+    width: auto;
   }
 }
 
