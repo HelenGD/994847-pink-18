@@ -34,7 +34,7 @@
   @include breakpointMd() {
     order: 1;
     padding-bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   @include breakpointXl() {
@@ -60,6 +60,10 @@
 
   @include breakpointMd() {
     padding-left: 0;
+    margin-right: 18px;
+  }
+
+  @include breakpointXl() {
     margin-right: 20px;
   }
 }
@@ -86,7 +90,13 @@
     border-color: $pink;
   }
 
+  @include breakpointMd() {
+    height: 63px;
+    padding-left: 18px;
+  }
+
   @include breakpointXl() {
+    height: 62px;
     padding-left: 19px;
   }
 }
@@ -100,8 +110,8 @@
     order: 4;
     width: 100%;
     background-color: transparent;
-    padding: 54px 60px;
-    margin-bottom: 70px;
+    padding: 54px 60px 48px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
@@ -132,7 +142,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    padding: 0 30px;
+    padding: 0 38px;
   }
 }
 
@@ -150,8 +160,8 @@
   @include breakpointMd() {
     order: 3;
     width: 100%;
-    padding: 45px 60px;
-    margin-bottom: 70px;
+    padding: 45px 58px 26px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
@@ -180,8 +190,8 @@
     order: 2;
     background-color: transparent;
     width: 100%;
-    padding: 53px 60px;
-    margin-bottom: 70px;
+    padding: 49px 45px 53px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
@@ -203,15 +213,15 @@
   @include breakpointMd() {
     order: 5;
     width: 100%;
-    padding: 53px 60px;
-    margin-bottom: 70px;
+    padding: 45px 58px 51px;
+    margin-bottom: 67px;
   }
 
   @include breakpointXl() {
     order: 5;
     flex-direction: column;
     padding: 42px 56px 43px;
-    margin-bottom: 66px
+    margin-bottom: 66px;
   }
 }
 
@@ -243,6 +253,10 @@
     color: $blue-dark;
   }
 
+  @include breakpointMd() {
+    height: 193px;
+  }
+
   @include breakpointXl() {
     height: 128px;
   }
@@ -262,6 +276,7 @@
   @include breakpointMd() {
     order: 6;
     justify-content: space-between;
+    padding-bottom: 50px;
   }
 
   @include breakpointXl() {
@@ -323,6 +338,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include breakpointMd() {
+    margin-bottom: 35px;
   }
 
   @include breakpointXl() {
@@ -428,11 +447,13 @@
   }
 
   @include breakpointMd() {
-    width: 50%;
+    width: 300px;
+    height: 63px;
   }
 
   @include breakpointXl() {
     width: 300px;
+    height: 62px;
   }
 }
 
@@ -447,6 +468,7 @@
   @include breakpointMd() {
     display: flex;
     align-items: center;
+    padding-bottom: 52px;
   }
 
   @include breakpointXl() {
@@ -476,7 +498,7 @@
 }
 
 .form__field-text--contacts:first-child {
-  padding-bottom: 28px;
+  padding-bottom: 29px;
 
   @include breakpointXl() {
     padding-bottom: 0;
@@ -486,7 +508,8 @@
 .form__text-label--contacts {
   @include breakpointMd() {
     order: 2;
-    padding-left: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
   }
 
   @include breakpointXl() {
@@ -566,6 +589,10 @@
   margin-bottom: 47px;
   font-size: 18px;
   line-height: 1;
+
+  @include breakpointMd() {
+    margin-bottom: 45px;
+  }
 
   @include breakpointXl() {
     width: 33.33333%;

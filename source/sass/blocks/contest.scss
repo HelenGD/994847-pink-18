@@ -22,7 +22,8 @@
     font-size: 18px;
     width: 530px;
     margin: 0 auto;
-    min-height: 256px;
+    min-height: 253px;
+    padding: 20px 0 0;
   }
 
   @include breakpointXl() {
