@@ -1,5 +1,29 @@
 .interactive-map {
   position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include retina() {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+
+  @include breakpointMd() {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @include retina() {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  @include breakpointXl() {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @include retina() {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
 }
 
 .interactive-map::before {
