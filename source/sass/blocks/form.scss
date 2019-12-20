@@ -520,6 +520,7 @@
 
   @include breakpointXl() {
     padding-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -692,12 +693,5 @@
 
   @include breakpointXl() {
     display: inline;
-  }
-}
-
-
-.form__field-text--contacts:first-child {
-  @include breakpointXl() {
-    margin-right: 70px;
   }
 }
