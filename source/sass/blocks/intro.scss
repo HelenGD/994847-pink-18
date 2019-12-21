@@ -20,6 +20,19 @@
   }
 }
 
+.intro__title--photo {
+  padding: 29px 20px 82px;
+
+  @include breakpointMd() {
+    padding: 69px 20px 82px;
+    line-height: 60px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 63px;
+  }
+}
+
 .intro__title--form {
   @include breakpointMd() {
     max-width: 800px;

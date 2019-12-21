@@ -1,17 +1,18 @@
 .post {
   margin: 0 auto;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 24px 20px;
 
   @include breakpointMd() {
     max-width: 660px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 46px 20px 20px 20px;
+    padding: 50px 20px 45px;
   }
 
   @include breakpointXl() {
     max-width: 980px;
+    padding: 51px 20px 6px 20px;
   }
 }
 
@@ -22,7 +23,7 @@
 
 .post__item {
   list-style-type: none;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   background-color: $grey-light;
 
   @include breakpointMd() {
@@ -30,17 +31,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 17px;
-  }
-
-  @include breakpointXl() {
     margin-bottom: 20px;
   }
-}
 
-.post__item:nth-child(-n+3) {
   @include breakpointXl() {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -54,14 +49,18 @@
 }
 
 .post__wrapper {
-  padding: 18px 17px 22px 17px;
+  padding: 18px 17px 18px 17px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 
   @include breakpointMd() {
-    padding: 25px 17px 26px 27px;
+    padding: 24px 17px 21px 27px;
     min-height: 155px;
+  }
+
+  @include breakpointXl() {
+    padding: 23px 17px 21px 27px;
   }
 }
 

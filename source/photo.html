@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
-
+<body>
 <header class="page-header page-header--photo">
   <div class="page-header__container page-header__container--open">
     <div class="page-header__toolbar">
@@ -63,7 +64,7 @@
   </div>
 
   <section class="intro download-background download-background--form">
-    <h2 class="intro__title">
+    <h2 class="intro__title intro__title--photo">
       Фотографии пользователей
     </h2>
   </section>
@@ -289,7 +290,7 @@
           <div class="photo-editor__tools-list">
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--crop"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--crop">
                 <input class="photo-editor__range-input" type="range" id="range-crop" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-crop">Диапазон</label>
               </span>
@@ -297,7 +298,7 @@
 
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--color"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--color">
                 <input class="photo-editor__range-input" type="range" id="range-color" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-color">Диапазон</label>
               </span>
@@ -305,7 +306,7 @@
 
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--contrast"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--contrast">
                 <input class="photo-editor__range-input" type="range" id="range-contrast" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-contrast">Диапазон</label>
               </span>
@@ -368,6 +369,7 @@
     </a>
   </div>
 </footer>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015"></script>
 <script src="js/navigation.js"></script>
 </body>
 </html>

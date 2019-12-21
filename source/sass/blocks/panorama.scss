@@ -26,6 +26,10 @@
   display: flex;
   justify-content: flex-end;
 
+  @include breakpointMd() {
+    top: 57px;
+  }
+
   @include breakpointXl() {
     width: 940px;
     top: 55px;
@@ -67,7 +71,7 @@
     width: 620px;
     margin: 0 auto;
     position: relative;
-    padding: 25px 17px 25px 27px;
+    padding: 25px 17px 23px 27px;
   }
 
   @include breakpointXl() {

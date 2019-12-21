@@ -84,8 +84,8 @@
   &::before {
     flex-shrink: 0;
     content: "";
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center;
@@ -178,8 +178,8 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 0;
+    padding-left: 41px;
+    padding-right: 10px;
   }
 }
 
@@ -257,10 +257,12 @@
 .photo-editor__tool--contrast::before {
   background-image: url("../img/icon-editor-contrast.svg");
   background-size: 33px;
+  background-position: 3px 5px;
 
   @include breakpointMd() {
     background-image: url("../img/icon-editor-contrast2.svg");
     background-size: 16px;
+    background-position: center;
   }
 
   @include breakpointXl() {
@@ -359,4 +361,16 @@
     margin: 0;
     width: 100%;
   }
+}
+
+.photo-editor__range--crop::before {
+  left: 26%;
+}
+
+.photo-editor__range--color::before {
+  left: 88%;
+}
+
+.photo-editor__range--contrast::before {
+  left: 58%;
 }

@@ -11,15 +11,15 @@
   line-height: 30px;
   text-align: center;
   color: $blue-dark;
-  padding: 10px 30px 41px 32px;
+  padding: 0 0 41px;
   margin: 0;
 
   @include breakpointMd() {
     font-size: 18px;
-    padding: 26px 30px 69px 32px;
+    padding: 0 30px 69px 32px;
   }
 
   @include breakpointXl() {
-    padding: 20px 30px 67px 32px;
+    padding: 0 30px 67px 32px;
   }
 }
