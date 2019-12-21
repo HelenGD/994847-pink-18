@@ -2,12 +2,12 @@
   background-repeat: no-repeat;
   max-width: 1200px;
   margin: 0 auto;
-  height: 1px;
 
   @include breakpointMd() {
     display: flex;
     justify-content: center;
     min-height: 330px;
+    height: 1px;
   }
 }
 

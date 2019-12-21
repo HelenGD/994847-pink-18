@@ -5,6 +5,7 @@
 .panorama__photo {
   width: 100%;
   display: block;
+  object-fit: cover;
 
   @include breakpointMd() {
     height: 509px;
@@ -19,21 +20,18 @@
 .panorama__rubric-wrapper {
   position: absolute;
   max-width: 100%;
-  left: 50%;
+  left: 20px;
+  right: 20px;
   top: 0;
-  width: 280px;
-  transform: translateX(-50%);
   display: flex;
   justify-content: flex-end;
-
-  @include breakpointMd() {
-    width: 620px;
-    top: 57px;
-  }
 
   @include breakpointXl() {
     width: 940px;
     top: 55px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
 }
 

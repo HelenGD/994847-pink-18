@@ -3,7 +3,7 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $blue-darkest;
-  background-size: auto 100%;
+  background-size: 100% auto;
   border-bottom: 1px solid $gray-darker-border;
 
   @include retina() {
@@ -13,7 +13,6 @@
   @include breakpointMd() {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-color: $blue-darkest;
-    //background-size: auto 729px;
 
     @include retina() {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -32,9 +31,8 @@
   }
 }
 
-.page-header--photo,
-.page-header--form {
-  //background-size: auto 462px;
+.page-header--home {
+  background-size: auto 100%;
 }
 
 .page-header__wrapper {
