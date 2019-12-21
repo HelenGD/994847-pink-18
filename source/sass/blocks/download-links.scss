@@ -16,16 +16,16 @@
 }
 
 .download-links__container {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
-  text-align: center;
+  background-color: $blue-darkest;
+  padding: 29px 20px;
+
+  @include breakpointMd() {
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .download-links__wrapper {
-  background-color: $blue-darkest;
-  padding: 27px 20px 29px 19px;
-
   @include breakpointMd() {
     background-color: transparent;
     width: 300px;
@@ -40,18 +40,13 @@
 }
 
 .download-links__title {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
   color: $white;
   width: 256px;
-  z-index: 1;
-  margin: 0;
+  margin: 22px auto 28px;
 
   @include breakpointMd() {
     position: static;
@@ -59,12 +54,11 @@
     width: 230px;
     display: block;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     text-align: center;
     font-weight: 300;
     color: $white;
-    margin: auto;
-    margin-bottom: 28px;
+    margin: 5px auto 31px;
   }
 
   @include breakpointXl() {
@@ -79,8 +73,28 @@
   }
 }
 
+.download-links__hand {
+  display: flex;
+  width: 320px;
+  height: 286px;
+  margin: auto;
+  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url(../img/iphone-hand-mobile@2x.png);
+  }
+
+  @include breakpointMd() {
+    display: none;
+  }
+}
+
 .download-links__button {
   font-size: 18px;
+  font-weight: bold;
   line-height: 1;
   color: $white;
   text-decoration: none;
@@ -124,6 +138,7 @@
   margin-top: 17px;
 
   @include breakpointMd() {
+    margin-top: 22px;
     font-size: 18px;
   }
 }

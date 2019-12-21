@@ -4,6 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 
   @include retina() {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -32,13 +33,22 @@
   top: 0;
   right: 50%;
   transform: translateX(50%);
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  background-image: url("../img/bg-triangle-white-footer.svg");
+  width: 320px;
+  height: 32px;
+  background-image: url(../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center -1px;
+  background-size: 100% 100%;
+  background-position: 50% 0;
+
+  @include breakpointMd() {
+    width: 660px;
+    height: 67px;
+  }
+
+  @include breakpointXl() {
+    width: 1430px;
+    height: 123px;
+  }
 }
 
 .interactive-map__frame {

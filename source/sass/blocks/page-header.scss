@@ -7,7 +7,7 @@
   border-bottom: 1px solid $gray-darker-border;
 
   @include retina() {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile-2@2x.jpg");
   }
 
   @include breakpointMd() {
@@ -22,7 +22,6 @@
   @include breakpointXl() {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-color: $blue-darkest;
-    //background-size: auto 853px;
     border-bottom: 0;
 
     @include retina() {
