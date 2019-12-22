@@ -69,26 +69,6 @@
   }
 }
 
-.contacts__item--phone {
-  @include breakpointMd() {
-    padding-right: 16px;
-  }
-
-  @include breakpointXl() {
-    padding-right: 0;
-  }
-}
-
-.contacts__item--email {
-  @include breakpointMd() {
-    padding-left: 15px;
-  }
-
-  @include breakpointXl() {
-    padding-right: 0;
-  }
-}
-
 .contacts__item-lead {
   font-size: 18px;
   line-height: 1;
@@ -121,13 +101,22 @@
 }
 
 .contacts__item--email {
+  @include breakpointMd() {
+    padding-left: 15px;
+  }
+
   @include breakpointXl() {
     order: 3;
     padding-left: 15px;
+    padding-right: 0;
   }
 }
 
 .contacts__item--phone {
+  @include breakpointMd() {
+    padding-right: 16px;
+  }
+
   @include breakpointXl() {
     order: 1;
     padding-right: 12px;

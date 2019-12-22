@@ -78,13 +78,13 @@
   width: 320px;
   height: 286px;
   margin: auto;
-  background-image: url(../img/iphone-hand-mobile@1x.png);
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: contain;
   background-position: left bottom;
   background-repeat: no-repeat;
 
   @include retina() {
-    background-image: url(../img/iphone-hand-mobile@2x.png);
+    background-image: url("../img/iphone-hand-mobile@2x.png");
   }
 
   @include breakpointMd() {
