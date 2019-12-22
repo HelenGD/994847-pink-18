@@ -54,8 +54,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 42px 17px;
-  padding-bottom: 34px;
+  padding: 42px 17px 30px;
 
   @include breakpointMd() {
     flex-direction: column;
@@ -348,7 +347,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 82%;
     transform: translate(-50%, -50%);
     height: 14px;
     width: 14px;
@@ -364,13 +363,25 @@
 }
 
 .photo-editor__range--crop::before {
-  left: 26%;
+  left: 75%;
+
+  @include breakpointXl() {
+    left: 26%;
+  }
 }
 
 .photo-editor__range--color::before {
-  left: 88%;
+  left: 15%;
+
+  @include breakpointXl() {
+    left: 88%;
+  }
 }
 
 .photo-editor__range--contrast::before {
-  left: 58%;
+  left: 51%;
+
+  @include breakpointXl() {
+    left: 58%;
+  }
 }
