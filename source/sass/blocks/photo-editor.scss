@@ -67,12 +67,19 @@
 }
 
 .photo-editor__tool {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
   list-style-type: none;
   min-height: 44px;
   padding: 0;
   margin: 0;
   border: 0;
   background: transparent;
+  margin-right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:first-child {
     @include breakpointMd() {
@@ -81,11 +88,12 @@
   }
 
   &::before {
+    display: none;
     flex-shrink: 0;
     content: "";
     width: 48px;
     height: 48px;
-    display: inline-flex;
+    //display: inline-flex;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -112,8 +120,25 @@
   }
 
   @include breakpointXl() {
-    padding-right: 18px;
+    //padding-right: 18px;
   }
+}
+
+.photo-editor__tool-icon {
+  color: $pink;
+}
+
+.photo-editor__tool:hover {
+  opacity: 0.5;
+}
+
+.photo-editor__tool:hover .photo-editor__tool-icon {
+  color: $blue-dark;
+}
+
+.photo-editor__tool-icon--contrast {
+  width: 32px;
+  height: 32px;
 }
 
 .photo-editor__tools-list .photo-editor__range {
@@ -139,6 +164,7 @@
     padding-top: 0;
     padding-bottom: 12px;
     padding-right: 30px;
+    margin-top: -4px;
   }
 }
 
