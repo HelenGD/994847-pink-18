@@ -19,39 +19,31 @@
 
 .panorama__rubric {
   position: absolute;
-  max-width: 100%;
-  left: 20px;
   right: 20px;
   top: 0;
-  display: flex;
-  justify-content: flex-end;
 
   @include breakpointMd() {
+    right: 50%;
+    margin-right: -310px;
     top: 57px;
   }
 
   @include breakpointXl() {
-    width: 940px;
     top: 55px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
+    margin-right: -470px;
   }
 
-  &::before {
-    content: "Панорама дня";
-    display: inline-flex;
-    padding: 0 22px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white;
-    background-color: $pink;
-  }
+  display: inline-flex;
+  padding: 0 22px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $pink;
 }
 
 .panorama__post-wrapper {
