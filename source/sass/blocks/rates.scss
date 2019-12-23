@@ -1,19 +1,21 @@
 .rates {
   background-color: $gray;
-  padding-top: 70px;
+  padding-top: 91px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 44px;
   overflow: hidden;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
   @include breakpointMd() {
-    padding-bottom: 70px;
+    padding-top: 88px;
+    padding-bottom: 71px;
   }
 
   @include breakpointXl() {
-    padding-top: 171px;
+    padding-top: 160px;
     padding-bottom: 98px;
   }
 }
@@ -45,8 +47,8 @@
   height: 29px;
   width: 200px;
   background-color: $pink;
-  top: 11px;
-  left: -73px;
+  top: 14px;
+  left: -80px;
   font-size: 14px;
   line-height: 14px;
   display: flex;
@@ -56,6 +58,16 @@
   color: $white;
   transform: rotate(-45deg);
   z-index: 10;
+
+  @include breakpointMd() {
+    top: 5px;
+    left: -80px;
+  }
+
+  @include breakpointXl() {
+    top: 11px;
+    left: -73px;
+  }
 }
 
 .rates__price {
@@ -88,7 +100,8 @@
 
 .rates__toggles {
   margin: 0;
-  padding: 20px 0;
+  margin-top: 34px;
+  padding: 0;
 
   @include breakpointMd() {
     display: none;
@@ -172,6 +185,7 @@
   @include breakpointMd() {
     right: 50%;
     transform: translate(50%, -50%);
+    top: auto;
   }
 
   @include breakpointXl() {

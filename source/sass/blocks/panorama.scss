@@ -5,39 +5,57 @@
 .panorama__photo {
   width: 100%;
   display: block;
+  object-fit: cover;
+
+  @include breakpointMd() {
+    height: 509px;
+  }
+
+  @include breakpointXl() {
+    height: auto;
+    max-height: 506px;
+  }
 }
 
 .panorama__rubric {
   position: absolute;
   right: 20px;
   top: 0;
-  padding: 7px 23px 6px;
+
+  @include breakpointMd() {
+    right: 50%;
+    margin-right: -310px;
+    top: 57px;
+  }
+
+  @include breakpointXl() {
+    top: 55px;
+    margin-right: -470px;
+  }
+
+  display: inline-flex;
+  padding: 0 22px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: $white;
   background-color: $pink;
-
-  @include breakpointMd() {
-    top: 43px;
-  }
-
-  @include breakpointXl() {
-    top: 54px;
-    right: 130px;
-  }
 }
 
 .panorama__post-wrapper {
   background-color: $grey-light;
   margin: 0 20px;
-  padding: 25px 17px 26px 17px;
+  padding: 18px 0 20px 18px;
 
   @include breakpointMd() {
     width: 620px;
     margin: 0 auto;
     position: relative;
+    padding: 25px 17px 23px 27px;
   }
 
   @include breakpointXl() {
@@ -72,14 +90,19 @@
 .panorama__post-action {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 9px;
 
   @include breakpointMd() {
+    margin-top: 20px;
     position: absolute;
     top: 6px;
-    right: 29px;
+    right: 10px;
     display: flex;
     align-items: center;
+  }
+
+  @include breakpointXl() {
+    right: 13px;
   }
 }
 

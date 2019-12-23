@@ -15,7 +15,6 @@
   background-color: $blue-dark;
   font-weight: bold;
   font-size: 18px;
-  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -33,23 +32,35 @@
 
   @include breakpointMd() {
     min-width: 25%;
+    height: 79px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 5px;
 
     &:first-child {
       display: table-cell;
     }
+  }
+
+  @include breakpointXl() {
+    height: 98px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 14px;
+    vertical-align: top;
   }
 }
 
 .rates-table__data-cell {
   background-color: $white;
   border: solid 1px $grey;
-  height: 60px;
-  padding: 0 24px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
   vertical-align: middle;
+  height: 61px;
 
   &:first-child {
     display: none;
@@ -57,6 +68,8 @@
 
   @include breakpointMd() {
     width: 25%;
+    height: 46px;
+    padding: 0 24px;
 
     &:first-child {
       display: table-cell;
@@ -69,6 +82,7 @@
 
   @include breakpointXl() {
     text-align: center;
+    height: 60px;
 
     &:first-child {
       text-align: left;

@@ -3,13 +3,13 @@
   color: $white;
 
   @include breakpointXl() {
-    padding-bottom: 15px;
+    padding-bottom: 8px;
   }
 }
 
 .site-list__item {
   list-style-type: none;
-  padding: 22px;
+  padding: 15px;
   text-align: center;
   border-bottom: 1px solid $gray-darker-border;
   border-top: 1px solid $blue-border;

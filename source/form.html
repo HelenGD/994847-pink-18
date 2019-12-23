@@ -5,6 +5,7 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
 <body>
 
@@ -33,7 +34,7 @@
             <path class="page-header__logo-star" fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
           </svg>
         </a>
-        <button class="page-header__button page-header__button--open" type="button" title="Закрыть">
+        <button class="page-header__button page-header__button--open page-header__button--nojs" type="button" title="Закрыть">
           <svg class="page-header__icon-close" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867">
             <path fill="currentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
@@ -44,7 +45,7 @@
         </button>
       </div>
 
-      <div class="main-nav">
+      <div class="main-nav main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -75,8 +76,10 @@
 
   <section class="contest">
       <p class="contest__lead">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        Пожалуйста, заполните форму ниже:
+        <span>
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__lead-add">Пожалуйста, заполните форму ниже:</span>
+        </span>
       </p>
       <div class="contest__wrapper">
         <form class="form" method="post" action="http://echo.htmlacademy.ru">
@@ -95,30 +98,30 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--achievements form__legend">
-              <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+              <h2 class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</h2>
               <div class="form__checkbox-fields form__checkbox-fields--achievements">
                 <div class="form__field-checkbox form__field-checkbox--one">
-                  <input class="form__checkbox-input" type="checkbox" id="achivements-one" name="Достижения" value="Сделал селфи с акулой" checked>
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-one" name="Achievements" value="Сделал селфи с акулой" checked>
                   <label class="form__checkbox-label form__checkbox-label--one" for="achivements-one">Сделал селфи с акулой</label>
                 </div>
                 <div class="form__field-checkbox form__field-checkbox--two">
-                  <input class="form__checkbox-input" type="checkbox" id="achivements-two" name="Достижения" value="Обгорел на пляже" checked>
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-two" name="Achievements" value="Обгорел на пляже" checked>
                   <label class="form__checkbox-label form__checkbox-label--two" for="achivements-two">Обгорел на пляже</label>
                 </div>
                 <div class="form__field-checkbox form__field-checkbox--three">
-                  <input class="form__checkbox-input" type="checkbox" id="achivements-three" name="Достижения" value="Видел Чака Норриса">
+                  <input class="form__checkbox-input" type="checkbox" id="achivements-three" name="Achievements" value="Видел Чака Норриса">
                   <label class="form__checkbox-label form__checkbox-label--three" for="achivements-three">Видел Чака Норриса</label>
                 </div>
                 <div class="form__field-checkbox form__field-checkbox--four">
-                  <input class="form__checkbox-input form__checkbox-input--four" type="checkbox" id="achivements-four" name="Достижения" value="Накупил сувениров">
+                  <input class="form__checkbox-input form__checkbox-input--four" type="checkbox" id="achivements-four" name="Achievements" value="Накупил сувениров">
                   <label class="form__checkbox-label form__checkbox-label--four" for="achivements-four">Накупил сувениров</label>
                 </div>
                 <div class="form__field-checkbox form__field-checkbox--five">
-                  <input class="form__checkbox-input form__checkbox-input--five" type="checkbox" id="achivements-five" name="Достижения" value="Удержал башню" checked>
+                  <input class="form__checkbox-input form__checkbox-input--five" type="checkbox" id="achivements-five" name="Achievements" value="Удержал башню" checked>
                   <label class="form__checkbox-label form__checkbox-label--five" for="achivements-five">Удержал башню</label>
                 </div>
                 <div class="form__field-checkbox form__field-checkbox--six">
-                  <input class="form__checkbox-input form__checkbox-input--six" type="checkbox" id="achivements-six" name="Достижения" value="Разгромил отель">
+                  <input class="form__checkbox-input form__checkbox-input--six" type="checkbox" id="achivements-six" name="Achievements" value="Разгромил отель">
                   <label class="form__checkbox-label form__checkbox-label--six" for="achivements-six">Разгромил отель</label>
                 </div>
               </div>
@@ -128,7 +131,7 @@
               <div class="form__text-fields form__text-fields--contacts">
                 <div class="form__field-text form__field-text--contacts form__field-text--contacts-number">
                   <label class="form__text-label form__text-label--contacts" for="user-phone">Номер телефона</label>
-                  <input class="form__text-input form__text-input--contacts" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
+                  <input class="form__text-input form__text-input--contacts" id="user-phone" type="tel" name="Phone-number" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form__field-text form__field-text--contacts form__field-text--contacts-mail">
                   <label class="form__text-label form__text-label--contacts" for="user-email">Адрес почты</label>
@@ -140,15 +143,15 @@
               <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
               <div class="form__radio-fields form__radio-fields--apps">
                 <div class="form__field-radio">
-                  <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
+                  <input class="form__radio-input" type="radio" id="ios" name="App" value="Pink для iOS" checked>
                   <label class="form__radio-label" for="ios">Pink для iOS</label>
                 </div>
                 <div class="form__field-radio">
-                  <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
+                  <input class="form__radio-input" type="radio" id="android" name="App" value="Pink на Android">
                   <label class="form__radio-label" for="android">Pink на Android</label>
                 </div>
                 <div class="form__field-radio">
-                  <input class="form__radio-input" type="radio" id="windows-phone" name="Приложение" value="Windows Phone">
+                  <input class="form__radio-input" type="radio" id="windows-phone" name="App" value="Windows Phone">
                   <label class="form__radio-label" for="windows-phone">Windows Phone</label>
                 </div>
               </div>
@@ -156,7 +159,7 @@
             <fieldset class="form__fieldset form__legend form__fieldset--emotions">
               <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
               <div class="form__textarea-fields form__textarea-fields--emotions">
-                <textarea class="form__textarea form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="form__textarea form__textarea--emotions" name="Message" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
             <div class="form__sending">
@@ -236,6 +239,7 @@
     <button class="popup__btn btn  btn--popup" type="button">Закрыть окно</button>
   </footer>
 </section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015"></script>
 <script src="js/navigation.js"></script>
 </body>
 </html>

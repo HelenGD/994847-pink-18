@@ -1,28 +1,37 @@
 .page-header {
   background-image: url("../img/bg-back-mobile-2@1x.jpg");
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $blue-darkest;
-  background-size: auto 462px;
+  background-size: 100% auto;
   border-bottom: 1px solid $gray-darker-border;
+
+  @include retina() {
+    background-image: url("../img/bg-back-mobile-2@2x.jpg");
+  }
 
   @include breakpointMd() {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-color: $blue-darkest;
-    background-size: auto 729px;
+
+    @include retina() {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @include breakpointXl() {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-color: $blue-darkest;
-    background-size: auto 853px;
     border-bottom: 0;
+
+    @include retina() {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
-.page-header--photo,
-.page-header--form {
-  //background-size: auto 462px;
+.page-header--home {
+  background-size: auto 100%;
 }
 
 .page-header__wrapper {
@@ -31,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $gray-darker-border;
-  min-height: 66px;
+  min-height: 70px;
   height: 1px;
 
 
@@ -49,10 +58,17 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0;
 
   @include breakpointXl() {
     display: none;
   }
+}
+
+.page-header__button--nojs {
+  display: none;
 }
 
 .page-header__logo-mobile {
@@ -88,6 +104,14 @@
 
   &:active {
     color: $white-rgba;
+  }
+
+  @include breakpointMd() {
+    height: 55px;
+  }
+
+  @include breakpointXl() {
+    height: auto;
   }
 }
 
@@ -189,10 +213,6 @@
 
 .page-header__container--open .main-nav {
   display: block;
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  width: 100%;
   background-color: $blue-dark;
 
   @include breakpointXl() {

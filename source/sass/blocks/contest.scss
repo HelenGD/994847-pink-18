@@ -10,8 +10,8 @@
   font-size: $font-size;
   line-height: 30px;
   text-align: center;
-  padding: 0 20px 0 20px;
-  min-height: 175px;
+  padding: 3px 20px 0;
+  min-height: 177px;
   height: 1px;
   display: flex;
   flex-direction: column;
@@ -22,14 +22,24 @@
     font-size: 18px;
     width: 530px;
     margin: 0 auto;
-    min-height: 256px;
+    min-height: 253px;
+    padding: 20px 0 0;
   }
 
   @include breakpointXl() {
-    min-height: 250px;
+    min-height: 222px;
     font-size: 18px;
     width: 796px;
     margin: 0 auto;
+    padding-top: 24px;
+  }
+}
+
+.contest__lead-add {
+  display: none;
+
+  @include breakpointMd() {
+    display: inline;
   }
 }
 

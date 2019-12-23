@@ -5,10 +5,11 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
 <body>
 
-<header class="page-header">
+<header class="page-header page-header--home">
   <div class="page-header__container page-header__container--open">
     <div class="page-header__toolbar">
       <div class="page-header__wrapper">
@@ -33,7 +34,7 @@
             <path class="page-header__logo-star" fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
           </svg>
         </a>
-        <button class="page-header__button page-header__button--open" type="button" title="Закрыть">
+        <button class="page-header__button page-header__button--open page-header__button--nojs" type="button" title="Закрыть">
           <svg class="page-header__icon-close" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867">
             <path fill="currentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
@@ -44,7 +45,7 @@
         </button>
       </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
             <a class="site-list__link site-list__link--active">Главная</a>
@@ -68,23 +69,22 @@
       <div class="download-links">
         <div class="download-links__wrapper">
           <h2 class="download-links__title">Bзгляните на жизнь иначе!</h2>
+          <span class="download-links__hand"></span>
           <div class="download-links__container">
             <a class="download-links__button" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
-          </div>
-          <ul class="download-links__market">
-            <li class="download-links__market-item">
-              <a class="download-links__market-link download-links__market-link--apple" href="https://apple.com" aria-label="Ссылка на магазин Apple" target="_blank"></a>
-            </li>
-            <li class="download-links__market-item">
-              <a class="download-links__market-link download-links__market-link--android" href="https://google.com" aria-label="Ссылка на магазин Android" target="_blank"></a>
-            </li>
-            <li class="download-links__market-item">
-              <a class="download-links__market-link download-links__market-link--windows" href="https://windows.com" aria-label="Ссылка на магазин Microsoft" target="_blank">
-              </a>
-            </li>
-          </ul>
-          <div class="download-links__info">
-            <p>
+            <ul class="download-links__market">
+              <li class="download-links__market-item">
+                <a class="download-links__market-link download-links__market-link--apple" href="https://apple.com" aria-label="Ссылка на магазин Apple" target="_blank"></a>
+              </li>
+              <li class="download-links__market-item">
+                <a class="download-links__market-link download-links__market-link--android" href="https://google.com" aria-label="Ссылка на магазин Android" target="_blank"></a>
+              </li>
+              <li class="download-links__market-item">
+                <a class="download-links__market-link download-links__market-link--windows" href="https://windows.com" aria-label="Ссылка на магазин Microsoft" target="_blank">
+                </a>
+              </li>
+            </ul>
+            <p class="download-links__info">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
@@ -152,6 +152,22 @@
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <blockquote class="reviews__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <span class="reviews__age">25 лет, водитель трамвая</span>
+          <p class="reviews__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <blockquote class="visually-hidden reviews__item-cite">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <span class="reviews__age">25 лет, водитель трамвая</span>
+          <p class="reviews__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <blockquote class="visually-hidden reviews__item-cite">
           <cite class="reviews__author-name">Николай Петров</cite>
           <span class="reviews__age">25 лет, водитель трамвая</span>
           <p class="reviews__text">
@@ -268,7 +284,7 @@
         </div>
         <div class="contacts__item  contacts__item--address">
           <b class="contacts__item-lead">Приезжайте в гости:</b>
-          <a class="contacts__item-info">ул. Большая Конюшенная, 19/8</a>
+          <a class="contacts__item-info" href="#" target="_blank">ул. Большая Конюшенная, 19/8</a>
         </div>
       </div>
     </div>
@@ -325,6 +341,7 @@
     </a>
   </div>
 </footer>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015"></script>
 <script src="js/navigation.js"></script>
 </body>
 </html>

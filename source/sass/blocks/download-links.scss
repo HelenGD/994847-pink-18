@@ -5,25 +5,27 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding-bottom: 13px;
   }
 
   @include breakpointXl() {
     min-height: 743px;
     margin: 0;
+    padding-bottom: 15px;
   }
 }
 
 .download-links__container {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 18px;
-  text-align: center;
+  background-color: $blue-darkest;
+  padding: 29px 20px;
+
+  @include breakpointMd() {
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .download-links__wrapper {
-  background-color: $blue-darkest;
-  padding: 28px 20px 20px 19px;
-
   @include breakpointMd() {
     background-color: transparent;
     width: 300px;
@@ -38,36 +40,32 @@
 }
 
 .download-links__title {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
   color: $white;
   width: 256px;
-  z-index: 1;
-  margin: 0;
+  margin: 22px auto 28px;
 
   @include breakpointMd() {
     position: static;
-    transform: unset;
+    transform: none;
     width: 230px;
     display: block;
     font-size: 40px;
+    line-height: 48px;
     text-align: center;
     font-weight: 300;
     color: $white;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 5px auto 31px;
   }
 
   @include breakpointXl() {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 52px;
+    margin-bottom: 49px;
+    margin-top: 0;
     width: 100%;
     padding: 0;
     margin-left: 0;
@@ -76,10 +74,29 @@
   }
 }
 
+.download-links__hand {
+  display: flex;
+  width: 320px;
+  height: 286px;
+  margin: auto;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+
+  @include retina() {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+
+  @include breakpointMd() {
+    display: none;
+  }
+}
+
 .download-links__button {
   font-size: 18px;
-  line-height: 18px;
-  text-align: center;
+  font-weight: bold;
+  line-height: 1;
   color: $white;
   text-decoration: none;
   border: solid 3px $white;
@@ -95,8 +112,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @include breakpointXl() {
     font-size: 21px;
-    line-height: 1;
   }
 }
 
@@ -116,9 +135,16 @@
   line-height: $line-height;
   color: $white;
   text-align: center;
+  margin: 0;
+  margin-top: 17px;
 
   @include breakpointMd() {
+    margin-top: 22px;
     font-size: 18px;
+  }
+
+  @include breakpointXl() {
+    margin-top: 18px;
   }
 }
 
@@ -128,7 +154,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 30px 20px 10px 20px;
+  padding: 32px 38px 0 38px;
+
+  @include breakpointMd() {
+    padding: 45px 46px 10px 46px;
+  }
 
   @include breakpointXl() {
     padding-top: 66px;

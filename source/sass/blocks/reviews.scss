@@ -1,11 +1,16 @@
 .reviews {
   background-color: $white;
-  padding: 42px 22px 50px 22px;
+  padding: 42px 22px 39px 22px;
   text-align: center;
+
+  @include breakpointMd() {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
   @include breakpointXl() {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 12px;
   }
 }
 
@@ -18,12 +23,16 @@
 
   @include breakpointMd() {
     order: 2;
+    margin-top: 39px;
+    margin-bottom: 7px;
+    line-height: 1;
+    font-size: 20px;
   }
 
   @include breakpointXl() {
     font-size: 24px;
-    line-height: 35px;
-    margin-top: 15px;
+    margin-top: 21px;
+    margin-bottom: 5px;
   }
 }
 
@@ -33,12 +42,11 @@
   @include breakpointMd() {
     display: flex;
     flex-direction: column;
-    min-height: 224px;
+    min-height: 214px;
   }
 
   @include breakpointXl() {
-    display: flex;
-    flex-direction: column;
+    min-height: 224px;
   }
 }
 
@@ -48,8 +56,10 @@
   text-align: center;
   color: $blue-dark;
   margin: 0;
+  margin-top: 13px;
 
   @include breakpointMd() {
+    margin-top: 0;
     font-size: 18px;
     order: 1;
   }
@@ -62,7 +72,12 @@
 
 .reviews__toggles {
   margin: 0;
-  padding: 20px 0;
+  margin-top: 27px;
+  padding: 0;
+
+  @include breakpointMd() {
+    margin-top: 0;
+  }
 
   @include breakpointXl() {
     display: none;

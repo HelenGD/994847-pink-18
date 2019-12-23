@@ -4,17 +4,26 @@
 
   @include breakpointMd() {
     min-height: 448px;
+    padding-bottom: 54px;
   }
 
   @include breakpointXl() {
     width: 940px;
     margin: auto;
-    padding: 50px 50px 50px 80px;
+    padding: 56px 50px 57px 80px;
   }
 }
 
 .photo-editor__image {
   margin: 0;
+
+  @include breakpointMd() {
+    padding-top: 37px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 0;
+  }
 }
 
 .photo-editor__image-road {
@@ -36,7 +45,7 @@
   }
 
   @include breakpointXl() {
-    padding-left: 60px;
+    padding-left: 49px;
     width: 75%;
   }
 }
@@ -45,15 +54,15 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 42px 0;
+  padding: 42px 17px 30px;
 
   @include breakpointMd() {
     flex-direction: column;
-    padding: 0 10px 27px 40px;
+    padding: 20px 0 27px 35px;
   }
 
   @include breakpointXl() {
-    padding: 0 0 27px 40px;
+    padding: 0 10px 27px 40px;
   }
 }
 
@@ -74,11 +83,12 @@
   &::before {
     flex-shrink: 0;
     content: "";
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     display: inline-flex;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     @include breakpointMd() {
       margin-right: 30px;
@@ -98,10 +108,10 @@
   @include breakpointMd() {
     display: flex;
     align-items: center;
-    padding-right: 18px;
+    padding-right: 0;
   }
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     padding-right: 18px;
   }
 }
@@ -120,14 +130,26 @@
 
   @include breakpointMd() {
     border-bottom: 1px solid $gray-rgba;
-    padding-right: 30px;
+    padding-right: 18px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 0;
+    padding-bottom: 12px;
+    padding-right: 30px;
+  }
+}
+
+.photo-editor__tool-container:not(:first-child) {
+  @include breakpointMd() {
+    padding-top: 14px;
   }
 }
 
 .photo-editor__buttons {
-  margin-top: 38px;
+  margin-top: 35px;
   padding-top: 38px;
   position: relative;
 
@@ -146,14 +168,17 @@
 
   @include breakpointMd() {
     margin-top: 0;
-    padding-left: 40px;
+    padding-left: 37px;
     padding-top: 38px;
+    padding-right: 13px;
   }
 
   @include breakpointXl() {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding-left: 41px;
+    padding-right: 10px;
   }
 }
 
@@ -230,10 +255,13 @@
 
 .photo-editor__tool--contrast::before {
   background-image: url("../img/icon-editor-contrast.svg");
+  background-size: 33px;
+  background-position: 3px 5px;
 
   @include breakpointMd() {
     background-image: url("../img/icon-editor-contrast2.svg");
     background-size: 16px;
+    background-position: center;
   }
 
   @include breakpointXl() {
@@ -279,8 +307,13 @@
     opacity: 0.3;
   }
 
+  @include breakpointMd() {
+    margin-bottom: 24px;
+  }
+
   @include breakpointXl() {
     width: 183px;
+    margin-bottom: 0;
   }
 }
 
@@ -306,20 +339,49 @@
 }
 
 .photo-editor__range {
-  width: 100%;
   border-bottom: 2px solid $blue-dark;
   position: relative;
+  margin: 0 20px;
 
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: 82%;
     transform: translate(-50%, -50%);
     height: 14px;
     width: 14px;
     border: 2px solid $pink;
     background: $white;
     border-radius: 50%;
+  }
+
+  @include breakpointMd() {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.photo-editor__range--crop::before {
+  left: 75%;
+
+  @include breakpointXl() {
+    left: 26%;
+  }
+}
+
+.photo-editor__range--color::before {
+  left: 15%;
+
+  @include breakpointXl() {
+    left: 88%;
+  }
+}
+
+.photo-editor__range--contrast::before {
+  left: 51%;
+
+  @include breakpointXl() {
+    left: 58%;
   }
 }

@@ -34,7 +34,7 @@
   @include breakpointMd() {
     order: 1;
     padding-bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   @include breakpointXl() {
@@ -43,20 +43,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 37px;
+    padding: 0;
+    padding-right: 35px;
+    margin-top: 16px;
+    margin-bottom: 0;
   }
 }
 
 .form__text-label {
   font-size: $font-size;
-  line-height: 30px;
+  line-height: 1;
   text-align: left;
   text-transform: uppercase;
   color: $pink;
-  padding-left: 24px;
+  padding-left: 23px;
+  padding-bottom: 13px;
+  display: block;
 
   @include breakpointMd() {
+    display: inline;
     padding-left: 0;
+    padding-bottom: 0;
+    margin-right: 18px;
+    line-height: 30px;
+  }
+
+  @include breakpointXl() {
     margin-right: 20px;
   }
 }
@@ -67,8 +79,8 @@
   text-align: left;
   color: $blue-dark;
   width: 100%;
-  padding-left: 24px;
-  height: 60px;
+  padding-left: 20px;
+  height: 63px;
   border: solid 2px $grey;
 
   &::placeholder {
@@ -82,33 +94,44 @@
   &:active {
     border-color: $pink;
   }
+
+  @include breakpointMd() {
+    height: 63px;
+    padding-left: 20px;
+  }
+
+  @include breakpointXl() {
+    height: 62px;
+    padding-left: 19px;
+  }
 }
 
 .form__fieldset--achievements {
   background-color: $gray;
-  padding: 40px 22px;
-  margin-bottom: 40px;
+  padding: 38px 22px 44px;
+  margin-bottom: 39px;
 
   @include breakpointMd() {
     order: 4;
     width: 100%;
     background-color: transparent;
-    padding: 54px 60px;
-    margin-bottom: 70px;
+    padding: 52px 60px 48px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
     order: 4;
     display: flex;
     flex-direction: column;
-    padding: 34px 60px;
+    padding: 30px 57px 36px;
+    margin-bottom: 65px;
   }
 }
 
 .form__title {
   max-width: 90%;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 37px;
   font-weight: normal;
   font-size: $font-size;
   line-height: 18px;
@@ -124,8 +147,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    padding: 0 30px;
+    padding: 0 38px;
   }
+}
+
+.form__title--apps {
+  margin-bottom: 33px;
+}
+
+.form__title--achievements {
+  margin-bottom: 38px;
 }
 
 .form {
@@ -137,17 +168,21 @@
 .form__fieldset--contacts {
   background-color: $white;
   padding: 0 20px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 
   @include breakpointMd() {
     order: 3;
     width: 100%;
-    padding: 45px 60px;
-    margin-bottom: 70px;
+    padding: 45px 58px 26px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
     order: 3;
+    padding: 0 56px;
+    padding-top: 42px;
+    padding-bottom: 13px;
+    margin-bottom: 65px;
   }
 }
 
@@ -161,15 +196,15 @@
 
 .form__fieldset--apps {
   background-color: $gray;
-  padding: 40px 20px;
-  margin-bottom: 40px;
+  padding: 40px 20px 44px;
+  margin-bottom: 38px;
 
   @include breakpointMd() {
     order: 2;
     background-color: transparent;
     width: 100%;
-    padding: 53px 60px;
-    margin-bottom: 70px;
+    padding: 49px 45px 53px;
+    margin-bottom: 65px;
   }
 
   @include breakpointXl() {
@@ -177,30 +212,38 @@
     width: calc(50% - 37px);
     background-color: $white;
     margin-left: 37px;
+    margin-top: 10px;
+    margin-bottom: 64px;
+    padding: 54px 60px;
   }
 }
 
 .form__fieldset--emotions {
   background-color: $white;
   padding: 0 20px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 
   @include breakpointMd() {
     order: 5;
     width: 100%;
-    padding: 53px 60px;
-    margin-bottom: 70px;
+    padding: 45px 58px 51px;
+    margin-bottom: 67px;
   }
 
   @include breakpointXl() {
     order: 5;
     flex-direction: column;
-    padding: 45px 60px;
+    padding: 42px 56px 43px;
+    margin-bottom: 66px;
   }
 }
 
 .form__fieldset--emotions .form__title {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @include breakpointMd() {
+    margin-bottom: 20px;
+  }
 }
 
 .form__textarea {
@@ -209,11 +252,12 @@
   text-align: left;
   color: $blue-dark;
   width: 100%;
-  padding: 24px 20px;
+  padding: 15px 19px;
   margin: 0;
   border-color: $grey;
   display: block;
   border-width: 2px;
+  height: 201px;
 
   &:hover {
     border-color: $blue-dark;
@@ -227,14 +271,18 @@
     color: $blue-dark;
   }
 
+  @include breakpointMd() {
+    height: 193px;
+  }
+
   @include breakpointXl() {
-    height: 124px;
+    height: 128px;
   }
 }
 
 .form__sending {
   background-color: $white;
-  padding: 0 20px;
+  padding: 0 20px 18px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -246,6 +294,7 @@
   @include breakpointMd() {
     order: 6;
     justify-content: space-between;
+    padding-bottom: 50px;
   }
 
   @include breakpointXl() {
@@ -282,20 +331,24 @@
     flex-shrink: 0;
     display: inline-flex;
     width: 37px;
-    height: 37px;
+    height: 39px;
     border: solid 2px $grey;
     background-color: $white;
     background-image: url("../img/icon-yes-pink.svg");
     background-size: 22px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 35px;
+    margin-right: 30px;
+
+    @include breakpointMd() {
+      margin-right: 21px;
+    }
   }
 }
 
 .form__field-radio {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   user-select: none;
   cursor: pointer;
   font-size: 18px;
@@ -307,6 +360,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include breakpointMd() {
+    margin-bottom: 35px;
+  }
+
+  @include breakpointXl() {
+    margin-bottom: 33px;
   }
 }
 
@@ -354,7 +415,13 @@
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 35px;
+    margin-right: 32px;
+
+    @include breakpointMd() {
+      margin-left: 14px;
+      margin-top: 4px;
+      margin-right: 21px;
+    }
   }
 }
 
@@ -363,7 +430,7 @@
   color: $blue-dark;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 35px;
 
   @include breakpointMd() {
     margin: 0;
@@ -385,7 +452,8 @@
   border: 0;
   margin: 0;
   padding: 10px 0;
-  height: 60px;
+  height: 63px;
+  border-radius: 4px;
 
   &:hover {
     background-color: $green-button-hover;
@@ -401,11 +469,13 @@
   }
 
   @include breakpointMd() {
-    width: 50%;
+    width: 300px;
+    height: 63px;
   }
 
   @include breakpointXl() {
-    width: 296px;
+    width: 300px;
+    height: 62px;
   }
 }
 
@@ -414,17 +484,18 @@
 }
 
 .form__field-text--fullname {
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   align-items: center;
 
   @include breakpointMd() {
     display: flex;
     align-items: center;
+    padding-bottom: 52px;
   }
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     padding-top: 0;
-    padding-bottom: 56px;
+    padding-bottom: 54px;
   }
 
   &:first-child {
@@ -444,22 +515,33 @@
 
   @include breakpointXl() {
     width: 100%;
-    margin: 0 37px;
+    margin: 0;
   }
 }
 
 .form__field-text--contacts:first-child {
-  padding-bottom: 28px;
+  padding-bottom: 25px;
+
+  @include breakpointMd() {
+    padding-bottom: 29px;
+  }
 
   @include breakpointXl() {
     padding-bottom: 0;
+    margin-right: 70px;
   }
 }
 
 .form__text-label--contacts {
   @include breakpointMd() {
     order: 2;
-    padding-left: 24px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  @include breakpointXl() {
+    padding-left: 19px;
+    padding-top: 11px;
   }
 }
 
@@ -492,8 +574,8 @@
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
-      width: 60px;
-      height: 60px;
+      width: 62px;
+      height: 62px;
       background-color: $grey;
     }
   }
@@ -514,8 +596,8 @@
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: center;
-      width: 60px;
-      height: 60px;
+      width: 62px;
+      height: 62px;
       background-color: $grey;
     }
   }
@@ -531,14 +613,18 @@
 
 .form__field-checkbox {
   position: relative;
-  margin-bottom: 47px;
+  margin-bottom: 43px;
   font-size: 18px;
   line-height: 1;
+
+  @include breakpointMd() {
+    margin-bottom: 43px;
+  }
 
   @include breakpointXl() {
     width: 33.33333%;
     margin-top: 23px;
-    margin-bottom: 23px;
+    margin-bottom: 19px;
   }
 
   &:first-child {
@@ -571,36 +657,42 @@
 .form__field-checkbox--one {
   @include breakpointXl() {
     order: 1;
+    width: 315px;
   }
 }
 
 .form__field-checkbox--three {
   @include breakpointXl() {
     order: 2;
+    width: 295px;
   }
 }
 
 .form__field-checkbox--five {
   @include breakpointXl() {
     order: 3;
+    width: auto;
   }
 }
 
 .form__field-checkbox--two {
   @include breakpointXl() {
     order: 4;
+    width: 315px;
   }
 }
 
 .form__field-checkbox--four {
   @include breakpointXl() {
     order: 5;
+    width: 295px;
   }
 }
 
 .form__field-checkbox--six {
   @include breakpointXl() {
     order: 6;
+    width: auto;
   }
 }
 

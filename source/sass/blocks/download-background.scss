@@ -1,33 +1,50 @@
 .download-background {
   background-repeat: no-repeat;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @include breakpointMd() {
     display: flex;
     justify-content: center;
     min-height: 330px;
+    height: 1px;
   }
 }
 
 .download-background--home {
   position: relative;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-size: auto;
+  //background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-size: 258px auto;
   background-position: left 110px;
-  padding-top: 396px;
+  //padding-top: 396px;
+
+  @include retina() {
+    //background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
 
   @include breakpointMd() {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     padding-top: 0;
-    min-height: 619px;
-    //background-size: auto 545px;
-    background-position: right bottom;
+    min-height: 617px;
+    background-position: 51% bottom;
+    background-size: 700px auto;
+    padding-bottom: 10px;
+
+    @include retina() {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   @include breakpointXl() {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     padding-top: 0;
+    padding-bottom: 0;
     min-height: 743px;
-    //background-size: auto 645px;
-    background-position: 58% bottom;
+    background-size: 1050px auto;
+    background-position: 97% bottom;
+
+    @include retina() {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 }

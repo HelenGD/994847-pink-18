@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
 </head>
-
+<body>
 <header class="page-header page-header--photo">
   <div class="page-header__container page-header__container--open">
     <div class="page-header__toolbar">
@@ -32,7 +33,7 @@
             <path class="page-header__logo-star" fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
           </svg>
         </a>
-        <button class="page-header__button page-header__button--open" type="button" title="Закрыть">
+        <button class="page-header__button page-header__button--open page-header__button--nojs" type="button" title="Закрыть">
           <svg class="page-header__icon-close" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867">
             <path fill="currentColor" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
@@ -43,7 +44,7 @@
         </button>
       </div>
 
-      <div class="main-nav">
+      <div class="main-nav main-nav--nojs">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -63,7 +64,7 @@
   </div>
 
   <section class="intro download-background download-background--form">
-    <h2 class="intro__title">
+    <h2 class="intro__title intro__title--photo">
       Фотографии пользователей
     </h2>
   </section>
@@ -74,16 +75,20 @@
     <h2 class="visually-hidden">Галерея фотографий</h2>
     <div class="gallery-description">
       <p class="gallery-description__lead">
-        Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
     </div>
     <div class="panorama">
       <div class="panorama__photo-wrapper">
         <a href="img/panorama-desktop@1x.jpg" target="_blank">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
-            <img class="panorama__photo" src="./img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
+            <img class="panorama__photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография Анны">
           </picture>
         </a>
         <span class="panorama__rubric">Панорама дня</span>
@@ -95,7 +100,7 @@
           </p>
         </div>
         <p class="panorama__post-text">
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе,
+          Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе,
           задавайте свои&nbsp;вопросы!
         </p>
         <div class="panorama__post-action">
@@ -111,9 +116,13 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-car-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
-              <img class="post__photo" src="./img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левонa">
+              <img class="post__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография Левонa">
             </picture>
           </a>
         </div>
@@ -138,11 +147,17 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-drumset-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-drumset-desktop@1x.webp, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-drumset-tablet@1x.webp, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp, img/photo-drumset-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                       srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                       srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="post__photo" src="./img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антонa">
+              <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография Антонa">
             </picture>
           </a>
         </div>
@@ -165,11 +180,17 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-window-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/photo-window-desktop@1x.webp, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                      srcset="img/photo-window-tablet@1x.webp, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp, img/photo-window-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                       srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
                       srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
-              <img class="post__photo" src="./img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Борисa">
+              <img class="post__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография Борисa">
             </picture>
           </a>
         </div>
@@ -192,9 +213,13 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-fair-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp, img/photo-fair-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="post__photo" src="./img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
+              <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография Сергея">
             </picture>
           </a>
         </div>
@@ -217,9 +242,13 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-pov-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp, img/photo-pov-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="post__photo" src="./img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
+              <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография Максима">
             </picture>
           </a>
         </div>
@@ -242,6 +271,10 @@
         <div class="post__photo-wrapper">
           <a href="img/photo-wing-desktop@1x.jpg" target="_blank">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp, img/photo-wing-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
               <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Надежда">
@@ -277,9 +310,13 @@
           <figure class="photo-editor__image">
             <a href="img/photo-road-desktop@1x.jpg" target="_blank">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp, img/photo-road-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
-                <img class="photo-editor__image-road" src="./img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
+                <img class="photo-editor__image-road" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
               </picture>
             </a>
           </figure>
@@ -287,7 +324,7 @@
           <div class="photo-editor__tools-list">
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--crop"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--crop">
                 <input class="photo-editor__range-input" type="range" id="range-crop" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-crop">Диапазон</label>
               </span>
@@ -295,7 +332,7 @@
 
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--color"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--color">
                 <input class="photo-editor__range-input" type="range" id="range-color" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-color">Диапазон</label>
               </span>
@@ -303,7 +340,7 @@
 
             <div class="photo-editor__tool-container">
               <button type="button" class="photo-editor__tool photo-editor__tool--contrast"></button>
-              <span class="photo-editor__range">
+              <span class="photo-editor__range photo-editor__range--contrast">
                 <input class="photo-editor__range-input" type="range" id="range-contrast" name="range" value="15" min="0" max="20">
                 <label class="visually-hidden" for="range-contrast">Диапазон</label>
               </span>
@@ -366,6 +403,7 @@
     </a>
   </div>
 </footer>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015"></script>
 <script src="js/navigation.js"></script>
 </body>
 </html>

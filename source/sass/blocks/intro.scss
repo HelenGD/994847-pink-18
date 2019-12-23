@@ -1,21 +1,50 @@
 .intro__title {
   font-size: 24px;
-  line-height: 1.5;
   font-weight: 300;
   text-align: center;
   color: $white;
-  padding: 35px 20px 80px 20px;
+  padding: 29px 20px 53px;
   margin: 0;
-  max-width: 680px;
+  line-height: 29px;
 
   @include breakpointMd() {
     font-size: 50px;
-    padding-top: 81px;
+    line-height: 58px;
+    padding-top: 71px;
+    max-width: 400px;
+  }
+
+  @include breakpointXl() {
+    line-height: 65px;
+    padding-top: 59px;
+  }
+}
+
+.intro__title--photo {
+  padding: 29px 20px 82px;
+
+  @include breakpointMd() {
+    padding: 69px 20px 82px;
+    line-height: 60px;
+  }
+
+  @include breakpointXl() {
+    padding-top: 63px;
   }
 }
 
 .intro__title--form {
   @include breakpointMd() {
     max-width: 800px;
+  }
+}
+
+.intro {
+  @include breakpointMd() {
+    min-height: 328px;
+  }
+
+  @include breakpointXl() {
+    min-height: 283px;
   }
 }

@@ -2,7 +2,7 @@
   max-width: $desktop-container-width;
   margin: auto;
   background-color: $white;
-  padding: 40px 0;
+  padding: 23px 0;
   text-align: center;
   color: $blue-dark;
 
@@ -11,8 +11,7 @@
   }
 
   @include breakpointMd() {
-    /*     min-height: 127px;*/
-    padding: 42px 20px 39px 20px;
+    padding: 36px 20px 39px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -63,11 +62,13 @@
 }
 
 .page-footer__social {
-  margin-top: 43px;
-  margin-bottom: 50px;
+  margin-top: 35px;
+  margin-bottom: 37px;
 
   @include breakpointMd() {
     margin: 0;
+    width: 33.33333%;
+    flex-shrink: 0;
   }
 }
 
@@ -78,6 +79,9 @@
   @include breakpointMd() {
     align-items: center;
     padding-top: 12px;
+    width: 33.33333%;
+    flex-shrink: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -90,6 +94,16 @@
 }
 
 .page-footer__wrapper {
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 14px;
+
+  @include breakpointMd() {
+    margin-top: 0;
+    text-align: left;
+    width: 33.33333%;
+  }
+
   @include breakpointXl() {
     padding-bottom: 11px;
   }
