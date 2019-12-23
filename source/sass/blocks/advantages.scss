@@ -49,6 +49,7 @@
     width: 321px;
     padding-top: 0;
     padding-bottom: 9px;
+    margin-left: 39px;
   }
 
   @include breakpointXl() {
@@ -137,7 +138,7 @@
     min-height: auto;
     display: flex;
     text-align: left;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     padding: 0 10px 0 20px;
   }
