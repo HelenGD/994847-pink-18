@@ -54,7 +54,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 42px 17px 30px;
+  padding: 42px 17px 35px;
 
   @include breakpointMd() {
     flex-direction: column;
@@ -71,17 +71,16 @@
   height: 48px;
   flex-shrink: 0;
   list-style-type: none;
-  min-height: 44px;
   padding: 0;
   margin: 0;
   border: 0;
   background: transparent;
-  margin-right: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include breakpointMd() {
+    min-height: 44px;
     width: 24px;
     height: 24px;
   }
@@ -104,17 +103,37 @@
   color: $blue-dark;
 }
 
+.photo-editor__tool-icon--color {
+  color: $blue-dark;
+  opacity: 0.5;
+
+  @include breakpointMd() {
+    opacity: 1;
+    color: $pink;
+  }
+}
+
 .photo-editor__tool-icon--contrast {
+  width: 32px;
+  margin-right: 9px;
+  margin-bottom: 5px;
+  color: $blue-dark;
+  opacity: 0.5;
+
   @include breakpointMd() {
     width: 16px;
     height: 16px;
     margin-left: 3px;
+    margin-right: 0;
+    opacity: 1;
+    color: $pink;
   }
 
   @include breakpointXl() {
     width: 32px;
     height: 32px;
     margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -228,6 +247,8 @@
 }
 
 .photo-editor__tool--color {
+  margin-right: 3px;
+
   @include breakpointMd() {
     margin-left: 2px;
     margin-right: 29px;
@@ -244,6 +265,7 @@
   @include breakpointMd() {
     margin-left: 2px;
     margin-right: 29px;
+    color: $pink;
   }
 
   @include breakpointXl() {
