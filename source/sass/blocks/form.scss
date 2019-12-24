@@ -562,22 +562,34 @@
 .form__field-text--contacts-number {
   position: relative;
 
-  &::after {
-    display: none;
+   &::after {
+     display: none;
 
-    @include breakpointMd() {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 62px;
-      height: 62px;
-      background-color: $grey;
-    }
+     @include breakpointMd() {
+       display: block;
+       content: "";
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 62px;
+       height: 62px;
+       background-color: $grey;
+       z-index: 1;
+     }
+   }
+}
+
+.form__icon {
+  display: none;
+
+  @include breakpointMd() {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 19px;
+    z-index: 10;
   }
 }
 
@@ -593,9 +605,6 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: center;
       width: 62px;
       height: 62px;
       background-color: $grey;
