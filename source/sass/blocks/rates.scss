@@ -137,21 +137,33 @@
   }
 }
 
-.rates-table__data-cell--yes::before {
+.rates-table__icon-done {
   width: 31px;
-  height: 21px;
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
+  color: $done;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  @include breakpointMd() {
+    position: static;
+    transform: none;
+  }
 }
 
-.rates-table__data-cell--no::before {
+.rates-table__icon-fail {
   width: 27px;
-  height: 27px;
-  background-image: url("../img/icon-no.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  @include breakpointMd() {
+    position: static;
+    transform: none;
+  }
 }
 
 .rates-table__data-cell:first-child {
@@ -169,30 +181,8 @@
 .rates-table__data-cell {
   position: relative;
 
-  @include breakpointXl() {
+  @include breakpointMd() {
     vertical-align: middle;
     text-align: center;
-  }
-}
-
-.rates-table__data-cell::before {
-  content: "";
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  @include breakpointMd() {
-    right: 50%;
-    transform: translate(50%, -50%);
-    top: auto;
-  }
-
-  @include breakpointXl() {
-    right: 20px;
-    transform: none;
-    position: static;
-    display: inline-flex;
-    vertical-align: middle;
   }
 }

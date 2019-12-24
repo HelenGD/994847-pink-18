@@ -70,9 +70,11 @@
     width: 25%;
     height: 46px;
     padding: 0 24px;
+    text-align: center;
 
     &:first-child {
       display: table-cell;
+      text-align: left;
 
       &::before {
         display: none;
