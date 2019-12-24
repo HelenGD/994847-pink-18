@@ -427,12 +427,17 @@
   &::after {
     content: "";
     position: absolute;
-    left: 25px;
-    top: 15px;
+    left: 12px;
+    top: 12px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: $pink;
+
+    @include breakpointMd() {
+      left: 25px;
+      top: 15px;
+    }
   }
 }
 
