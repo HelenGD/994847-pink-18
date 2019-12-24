@@ -109,12 +109,9 @@
 .panorama__post-like-btn {
   background-color: $grey-light;
   border: none;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
   width: 13px;
-  height: 12px;
   margin-right: 19px;
+  padding: 0;
 
   @include breakpointMd() {
     order: 1;
