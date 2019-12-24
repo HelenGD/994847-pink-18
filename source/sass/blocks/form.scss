@@ -578,21 +578,21 @@
 .form__field-text--contacts-number {
   position: relative;
 
-   &::after {
-     display: none;
+  &::after {
+    display: none;
 
-     @include breakpointMd() {
-       display: block;
-       content: "";
-       position: absolute;
-       top: 0;
-       right: 0;
-       width: 62px;
-       height: 62px;
-       background-color: $grey;
-       z-index: 1;
-     }
-   }
+    @include breakpointMd() {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 62px;
+      height: 62px;
+      background-color: $grey;
+      z-index: 1;
+    }
+  }
 }
 
 .form__icon {
