@@ -315,8 +315,8 @@
   cursor: pointer;
 }
 
-.form__checkbox-input:not(:checked) + .form__checkbox-label::before {
-  background-image: none;
+.form__checkbox-input:not(:checked) + .form__checkbox-label .form__checkbox-check {
+  display: none;
 }
 
 .form__checkbox-label {
@@ -334,16 +334,20 @@
     height: 39px;
     border: solid 2px $grey;
     background-color: $white;
-    background-image: url("../img/icon-yes-pink.svg");
-    background-size: 22px;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-right: 30px;
 
     @include breakpointMd() {
       margin-right: 21px;
     }
   }
+}
+
+.form__checkbox-check {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 21px;
+  color: $pink;
 }
 
 .form__field-radio {
@@ -391,8 +395,8 @@
   cursor: pointer;
 }
 
-.form__radio-input:not(:checked) ~ .form__radio-label::before {
-  background-image: none;
+.form__radio-input:not(:checked) ~ .form__radio-label::after {
+  display: none;
 }
 
 .form__radio-label {
@@ -411,10 +415,6 @@
     border: solid 2px $grey;
     border-radius: 50%;
     background-color: $white;
-    background-image: url("../img/icon-radio.svg");
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-right: 32px;
 
     @include breakpointMd() {
@@ -422,6 +422,17 @@
       margin-top: 4px;
       margin-right: 21px;
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $pink;
   }
 }
 
