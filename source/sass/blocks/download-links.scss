@@ -90,6 +90,7 @@
 
   @include breakpointMd() {
     display: none;
+    background-image: none;
   }
 }
 

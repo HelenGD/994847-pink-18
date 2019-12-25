@@ -220,10 +220,13 @@
   @include breakpointMd() {
     display: flex;
     justify-content: space-between;
+    max-width: 660px;
+    margin: auto;
   }
 
   @include breakpointXl() {
     display: flex;
+    max-width: 100%;
   }
 }
 

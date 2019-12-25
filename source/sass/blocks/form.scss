@@ -79,6 +79,7 @@
   text-align: left;
   color: $blue-dark;
   width: 100%;
+  padding: 0;
   padding-left: 20px;
   height: 63px;
   border: solid 2px $grey;
@@ -87,12 +88,13 @@
     color: $blue-dark;
   }
 
-  &:hover {
-    border-color: $blue-dark;
-  }
-
+  &:focus,
   &:active {
     border-color: $pink;
+  }
+
+  &:hover {
+    border-color: $blue-dark;
   }
 
   @include breakpointMd() {
@@ -315,8 +317,8 @@
   cursor: pointer;
 }
 
-.form__checkbox-input:not(:checked) + .form__checkbox-label .form__checkbox-check {
-  display: none;
+.form__checkbox-input:not(:checked) + .form__checkbox-label::before {
+  background-image: none;
 }
 
 .form__checkbox-label {
@@ -334,6 +336,10 @@
     height: 39px;
     border: solid 2px $grey;
     background-color: $white;
+    background-image: url("../img/icon-yes-pink.svg");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 30px;
 
     @include breakpointMd() {
@@ -585,12 +591,36 @@
       display: block;
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
-      width: 62px;
-      height: 62px;
+      top: 2px;
+      right: 2px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 58px;
       background-color: $grey;
-      z-index: 1;
+    }
+  }
+}
+
+.form__field-text--contacts-mail {
+  position: relative;
+
+  &::after {
+    display: none;
+
+    @include breakpointMd() {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 58px;
+      background-color: $grey;
     }
   }
 }
@@ -608,26 +638,6 @@
     z-index: 10;
   }
 }
-
-.form__field-text--contacts-mail {
-  position: relative;
-
-  &::after {
-    display: none;
-
-    @include breakpointMd() {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 62px;
-      height: 62px;
-      background-color: $grey;
-    }
-  }
-}
-
 
 .form__checkbox-fields--achievements {
   @include breakpointXl() {
