@@ -88,13 +88,13 @@
     color: $blue-dark;
   }
 
+  &:hover {
+    border-color: $blue-dark;
+  }
+
   &:focus,
   &:active {
     border-color: $pink;
-  }
-
-  &:hover {
-    border-color: $blue-dark;
   }
 
   @include breakpointMd() {
