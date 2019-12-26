@@ -106,10 +106,18 @@
     position: relative;
     padding-top: 167px;
     padding-bottom: 0;
-    background-image: url("../img/icon-quotes.svg");
-    background-size: 80px 63px;
-    background-repeat: no-repeat;
-    background-position: 50% 72px;
+  }
+}
+
+.reviews__quotes {
+  display: none;
+
+  @include breakpointXl() {
+    display: block;
+    position: absolute;
+    top: 71px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

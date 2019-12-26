@@ -54,7 +54,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 42px 17px 30px;
+  padding: 42px 17px 35px;
 
   @include breakpointMd() {
     flex-direction: column;
@@ -67,52 +67,73 @@
 }
 
 .photo-editor__tool {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
   list-style-type: none;
-  min-height: 44px;
   padding: 0;
   margin: 0;
   border: 0;
   background: transparent;
-
-  &:first-child {
-    @include breakpointMd() {
-      padding-top: 0;
-    }
-  }
-
-  &::before {
-    flex-shrink: 0;
-    content: "";
-    width: 48px;
-    height: 48px;
-    display: inline-flex;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    @include breakpointMd() {
-      margin-right: 30px;
-      margin-left: 3px;
-      width: 24px;
-      height: 24px;
-    }
-
-    @include breakpointXl() {
-      margin-right: 30px;
-      margin-left: 0;
-      width: 48px;
-      height: 44px;
-    }
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include breakpointMd() {
-    display: flex;
-    align-items: center;
-    padding-right: 0;
+    min-height: 44px;
+    width: 24px;
+    height: 24px;
   }
 
   @include breakpointXl() {
-    padding-right: 18px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.photo-editor__tool-icon {
+  color: $pink;
+}
+
+.photo-editor__tool:hover {
+  opacity: 0.5;
+}
+
+.photo-editor__tool:hover .photo-editor__tool-icon {
+  color: $blue-dark;
+}
+
+.photo-editor__tool-icon--color {
+  color: $blue-dark;
+  opacity: 0.5;
+
+  @include breakpointMd() {
+    opacity: 1;
+    color: $pink;
+  }
+}
+
+.photo-editor__tool-icon--contrast {
+  width: 32px;
+  margin-right: 9px;
+  margin-bottom: 5px;
+  color: $blue-dark;
+  opacity: 0.5;
+
+  @include breakpointMd() {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 0;
+    opacity: 1;
+    color: $pink;
+  }
+
+  @include breakpointXl() {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -139,6 +160,7 @@
     padding-top: 0;
     padding-bottom: 12px;
     padding-right: 30px;
+    margin-top: -4px;
   }
 }
 
@@ -198,10 +220,13 @@
   @include breakpointMd() {
     display: flex;
     justify-content: space-between;
+    max-width: 660px;
+    margin: auto;
   }
 
   @include breakpointXl() {
     display: flex;
+    max-width: 100%;
   }
 }
 
@@ -211,69 +236,44 @@
   }
 }
 
-.photo-editor__tool--crop::before {
-  background-image: url("../img/icon-editor-crop.svg");
-
-  @include breakpointMd() {
-    background-size: 22px;
-  }
-
-  @include breakpointXl() {
-    background-size: 44px;
-    background-position: left center;
-  }
-}
 
 .photo-editor__tool--crop {
-  &:hover {
-    &::before {
-      background-image: url("../img/icon-editor-crop2.svg");
-    }
-  }
-}
-
-.photo-editor__tool--color::before {
-  background-image: url("../img/icon-editor-fill.svg");
-
   @include breakpointMd() {
-    background-image: url("../img/icon-editor-fill2.svg");
-    background-size: 24px;
+    margin-left: 2px;
+    margin-right: 29px;
   }
 
   @include breakpointXl() {
-    background-size: 48px;
+    margin-left: 0;
+    margin-right: 45px;
   }
 }
 
 .photo-editor__tool--color {
-  &:hover {
-    &::before {
-      background-image: url("../img/icon-editor-fill3.svg");
-    }
-  }
-}
-
-.photo-editor__tool--contrast::before {
-  background-image: url("../img/icon-editor-contrast.svg");
-  background-size: 33px;
-  background-position: 3px 5px;
+  margin-right: 3px;
 
   @include breakpointMd() {
-    background-image: url("../img/icon-editor-contrast2.svg");
-    background-size: 16px;
-    background-position: center;
+    margin-left: 2px;
+    margin-right: 29px;
   }
 
   @include breakpointXl() {
-    background-size: 32px;
+    margin-left: 0;
+    margin-right: 45px;
+    padding-top: 4px;
   }
 }
 
 .photo-editor__tool--contrast {
-  &:hover {
-    &::before {
-      background-image: url("../img/icon-editor-contrast3.svg");
-    }
+  @include breakpointMd() {
+    margin-left: 2px;
+    margin-right: 29px;
+    color: $pink;
+  }
+
+  @include breakpointXl() {
+    margin-left: 0;
+    margin-right: 45px;
   }
 }
 

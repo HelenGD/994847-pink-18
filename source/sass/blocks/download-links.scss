@@ -90,6 +90,7 @@
 
   @include breakpointMd() {
     display: none;
+    background-image: none;
   }
 }
 
@@ -180,19 +181,19 @@
 }
 
 .download-links__market-link--apple {
-  background-image: url("../img/logo-apple.svg");
+  /*background-image: url("../img/logo-apple.svg");
   width: 47px;
-  height: 56px;
+  height: 56px;*/
 }
 
 .download-links__market-link--android {
-  background-image: url("../img/logo-android.svg");
+  /*background-image: url("../img/logo-android.svg");
   width: 43px;
-  height: 47px;
+  height: 47px;*/
 }
 
 .download-links__market-link--windows {
-  background-image: url("../img/logo-microsoft.svg");
+  /*background-image: url("../img/logo-microsoft.svg");
   width: 44px;
-  height: 41px;
+  height: 41px;*/
 }

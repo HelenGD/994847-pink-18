@@ -118,7 +118,7 @@
 .page-header__logo-desktop {
   display: none;
 
-  @include breakpointMd() {
+  @include breakpointXl() {
     display: block;
   }
 }

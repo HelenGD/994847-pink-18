@@ -41,6 +41,14 @@
   }
 }
 
+.page-footer__icon-desktop {
+  display: none;
+
+  @include breakpointXl() {
+    display: inline;
+  }
+}
+
 .page-footer__icon-mobile {
   @include breakpointXl() {
     display: none;
