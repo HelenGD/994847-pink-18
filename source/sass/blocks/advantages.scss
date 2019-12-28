@@ -178,6 +178,7 @@
     }
 
     @include breakpointXl() {
+      background-image: none;
       display: none;
     }
   }

@@ -362,6 +362,10 @@
   }
 }
 
+.photo-editor__range--active::before {
+  background: $pink;
+}
+
 .photo-editor__range--crop::before {
   left: 75%;
 
