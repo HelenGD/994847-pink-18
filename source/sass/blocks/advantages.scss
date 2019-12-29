@@ -32,7 +32,8 @@
   margin: 0;
 
   @include breakpointMd() {
-    max-width: 820px;
+    width: 820px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -54,7 +55,7 @@
 
   @include breakpointXl() {
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0;
     width: $desktop-width;
     max-width: 100%;
     padding: 0;
