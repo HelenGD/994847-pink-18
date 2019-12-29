@@ -11,8 +11,8 @@
   }
 
   @include breakpointXl() {
-    max-width: 980px;
-    padding: 51px 20px 6px 20px;
+    max-width: $desktop-container-width;
+    padding: 51px 0 6px;
   }
 }
 

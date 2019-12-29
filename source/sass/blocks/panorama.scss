@@ -12,8 +12,7 @@
   }
 
   @include breakpointXl() {
-    height: auto;
-    max-height: 506px;
+    height: 506px;
   }
 }
 
