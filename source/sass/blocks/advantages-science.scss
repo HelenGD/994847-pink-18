@@ -137,7 +137,6 @@
 
 .advantages-science__link {
   @include breakpointMd() {
-    text-decoration: underline;
     color: $pink;
     font-size: $font-size;
     line-height: $line-height;
@@ -146,7 +145,6 @@
   @include breakpointXl() {
     font-size: 18px;
     line-height: 1;
-    text-decoration: none;
   }
 }
 

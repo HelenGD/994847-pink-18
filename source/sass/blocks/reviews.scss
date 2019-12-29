@@ -9,8 +9,7 @@
   }
 
   @include breakpointXl() {
-    padding-top: 0;
-    padding-bottom: 12px;
+    padding: 0 0 12px;
   }
 }
 

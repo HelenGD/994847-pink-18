@@ -15,8 +15,7 @@
   }
 
   @include breakpointXl() {
-    padding-top: 160px;
-    padding-bottom: 98px;
+    padding: 160px 0 98px;
   }
 }
 
