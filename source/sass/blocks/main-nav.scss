@@ -1,14 +1,3 @@
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-  @include breakpointXl() {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .main-nav {
   display: none;
   position: absolute;
@@ -20,6 +9,17 @@
     display: block;
     position: static;
     width: auto;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include breakpointXl() {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
