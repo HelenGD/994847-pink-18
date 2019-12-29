@@ -8,6 +8,24 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+
+  @include breakpointMd() {
+    width: 100%;
+  }
+
+  @include breakpointXl() {
+    max-width: 100%;
+    background-color: $white;
+  }
+}
+
 input,
 textarea {
   font-size: inherit;

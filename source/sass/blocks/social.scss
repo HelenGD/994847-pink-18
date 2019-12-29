@@ -27,9 +27,6 @@
   display: inline-flex;
   border-radius: 50%;
   border: 3px solid $gray-light-border;
-  /*background-position: center;
-  background-repeat: no-repeat;
-   */
 
   &:hover {
     border-color: $blue-dark;
@@ -46,15 +43,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*.social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
-}
-
-.social__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
-}
-
-.social__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
-}
-*/
