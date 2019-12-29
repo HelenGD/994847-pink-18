@@ -13,14 +13,8 @@
 
 .download-background--home {
   position: relative;
-  //background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: 258px auto;
   background-position: left 110px;
-  //padding-top: 396px;
-
-  @include retina() {
-    //background-image: url("../img/iphone-hand-mobile@2x.png");
-  }
 
   @include breakpointMd() {
     background-image: url("../img/iphone-hand-tablet@1x.png");

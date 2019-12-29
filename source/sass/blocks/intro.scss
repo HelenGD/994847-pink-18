@@ -1,3 +1,13 @@
+.intro {
+  @include breakpointMd() {
+    min-height: 328px;
+  }
+
+  @include breakpointXl() {
+    min-height: 283px;
+  }
+}
+
 .intro__title {
   font-size: 24px;
   font-weight: 300;
@@ -36,15 +46,5 @@
 .intro__title--form {
   @include breakpointMd() {
     max-width: 800px;
-  }
-}
-
-.intro {
-  @include breakpointMd() {
-    min-height: 328px;
-  }
-
-  @include breakpointXl() {
-    min-height: 283px;
   }
 }

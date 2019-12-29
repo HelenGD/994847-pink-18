@@ -30,10 +30,10 @@
 
 .advantages__slogan {
   margin: 0;
-  margin-bottom: 27px;
 
   @include breakpointMd() {
-    margin-bottom: 0;
+    max-width: 820px;
+    margin: 0 auto;
   }
 }
 
@@ -214,5 +214,15 @@
     text-align: center;
     margin: 0;
     margin-top: 25px;
+  }
+}
+
+.advantages__subtitle {
+  margin-top: 27px;
+  display: block;
+  padding: 0 50px;
+
+  @include breakpointMd() {
+    margin-top: 0;
   }
 }

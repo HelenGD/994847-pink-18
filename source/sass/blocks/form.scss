@@ -1,3 +1,9 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .form__fieldset {
   margin: 0;
   border: 0;
@@ -159,12 +165,6 @@
 
 .form__title--achievements {
   margin-bottom: 38px;
-}
-
-.form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .form__fieldset--contacts {

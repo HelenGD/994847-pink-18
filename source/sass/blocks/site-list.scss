@@ -1,12 +1,3 @@
-.site-list__link {
-  text-decoration: none;
-  color: $white;
-
-  @include breakpointXl() {
-    padding-bottom: 8px;
-  }
-}
-
 .site-list__item {
   list-style-type: none;
   padding: 15px;
@@ -18,6 +9,15 @@
     border: none;
     padding: 0;
     margin-left: 80px;
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: $white;
+
+  @include breakpointXl() {
+    padding-bottom: 8px;
   }
 }
 

@@ -120,35 +120,3 @@
     transform: translateX(-50%);
   }
 }
-
-.slider__arrow {
-  display: none;
-  color: $blue-rgba;
-
-  @include breakpointXl() {
-    display: block;
-    position: absolute;
-    top: 213px;
-    cursor: pointer;
-    z-index: 1;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-
-  &:hover {
-    color: $blue-dark;
-  }
-
-  &:active {
-    color: $blue-rgba-light;
-  }
-}
-
-.slider__arrow--next {
-  @include breakpointXl() {
-    left: auto;
-    right: 0;
-  }
-}
