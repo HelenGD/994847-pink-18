@@ -393,6 +393,10 @@
   border-color: $pink;
 }
 
+.form__radio-input:focus + .form__radio-label::before {
+  border-color: $pink;
+}
+
 .form__radio-input {
   position: absolute;
   top: 0;
@@ -690,6 +694,10 @@
 }
 
 .form__field-checkbox:active .form__checkbox-label::before {
+  border-color: $pink;
+}
+
+.form__checkbox-input:focus + .form__checkbox-label::before {
   border-color: $pink;
 }
 
